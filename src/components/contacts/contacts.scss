@@ -1,0 +1,69 @@
+@import "@/styles/main";
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  width: 83.19%;;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts-content {
+  display: flex;
+  width: 72.36%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33.20%;
+  gap: 15px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.inputs-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+input, textarea {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid $gray100;
+  align-self: stretch;
+  resize: unset;
+
+}
+
+.contacts-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55.9%;
+  gap: 30px;
+
+  & h2 {
+    color: $cyan;
+    text-wrap: unset;
+  }
+
+  & p {
+    color: $gray100;
+    text-wrap: unset;
+  }
+}
