@@ -1,11 +1,11 @@
 import "./aboutMe.scss";
 import { Card } from "@/components/small-componnets/Card";
 import { TitleWrapper } from "@/components/small-componnets/TitleWrapper";
-import {PageProps} from "@/types";
+import { PageProps } from "@/types";
 
 export function AboutMe({ page }: PageProps) {
 	return (
-		<div className="about-container">
+		<div id="about-me" className="about-container">
 			<div className="me-container">
 				<TitleWrapper page={page} index="/" title="about-me" />
 				<p>

@@ -1,29 +1,29 @@
-import {ReactElement} from "react";
+import { ReactElement } from "react";
 
 export type PageProps = {
-    page: string;
+	page: string;
 };
 export type SubmitButtonProps = {
-    type: string;
-    disabled?: boolean
-}
+	type: string;
+	disabled?: boolean;
+};
 export type ButtonProps = {
-    Btype: string,
-    type: string,
-    content: ReactElement | string,
+	Btype: string;
+	type: string;
+	content: ReactElement | string;
 };
 export type CardProps = {
-    title: string;
-    content: string;
-}
+	title: string;
+	content: string;
+};
 export type TitleProps = {
-    index: string;
-    title: string;
-}
+	index: string;
+	title: string;
+};
 export type ProjectProps = {
-    projectTitle: string;
-    projectDescription: string;
-    projectAlt: string;
-    projectImg: string;
-    page: string;
-}
+	projectTitle: string;
+	projectDescription: string;
+	projectAlt: string;
+	projectImg: string;
+	page: string;
+};

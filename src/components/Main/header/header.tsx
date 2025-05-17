@@ -1,7 +1,7 @@
 import "./header.scss";
-import {PageProps} from "@/types";
+import { PageProps } from "@/types";
 
-export default function Header({ page }: PageProps){
+export default function Header({ page }: PageProps) {
 	return (
 		<div className="header-container">
 			<p>
@@ -9,16 +9,16 @@ export default function Header({ page }: PageProps){
 				<span className="pipe">|</span>
 			</p>
 			<nav>
-				<a href="home" target="_blank" rel="noopener noreferrer">
+				<a href="#home" rel="noopener noreferrer">
 					<span className={page}>/</span>home
 				</a>
-				<a href="#about-me" target="_blank" rel="noopener noreferrer">
+				<a href="#about-me" rel="noopener noreferrer">
 					<span className={page}>/</span>about-me
 				</a>
-				<a href="#projects" target="_blank" rel="noopener noreferrer">
+				<a href="#projects" rel="noopener noreferrer">
 					<span className={page}>/</span>projects
 				</a>
-				<a href="#contacts" target="_blank" rel="noopener noreferrer">
+				<a href="#contacts" rel="noopener noreferrer">
 					<span className={page}>/</span>contacts
 				</a>
 			</nav>
