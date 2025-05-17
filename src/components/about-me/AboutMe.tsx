@@ -5,7 +5,7 @@ import {PageProps} from "@/types";
 
 export function AboutMe({ page }: PageProps) {
 	return (
-		<div className="about-container">
+		<section className="about-container">
 			<div className="me-container">
 				<TitleWrapper page={page} index="/" title="about-me" />
 				<p>
@@ -27,6 +27,6 @@ export function AboutMe({ page }: PageProps) {
 					<Card title="Tools" content="Figma VSCode Git" />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

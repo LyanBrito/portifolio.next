@@ -5,7 +5,7 @@ import {BpIcon} from "@/assets/icons/export";
 
 export default function Hero({ page }: PageProps) {
 	return (
-		<div className="home-container">
+		<section className="home-container">
 			<div className="hero-title">
 				<h1>
 					Hello World! I’m <span className={page}>Lyan Brito.</span>
@@ -24,6 +24,6 @@ export default function Hero({ page }: PageProps) {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

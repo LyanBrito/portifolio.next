@@ -5,7 +5,7 @@ import {PageProps} from "@/types";
 
 export function Projects({ page }: PageProps) {
 	return (
-		<div className="project-container">
+		<section className="project-container">
 			<div className="project-title">
 				<TitleWrapper page={page} title="projects" index="/" />
 				<a href="https://example.com" target="_blank" rel="noopener noreferrer">
@@ -35,6 +35,6 @@ export function Projects({ page }: PageProps) {
 					projectAlt="portifolio image"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 }

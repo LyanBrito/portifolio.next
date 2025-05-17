@@ -3,7 +3,7 @@ import {PageProps} from "@/types";
 
 export default function Header({ page }: PageProps){
 	return (
-		<div className="header-container">
+		<header className="header-container">
 			<p>
 				C:\Users\<span className={page}>LyanBrito</span>\portifolio&gt;
 				<span className="pipe">|</span>
@@ -22,6 +22,6 @@ export default function Header({ page }: PageProps){
 					<span className={page}>/</span>contacts
 				</a>
 			</nav>
-		</div>
+		</header>
 	);
 }
