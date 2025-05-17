@@ -1,0 +1,9 @@
+export { default as BellIcon } from "./BellIcon";
+export { default as BpIcon } from "./BpIcon";
+export { default as BranchIcon } from "./BranchIcon";
+export { default as CommitIcon } from "./CommitIcon";
+export { default as GithubIcon } from "./GithubIcon";
+export { default as InstaIcon } from "./InstaIcon";
+export { default as LinkedinIcon } from "./LinkedinIcon";
+export { default as VscIcon } from "./VscIcon";
+export { default as XIcon } from "./XIcon";

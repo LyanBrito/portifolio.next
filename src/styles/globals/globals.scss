@@ -1,0 +1,44 @@
+@import 'variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-family: $primary-font;
+  background: $background-gradient;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button {
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $white;
+  text-wrap: balance;
+  text-decoration: none;
+}
+h1{
+  font-size: $title-font;
+}
+h2{
+  font-size: $title2-font;
+}
+h3{
+  font-size: $subtitle-font;
+}
+p{
+  font-size: $text-font;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}

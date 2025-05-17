@@ -1,0 +1,48 @@
+@import "variables";
+
+span {
+  color: $white;
+
+  &.pg1 {
+    color: $pink;
+  }
+
+  &.pg2 {
+    color: $yellow;
+  }
+}
+
+.page-color {
+  background-color: $white;
+
+  &.pg1 {
+    background-color: $pink;
+  }
+
+  &.pg2 {
+    background-color: $yellow;
+  }
+
+}
+
+button {
+  border: 1px solid $white;
+
+  &.pg1 {
+    border: 1px solid $pink;
+
+    &:hover {
+      background-color: $pink;
+      border: 1px solid $pink;
+    }
+  }
+
+  &.pg2 {
+    border: 1px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      border: 1px solid $yellow;
+    }
+  }
+}
