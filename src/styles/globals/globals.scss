@@ -9,6 +9,9 @@
   padding: 0;
   transition: 0.2s;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 html {
   scroll-behavior: smooth;
@@ -19,8 +22,10 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  font-family: $primary-font;
   background: $background-gradient;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
