@@ -47,6 +47,7 @@
   background-color: transparent;
   border: 1px solid $gray100;
   color: $gray100;
+  cursor: pointer;
 
   &:hover {
     color: $black;
@@ -64,6 +65,7 @@
   background-color: transparent;
   border: 1px solid $pink;
   color: $gray100;
+  cursor: pointer;
 
   &:hover {
     color: $black;
@@ -79,6 +81,7 @@
   align-items: center;
   border: 1px solid var(--pink, #BA7595);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .insta-icon:hover {
