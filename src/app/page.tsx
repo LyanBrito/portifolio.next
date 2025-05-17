@@ -4,6 +4,7 @@ import "./page.scss";
 import {Main} from "@/components/Main/Main";
 import {AboutMe} from "@/components/about-me/AboutMe";
 import {Projects} from "@/components/projects/Projects";
+import Contacts from "@/components/contacts/Contacts";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
             <Main/>
             <AboutMe page="pg1" />
             <Projects page="pg1" />
+            <Contacts page="pg1" />
         </div>
     );
 }
