@@ -9,3 +9,5 @@ export { default as VscIcon } from "./VscIcon";
 export { default as XIcon } from "./XIcon";
 export { default as MenuIcon } from "./MenuIcon";
 export { default as XMenuIcon } from "./XMenuIcon";
+export { default as RefreshIcon } from "./Refresh";
+export { default as AlertIcon } from "./AlertTriangle";

@@ -17,7 +17,11 @@ export default function Hero({ page }: PageProps) {
 				</p>
 			</div>
 			<div className="main-project">
-				<Image className="hero-image" src={PlaceholderImage} alt="Placeholder Image" />
+				<Image
+					className="hero-image"
+					src={PlaceholderImage}
+					alt="Placeholder Image"
+				/>
 				<div className="working-on">
 					<BpIcon />
 					<p>
