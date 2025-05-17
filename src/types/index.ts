@@ -1,9 +1,16 @@
+import {ReactElement} from "react";
+
 export type PageProps = {
     page: string;
 };
-export type ButtonProps = {
+export type SubmitButtonProps = {
     type: string;
-    content: string;
+    disabled?: boolean
+}
+export type ButtonProps = {
+    Btype: string,
+    type: string,
+    content: ReactElement | string,
 };
 export type CardProps = {
     title: string;

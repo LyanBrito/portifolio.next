@@ -1,10 +1,10 @@
 import "./styles.scss";
 import "@/styles/main.scss";
-import {ButtonProps} from "@/types";
+import {ButtonProps, SubmitButtonProps} from "@/types";
 
-export function Button({ content, type } : ButtonProps) {
+export function Button({content, Btype} : ButtonProps ) {
 	return (
-		<button className={type} type="button">
+		<button className={Btype} type="button">
 			{content}
 		</button>
 	);
