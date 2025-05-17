@@ -1,0 +1,46 @@
+@import "../../../styles/main";
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88.66%;
+  height: fit-content;
+
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  width: 45.51%;
+
+  & h1 {
+    width: 56.71%;
+
+  }
+}
+
+.main-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & Image{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.working-on {
+  display: flex;
+  width: fit-content;
+  padding: 8px 12.5px;
+  gap: 10px;
+  border: 1px solid $gray100;
+
+  & b {
+    color: $white;
+    font-weight: 400;
+  }
+
+}
