@@ -1,0 +1,111 @@
+@import "@/styles/main";
+
+.line {
+  width: 100%;
+  height: 2px;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+
+  & h3 {
+    white-space: nowrap;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: max(154px, 230px);
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid $gray100;
+
+  & p {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+  }
+
+  & .card-title {
+    border-bottom: 1px solid $gray100;
+
+  }
+}
+
+.primary-button {
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  background-color: transparent;
+  border: 1px solid $gray100;
+  color: $gray100;
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $white;
+  }
+}
+
+.secondary-button {
+  display: flex;
+  padding: 8px 16px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid $pink;
+  color: $gray100;
+
+  &:hover {
+    color: $black;
+    background-color: $pink;
+    border: 1px solid $pink;
+  }
+}
+.insta-icon{
+
+}
+.github-icon{
+
+}
+.linkedin-icon{
+
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid $gray100;
+
+}
+
+.projectName {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+
+  & p {
+    color: $gray100;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+
