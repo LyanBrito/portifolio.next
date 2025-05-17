@@ -1,6 +1,6 @@
 import "./styles.scss";
 import "@/styles/main.scss";
-import { ButtonProps } from "@/types";
+import { ButtonProps, SubmitButtonProps } from "@/types";
 
 export function Button({ content, Btype }: ButtonProps) {
 	return (

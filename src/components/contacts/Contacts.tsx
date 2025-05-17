@@ -50,7 +50,7 @@ export default function Contacts({ page }: PageProps) {
 	};
 
 	return (
-		<div id="contacts" className="contacts-container">
+		<section id="contacts" className="contacts-container">
 			<TitleWrapper page={page} index="/" title="contact-me" />
 			<div className="contacts-content">
 				<form ref={formRef} onSubmit={handleSubmit} className="contacts">
@@ -106,6 +106,6 @@ export default function Contacts({ page }: PageProps) {
 					</h3>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

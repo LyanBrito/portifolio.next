@@ -27,6 +27,13 @@
 .projects{
   display: flex;
   padding: 1px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 25px;
+}
+@media (max-width: 850px) {
+  .project-container {
+    width: 91.93%;
+  }
 }
