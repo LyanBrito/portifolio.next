@@ -1,0 +1,48 @@
+@import "@/styles/main";
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 87.43%;
+  justify-content: space-between;
+  height: 61px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15px;
+  align-items: center;
+  gap: 15px;
+
+}
+
+nav a {
+  color: $gray100;
+
+  &:hover {
+    color: $white;
+
+  }
+  &:active {
+    color: $pink;
+  }
+}
+
+.pipe {
+  color: $gray100;
+  animation: Pipe 1s steps(1, start) infinite;
+}
+
+@keyframes Pipe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
