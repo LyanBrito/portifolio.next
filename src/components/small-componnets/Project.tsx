@@ -15,8 +15,8 @@ export default function Project({
 				<h3>{projectTitle}</h3>
 				<p>{projectDescription}</p>
 				<div className="button-wrapper">
-					<Button type={`primary-button ${page}`} content="Open" />{" "}
-					<Button type="primary-button" content="Github" />
+					<Button type="button" Btype={`primary-button ${page}`} content="Open" />{" "}
+					<Button type="button" Btype="primary-button" content="Github" />
 				</div>
 			</div>
 			<img src={projectImg} alt={projectAlt} />
