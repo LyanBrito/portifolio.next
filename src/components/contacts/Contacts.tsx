@@ -1,17 +1,17 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
-import { Button } from '../small-componnets/Button';
-import { SubButton } from '../small-componnets/SubButton';
-import { TitleWrapper } from '../small-componnets/TitleWrapper';
-import { PageProps } from '@/types';
-import { GithubIcon, InstaIcon, LinkedinIcon } from '@/assets/icons/export';
+import React, {useRef, useState} from 'react';
+import {Button} from '../small-componnets/Button';
+import {SubButton} from '../small-componnets/SubButton';
+import {TitleWrapper} from '../small-componnets/TitleWrapper';
+import {PageProps} from '@/types';
+import {GithubIcon, InstaIcon, LinkedinIcon} from '@/assets/icons/export';
 import emailjs from '@emailjs/browser';
 import './contacts.scss';
 
-export default function Contacts({ page }: PageProps) {
+export default function Contacts({page}: PageProps) {
     emailjs.init({
-        publicKey:  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
         blockHeadless: true,
         blockList: {
             list: ['foo@emailjs.com', 'bar@emailjs.com'],
@@ -38,25 +38,26 @@ export default function Contacts({ page }: PageProps) {
                 process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
             );
             setStatus('sent');
+            alert('✅ Message sent!');
             formRef.current.reset();
         } catch (err) {
             console.error('EmailJS error:', err);
             setStatus('error');
-            console.log("Public Key:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+            alert('❌ Oops, something went wrong.');
         }
     };
 
     return (
         <div className="contacts-container">
-            <TitleWrapper page={page} index="/" title="contact-me" />
+            <TitleWrapper page={page} index="/" title="contact-me"/>
             <div className="contacts-content">
                 <form ref={formRef} onSubmit={handleSubmit} className="contacts">
                     <div className="inputs-wrapper">
-                        <input placeholder="Name" type="text" name="name" required />
-                        <input placeholder="Email" type="email" name="email" required />
+                        <input placeholder="Name" type="text" name="name" required/>
+                        <input placeholder="Email" type="email" name="email" required/>
                     </div>
-                    <input placeholder="Title" type="text" name="title" required />
-                    <textarea placeholder="Message" name="message" id="message" required />
+                    <input placeholder="Title" type="text" name="title" required/>
+                    <textarea placeholder="Message" name="message" id="message" required/>
                     <div className="buttons-wrapper">
                         <SubButton
                             type="submit"
@@ -64,23 +65,21 @@ export default function Contacts({ page }: PageProps) {
                             disabled={status === 'sending'}
                             content={status === 'sending' ? 'Sending...' : 'Send'}
                         />
-                        {status === 'sent' && <p>✅ Message sent!</p>}
-                        {status === 'error' && <p>❌ Oops, something went wrong.</p>}
 
                         <Button
                             type="button"
                             Btype="github-icon icon-button"
-                            content={<GithubIcon width={24} height={24} />}
+                            content={<GithubIcon width={24} height={24}/>}
                         />
                         <Button
                             type="button"
                             Btype="linkedin-icon icon-button"
-                            content={<LinkedinIcon width={24} height={24} />}
+                            content={<LinkedinIcon width={24} height={24}/>}
                         />
                         <Button
                             type="button"
                             Btype="insta-icon icon-button"
-                            content={<InstaIcon width={24} height={24} />}
+                            content={<InstaIcon width={24} height={24}/>}
                         />
                     </div>
                 </form>
@@ -92,7 +91,7 @@ export default function Contacts({ page }: PageProps) {
                     </p>
                     <h3>
                         <span className={page}>+55</span> (11) 9 8658<span className={page}>-</span>1730
-                        <br />
+                        <br/>
                         lyanbrito613<span className={page}>@gmail.com</span>
                     </h3>
                 </div>
