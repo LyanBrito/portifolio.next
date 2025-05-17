@@ -1,0 +1,32 @@
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 83.19%;
+
+}
+
+.me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48.76%;
+  gap: 30px;
+}
+
+.skills {
+  display: flex;
+  width: 41.81%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
