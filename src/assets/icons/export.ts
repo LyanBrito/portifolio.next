@@ -7,3 +7,5 @@ export { default as InstaIcon } from "./InstaIcon";
 export { default as LinkedinIcon } from "./LinkedinIcon";
 export { default as VscIcon } from "./VscIcon";
 export { default as XIcon } from "./XIcon";
+export { default as MenuIcon } from "./MenuIcon";
+export { default as XMenuIcon } from "./XMenuIcon";
