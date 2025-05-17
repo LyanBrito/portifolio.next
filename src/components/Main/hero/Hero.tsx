@@ -1,11 +1,12 @@
 import "./hero.scss";
-import {PageProps} from "@/types";
+import { PageProps } from "@/types";
 import Image from "next/image";
-import {BpIcon} from "@/assets/icons/export";
+import { BpIcon } from "@/assets/icons/export";
+import { PlaceholderImage } from "@/assets/images/export";
 
 export default function Hero({ page }: PageProps) {
 	return (
-		<section className="home-container">
+		<section id="home" className="home-container">
 			<div className="hero-title">
 				<h1>
 					Hello World! I’m <span className={page}>Lyan Brito.</span>
@@ -16,7 +17,7 @@ export default function Hero({ page }: PageProps) {
 				</p>
 			</div>
 			<div className="main-project">
-				<Image src="https://picsum.photos/529/395" height={395} width={529} alt="Placeholder Image" />
+				<Image className="hero-image" src={PlaceholderImage} alt="Placeholder Image" />
 				<div className="working-on">
 					<BpIcon />
 					<p>

@@ -1,11 +1,11 @@
 import { TitleWrapper } from "../small-componnets/TitleWrapper";
 import "./projects.scss";
 import Project from "@/components/small-componnets/Project";
-import {PageProps} from "@/types";
+import { PageProps } from "@/types";
 
 export function Projects({ page }: PageProps) {
 	return (
-		<section className="project-container">
+		<section id="projects" className="project-container">
 			<div className="project-title">
 				<TitleWrapper page={page} title="projects" index="/" />
 				<a href="https://example.com" target="_blank" rel="noopener noreferrer">

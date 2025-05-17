@@ -1,8 +1,8 @@
 import { Line } from "@/components/small-componnets/Line";
 import "./styles.scss";
-import {PageProps, TitleProps} from "@/types";
+import { PageProps, TitleProps } from "@/types";
 
-export function TitleWrapper({ page, title, index } : PageProps & TitleProps) {
+export function TitleWrapper({ page, title, index }: PageProps & TitleProps) {
 	return (
 		<div className="title-wrapper">
 			<h3>
