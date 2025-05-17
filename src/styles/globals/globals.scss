@@ -10,6 +10,10 @@
   transition: 0.2s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,16 +30,20 @@ h1, h2, h3, h4, h5, h6, a, p, button {
   text-wrap: balance;
   text-decoration: none;
 }
-h1{
+
+h1 {
   font-size: $title-font;
 }
-h2{
+
+h2 {
   font-size: $title2-font;
 }
-h3{
+
+h3 {
   font-size: $subtitle-font;
 }
-p{
+
+p {
   font-size: $text-font;
 }
 

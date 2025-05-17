@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.menu-icon {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -25,6 +29,7 @@ nav a {
     color: $white;
 
   }
+
   &:active {
     color: $pink;
   }
@@ -34,6 +39,43 @@ nav a {
   color: $gray100;
   animation: Pipe 1s steps(1, start) infinite;
 }
+
+@media (max-width: 850px) {
+  .header-container {
+    justify-content: space-between;
+    width: 91.93%;
+    /* mostra só o ícone/botão */
+    .menu-icon,
+    .menu-button {
+      display: block;
+    }
+  }
+
+
+  nav {
+
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: $black;
+    flex-direction: column;
+    padding: 15px 30px;
+    gap: 15px;
+    align-items: flex-start;
+    z-index: 50;
+    border: 1px solid $gray100;
+
+    &.open {
+      display: flex; // mostra quando tiver a classe
+    }
+
+    a {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
 
 @keyframes Pipe {
   0% {

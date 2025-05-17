@@ -30,3 +30,8 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+@media (max-width: 850px) {
+  .about-container {
+    width: 91.93%;
+  }
+}

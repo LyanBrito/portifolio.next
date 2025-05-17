@@ -67,3 +67,19 @@ input, textarea {
     text-wrap: unset;
   }
 }
+@media (max-width: 850px) {
+  .contacts-container {
+    width: 91.93%;
+  }
+  .contacts-content {
+    flex-direction: column-reverse;
+    gap: 30px;
+    width: 100%;
+  }
+  .contacts-title {
+    width: 100%;
+  }
+  .contacts{
+    width: 100%;
+  }
+}

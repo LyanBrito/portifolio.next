@@ -5,14 +5,14 @@
   padding: 60px 0;
   flex-direction: column;
   align-items: flex-end;
-  width: 32%;
 }
 .quote-text {
   display: flex;
+  flex-direction: column;
   padding: 8px;
   justify-content: center;
-  align-items: center;
   border: 1px solid var(--gray-200, #AEB8C1);
+  width: 468px;
 }
 .quote-author {
   border: 1px solid var(--gray-200, #AEB8C1);
@@ -24,4 +24,5 @@
 }
 .quote-container p {
   color: $gray100;
+  text-wrap: unset;
 }
