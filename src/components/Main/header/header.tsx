@@ -5,7 +5,7 @@ export default function Header({ page }: PageProps){
 	return (
 		<div className="header-container">
 			<p>
-				C:\Users\<span className={page}>LyanBrito</span>\portifolio&gt;
+				C:\Users\<span className={page}>LyanBrito</span>\portfolio&gt;
 				<span className="pipe">|</span>
 			</p>
 			<nav>

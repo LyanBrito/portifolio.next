@@ -15,8 +15,10 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  font-family: $primary-font;
   background: $background-gradient;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
@@ -26,16 +28,20 @@ h1, h2, h3, h4, h5, h6, a, p, button {
   text-wrap: balance;
   text-decoration: none;
 }
-h1{
+
+h1 {
   font-size: $title-font;
 }
-h2{
+
+h2 {
   font-size: $title2-font;
 }
-h3{
+
+h3 {
   font-size: $subtitle-font;
 }
-p{
+
+p {
   font-size: $text-font;
 }
 
