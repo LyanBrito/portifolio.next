@@ -71,13 +71,48 @@
     border: 1px solid $pink;
   }
 }
-.insta-icon{
+
+.icon-button {
+  display: flex;
+  padding: 6.5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--pink, #BA7595);
+  background-color: transparent;
+}
+
+.insta-icon:hover {
+  background: $insta-gradient;
+  border: 1px solid $insta-gradient;
+
+  & svg {
+    & path {
+      stroke: $white;
+    }
+  }
+}
+
+.github-icon:hover {
+  background: $github-color;
+  border: 1px solid $github-color;
+
+  & svg {
+    & path {
+      stroke: $white;
+    }
+  }
 
 }
-.github-icon{
 
-}
-.linkedin-icon{
+.linkedin-icon:hover {
+  background: $linkedin-color;
+  border: 1px solid $linkedin-color;
+
+  & svg {
+    & path {
+      stroke: $white;
+    }
+  }
 
 }
 
