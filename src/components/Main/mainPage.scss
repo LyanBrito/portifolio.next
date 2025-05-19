@@ -7,3 +7,8 @@
   align-items: center;
   width: 100%;
 }
+@media (max-width: 430px) {
+  .main-container {
+    gap: 10px;
+  }
+}

@@ -30,8 +30,26 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+
 @media (max-width: 850px) {
   .about-container {
     width: 91.93%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-container {
+    width: 86.04%;
+    flex-direction: column;
+  }
+  .me-container {
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+  }
+  .card-wrapper {
+    justify-content: center;
   }
 }

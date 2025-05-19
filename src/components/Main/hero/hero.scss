@@ -49,3 +49,19 @@
     width: 91.93%;
   }
 }
+@media (max-width: 430px) {
+  .home-container {
+    width: 86.04%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .hero-title {
+    width: 100%;
+    & h1{
+      width: 100%;
+    }
+  }
+    .working-on  p{
+      font-size: 14px;
+    }
+}
