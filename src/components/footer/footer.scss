@@ -1,0 +1,44 @@
+@import "@/styles/main";
+
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $gray100;
+}
+.footer-R{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+.git-container{
+  display: flex;
+  padding: 8px 18px;
+  align-items: center;
+  gap: 10px;
+  background-color: $pink;
+}
+.icons-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.footer-L{
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  gap: 20px;
+}
+.commit-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 850px) {
+  .columns{
+    display: none;
+  }
+}

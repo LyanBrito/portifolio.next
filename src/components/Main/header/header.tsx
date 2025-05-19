@@ -3,7 +3,7 @@
 import "./header.scss";
 import { PageProps } from "@/types";
 import { useState, useRef, useEffect } from "react";
-import {MenuIcon, XMenuIcon} from "@/assets/icons/export";
+import { MenuIcon, XMenuIcon } from "@/assets/icons/export";
 
 export default function Header({ page }: PageProps) {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -40,10 +40,11 @@ export default function Header({ page }: PageProps) {
 				<span className="pipe">|</span>
 			</p>
 			<div ref={buttonRef} className="menu-icon-wrapper" onClick={handleMenu}>
-				{menuOpen
-					? <XMenuIcon width={24} height={24} />
-					: <MenuIcon width={24} height={24} />
-				}
+				{menuOpen ? (
+					<XMenuIcon width={24} height={24} />
+				) : (
+					<MenuIcon width={24} height={24} />
+				)}
 			</div>
 
 			<nav ref={navRef} className={menuOpen ? "open" : ""}>
