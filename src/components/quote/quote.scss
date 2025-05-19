@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
 .quote-text {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,7 @@
   border: 1px solid var(--gray-200, #AEB8C1);
   width: 468px;
 }
+
 .quote-author {
   border: 1px solid var(--gray-200, #AEB8C1);
   border-top: none;
@@ -22,7 +24,18 @@
   justify-content: center;
   align-items: center;
 }
+
 .quote-container p {
   color: $gray100;
   text-wrap: unset;
+}
+
+@media (max-width: 650px) {
+  .quote-container {
+    padding: 116px 0;
+    width: 86.04%;
+  }
+  .quote-text {
+    width: 100%;
+  }
 }

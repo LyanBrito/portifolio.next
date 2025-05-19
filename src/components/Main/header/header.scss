@@ -12,6 +12,10 @@
 .menu-icon {
   display: none;
 }
+.menu-icon-wrapper{
+  display: none;
+
+}
 
 nav {
   display: flex;
@@ -21,19 +25,13 @@ nav {
   gap: 15px;
 
 }
-
-nav a {
-  color: $gray100;
-
-  &:hover {
-    color: $white;
-
-  }
-
-  &:active {
-    color: $pink;
-  }
+nav .pg2{
+  display: none;
 }
+nav a .pg2{
+  display: unset;
+}
+
 
 .pipe {
   color: $gray100;
@@ -49,6 +47,9 @@ nav a {
     .menu-button {
       display: block;
     }
+  }
+  .menu-icon-wrapper{
+    display: unset;
   }
 
 
@@ -76,7 +77,11 @@ nav a {
   }
 }
 
-
+@media (max-width: 430px) {
+  .header-container {
+    height: 64px;
+  }
+}
 @keyframes Pipe {
   0% {
     opacity: 1;

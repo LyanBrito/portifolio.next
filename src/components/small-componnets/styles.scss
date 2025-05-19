@@ -146,4 +146,9 @@
   gap: 16px;
 }
 
+@media (max-width: 430px) {
+  .card {
+    width: 41.89%;
+  }
 
+}

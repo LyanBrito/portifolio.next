@@ -1,7 +1,8 @@
 import { PageProps } from "@/types";
 import "./footer.scss";
 import {
-	AlertIcon, BellIcon,
+	AlertIcon,
+	BellIcon,
 	BranchIcon,
 	CommitIcon,
 	RefreshIcon,
@@ -13,7 +14,7 @@ export default function Footer({ page }: PageProps) {
 	return (
 		<footer>
 			<div className="footer-R">
-				<div className="git-container">
+				<div className={`git-container page-color ${page}`}>
 					<VscIcon width={24} height={24} />
 				</div>
 				<BranchIcon width={24} height={24} />
@@ -28,8 +29,8 @@ export default function Footer({ page }: PageProps) {
 			</div>
 			<div className="footer-L">
 				<div className="commit-container">
-				<CommitIcon />
-				<p>lyanbrito(1 mouth ago)</p>
+					<CommitIcon />
+					<p>lyanbrito(1 mouth ago)</p>
 				</div>
 				<p className="columns">Ln 1, Col 1</p>
 				<p>CRLF</p>

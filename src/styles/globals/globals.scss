@@ -13,10 +13,6 @@ html{
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -28,12 +24,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, button {
+h1, h2, h3, h4, h5, h6, a, p, button, input, textarea, Link {
   font-family: $primary-font;
   font-weight: 200;
   color: $white;
   text-wrap: balance;
   text-decoration: none;
+  line-height: normal;
 }
 
 h1 {

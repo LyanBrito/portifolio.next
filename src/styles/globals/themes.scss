@@ -25,6 +25,14 @@ span {
 
 }
 
+nav a {
+  color: $gray100;
+
+  &:hover {
+    color: $white;
+  }
+}
+
 button {
   border: 1px solid $white;
 

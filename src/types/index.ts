@@ -3,6 +3,9 @@ import { ReactElement } from "react";
 export type PageProps = {
 	page: string;
 };
+export type HeaderProps = {
+	index: string;
+};
 export type SubmitButtonProps = {
 	type: string;
 	disabled?: boolean;

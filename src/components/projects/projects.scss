@@ -37,3 +37,11 @@
     width: 91.93%;
   }
 }
+@media (max-width: 430px) {
+  .project-container {
+    width: 86.04%;
+  }
+  .project-title a{
+    font-size: 12px;
+  }
+}
