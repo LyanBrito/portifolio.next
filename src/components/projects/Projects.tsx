@@ -2,15 +2,16 @@ import { TitleWrapper } from "../small-componnets/TitleWrapper";
 import "./projects.scss";
 import Project from "@/components/small-componnets/Project";
 import { PageProps } from "@/types";
+import Link from "next/link";
 
 export function Projects({ page }: PageProps) {
 	return (
 		<section id="projects" className="project-container">
 			<div className="project-title">
 				<TitleWrapper page={page} title="projects" index="/" />
-				<a href="https://example.com" target="_blank" rel="noopener noreferrer">
+				<Link href="/projectsPage" rel="noopener noreferrer">
 					View more ~~{">"}
-				</a>
+				</Link>
 			</div>
 			<div className="projects">
 				<Project

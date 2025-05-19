@@ -1,11 +1,11 @@
 "use client";
 
 import "./header.scss";
-import { PageProps } from "@/types";
+import { HeaderProps, PageProps } from "@/types";
 import { useState, useRef, useEffect } from "react";
 import { MenuIcon, XMenuIcon } from "@/assets/icons/export";
 
-export default function Header({ page }: PageProps) {
+export default function Header({ page, index }: PageProps & HeaderProps) {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navRef = useRef<HTMLElement>(null);
 	const buttonRef = useRef<HTMLDivElement>(null);
@@ -36,7 +36,8 @@ export default function Header({ page }: PageProps) {
 	return (
 		<header className="header-container">
 			<p>
-				C:\Users\<span className={page}>LyanBrito</span>\portfolio&gt;
+				C:\Users\<span className={page}>LyanBrito</span>\portfolio
+				<span className={page}>{index}</span>
 				<span className="pipe">|</span>
 			</p>
 			<div ref={buttonRef} className="menu-icon-wrapper" onClick={handleMenu}>
@@ -48,16 +49,31 @@ export default function Header({ page }: PageProps) {
 			</div>
 
 			<nav ref={navRef} className={menuOpen ? "open" : ""}>
-				<a href="#home" rel="noopener noreferrer" onClick={handleLinkClick}>
+				<a href="/" rel="noopener noreferrer" onClick={handleLinkClick}>
 					<span className={page}>/</span>home
 				</a>
-				<a href="#about-me" rel="noopener noreferrer" onClick={handleLinkClick}>
+				<a
+					className={page}
+					href="#about-me"
+					rel="noopener noreferrer"
+					onClick={handleLinkClick}
+				>
 					<span className={page}>/</span>about-me
 				</a>
-				<a href="#projects" rel="noopener noreferrer" onClick={handleLinkClick}>
+				<a
+					className={page}
+					href="#projects"
+					rel="noopener noreferrer"
+					onClick={handleLinkClick}
+				>
 					<span className={page}>/</span>projects
 				</a>
-				<a href="#contacts" rel="noopener noreferrer" onClick={handleLinkClick}>
+				<a
+					className={page}
+					href="#contacts"
+					rel="noopener noreferrer"
+					onClick={handleLinkClick}
+				>
 					<span className={page}>/</span>contacts
 				</a>
 			</nav>

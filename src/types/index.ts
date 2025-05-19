@@ -5,7 +5,7 @@ export type PageProps = {
 };
 export type HeaderProps = {
 	index: string;
-}
+};
 export type SubmitButtonProps = {
 	type: string;
 	disabled?: boolean;
