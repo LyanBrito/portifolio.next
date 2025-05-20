@@ -8,9 +8,10 @@ export default function Project({
 	projectAlt,
 	projectImg,
 	page,
+	type,
 }: ProjectProps) {
 	return (
-		<div className="project">
+		<div className={`project ${type}`}>
 			<div className="projectName">
 				<h3>{projectTitle}</h3>
 				<p>{projectDescription}</p>
@@ -20,7 +21,10 @@ export default function Project({
 						Btype={`primary-button ${page}`}
 						content="Open"
 					/>{" "}
-					<Button type="button" Btype="primary-button" content="Github" />
+					<Button 
+						type="button" 
+						Btype="primary-button" 
+						content="Github" />
 				</div>
 			</div>
 			<img src={projectImg} alt={projectAlt} />

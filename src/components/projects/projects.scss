@@ -28,13 +28,16 @@
   display: flex;
   padding: 1px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+  width: 86.89%;
+  gap: 30px;
 }
 @media (max-width: 850px) {
   .project-container {
     width: 91.93%;
+  }
+  .projects{
+    width: 100%;
+    justify-content: center;
   }
 }
 @media (max-width: 430px) {

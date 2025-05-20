@@ -29,4 +29,5 @@ export type ProjectProps = {
 	projectAlt: string;
 	projectImg: string;
 	page: string;
+	type: string;
 };

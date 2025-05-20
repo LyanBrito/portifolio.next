@@ -20,6 +20,7 @@ export function Projects({ page }: PageProps) {
 					projectTitle="Portifolio"
 					projectImg="https://picsum.photos/305/208"
 					projectAlt="portifolio image"
+					type="pj1"
 				/>
 				<Project
 					page={page}
@@ -27,6 +28,7 @@ export function Projects({ page }: PageProps) {
 					projectTitle="Portifolio"
 					projectImg="https://picsum.photos/305/208"
 					projectAlt="portifolio image"
+					type="pj1"
 				/>
 				<Project
 					page={page}
@@ -34,6 +36,7 @@ export function Projects({ page }: PageProps) {
 					projectTitle="Portifolio"
 					projectImg="https://picsum.photos/305/208"
 					projectAlt="portifolio image"
+					type="pj1"
 				/>
 			</div>
 		</section>
