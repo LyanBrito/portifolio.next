@@ -126,6 +126,29 @@
   border: 1px solid $gray100;
 
 }
+.small-projects .projects .project {
+    width: 305px;
+  }
+
+.pj1 {
+  display: flex;
+}
+
+.pj2 {
+  display: flex;
+}
+
+.pj2 img {
+  display: none;
+}
+
+.pj2 Button:first-child {
+  display: none;
+}
+
+.pj2 .projectName h3 {
+  color: $gray100;
+}
 
 .projectName {
   display: flex;
@@ -149,6 +172,10 @@
 @media (max-width: 430px) {
   .card {
     width: 41.89%;
+  }
+
+  .small-projects .projects .project {
+    width: 100%;
   }
 
 }
