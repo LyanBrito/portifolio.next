@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { StaticImageData } from "next/image";
 
 export type PageProps = {
 	page: string;
@@ -14,6 +15,7 @@ export type ButtonProps = {
 	Btype: string;
 	type: string;
 	content: ReactElement | string;
+	link: string;
 };
 export type CardProps = {
 	title: string;
@@ -27,7 +29,9 @@ export type ProjectProps = {
 	projectTitle: string;
 	projectDescription: string;
 	projectAlt: string;
-	projectImg: string;
+	projectImg: string | StaticImageData;
 	page: string;
 	type: string;
+	openLink: string;
+	ghLink: string;
 };

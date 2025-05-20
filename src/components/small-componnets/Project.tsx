@@ -1,6 +1,8 @@
 import { Button } from "@/components/small-componnets/Button";
 import "./styles.scss";
 import { ProjectProps } from "@/types";
+import { PlaceholderImage } from "@/assets/images/export";
+import Image from "next/image";
 
 export default function Project({
 	projectTitle,
@@ -9,7 +11,10 @@ export default function Project({
 	projectImg,
 	page,
 	type,
+	openLink,
+	ghLink,
 }: ProjectProps) {
+	const imageSrc = projectImg || PlaceholderImage;
 	return (
 		<div className={`project ${type}`}>
 			<div className="projectName">
@@ -20,14 +25,17 @@ export default function Project({
 						type="button"
 						Btype={`primary-button ${page}`}
 						content="Open"
-					/>{" "}
-					<Button 
-						type="button" 
-						Btype="primary-button" 
-						content="Github" />
+						link={openLink}
+					/>
+					<Button
+						type="button"
+						Btype="primary-button"
+						content="Github"
+						link={ghLink}
+					/>
 				</div>
 			</div>
-			<img src={projectImg} alt={projectAlt} />
+			<Image width={305} height={208} src={imageSrc} alt={projectAlt} />
 		</div>
 	);
 }
