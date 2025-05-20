@@ -8,12 +8,20 @@
   width: 100%;
   gap: 30px;
 }
+.all-projects, .small-projects{
+  width: 83.19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px ;
+}
 
 @media (max-width: 430px) {
   .page {
     gap: 40px;
   }
-  .all-projects {
+  .all-projects, .small-projects {
     display: flex;
     flex-direction: column;
     width: 86.04%;
