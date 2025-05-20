@@ -124,11 +124,14 @@
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid $gray100;
+  width: 307px;
+  height: fit-content;
 
 }
+
 .small-projects .projects .project {
-    width: 305px;
-  }
+  width: 305px;
+}
 
 .pj1 {
   display: flex;
@@ -142,8 +145,12 @@
   display: none;
 }
 
-.pj2 Button:first-child {
+.pj2 a:first-child {
   display: none;
+}
+
+.pj2 a:last-child {
+  border: 1px solid $gray100;
 }
 
 .pj2 .projectName h3 {
@@ -160,7 +167,12 @@
 
   & p {
     color: $gray100;
+    text-wrap: inherit;
   }
+}
+
+.project img {
+  border-top: 1px solid $gray100;
 }
 
 .button-wrapper {

@@ -67,6 +67,7 @@ export default function Contacts({ page }: PageProps) {
 					/>
 					<div className="buttons-wrapper">
 						<SubButton
+							link=""
 							type="submit"
 							Btype="secondary-button"
 							disabled={status === "sending"}
@@ -74,16 +75,19 @@ export default function Contacts({ page }: PageProps) {
 						/>
 
 						<Button
+							link="https://github.com/LyanBrito"
 							type="button"
 							Btype="github-icon icon-button"
 							content={<GithubIcon width={24} height={24} />}
 						/>
 						<Button
+							link="https://www.linkedin.com/in/lyan-brito-998986284/"
 							type="button"
 							Btype="linkedin-icon icon-button"
 							content={<LinkedinIcon width={24} height={24} />}
 						/>
 						<Button
+							link="https://instagram.com/_lyanbrito_"
 							type="button"
 							Btype="insta-icon icon-button"
 							content={<InstaIcon width={24} height={24} />}
