@@ -31,6 +31,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={jetBrainsMono.className}>
 			<head>
+                <meta name="keywords" content="LyanBrito Portfolio Porfifolio HTML GitHub Git JavaScript Next.js " />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link
 					rel="preconnect"
@@ -41,10 +42,11 @@ export default function RootLayout({
 					href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
 					rel="stylesheet"
 				/>
-				<title>Lyan Brito</title>
+				<title>LyanBrito's | Portfolio</title>
 			</head>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
 				{children}
+
 			</body>
 		</html>
 	);

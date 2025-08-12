@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import "@/styles/main.scss";
 import "./page.scss";
 import { Main } from "@/components/Main/Main";
