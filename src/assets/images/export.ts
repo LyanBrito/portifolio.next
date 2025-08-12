@@ -4,3 +4,4 @@ export { default as RRImg } from "./rr-image.png";
 export { default as PlaceholderImage } from "./395.webp";
 export { default as FashionImg } from "./fashion-img.png";
 export { default as JavaImg } from "./java-img.png";
+export { default as Myself } from "./lyan-brito.png";
