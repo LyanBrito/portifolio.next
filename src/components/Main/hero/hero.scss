@@ -2,7 +2,7 @@
 
 .home-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 88.66%;
   height: fit-content;
@@ -12,11 +12,9 @@
 .hero-title {
   display: flex;
   flex-direction: column;
-  width: 45.51%;
 
   & h1 {
-    width: 56.71%;
-
+    width: 70%;
   }
 }
 
@@ -26,9 +24,11 @@
   justify-content: center;
 
 }
+
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 
 .working-on {
@@ -44,11 +44,13 @@
   }
 
 }
+
 @media (max-width: 850px) {
   .home-container {
     width: 91.93%;
   }
 }
+
 @media (max-width: 430px) {
   .home-container {
     width: 86.04%;
@@ -57,11 +59,12 @@
   }
   .hero-title {
     width: 100%;
-    & h1{
+
+    & h1 {
       width: 100%;
     }
   }
-    .working-on  p{
-      font-size: 14px;
-    }
+  .working-on p {
+    font-size: 14px;
+  }
 }

@@ -2,7 +2,7 @@ import "./hero.scss";
 import { PageProps } from "@/types";
 import Image from "next/image";
 import { BpIcon } from "@/assets/icons/export";
-import { PlaceholderImage } from "@/assets/images/export";
+import {Myself} from "@/assets/images/export";
 
 export default function Hero({ page }: PageProps) {
 	return (
@@ -19,7 +19,7 @@ export default function Hero({ page }: PageProps) {
 			<div className="main-project">
 				<Image
 					className="hero-image"
-					src={PlaceholderImage}
+					src={Myself}
 					alt="Placeholder Image"
 				/>
 				<div className="working-on">
