@@ -71,7 +71,7 @@ export default function Contacts({ page }: PageProps) {
 							type="submit"
 							Btype="secondary-button"
 							disabled={status === "sending"}
-							content={status === "sending" ? "Sending..." : "Send"}
+							content={status === "sending" ? "Sending......" : "Send"}
 						/>
 
 						<Button
