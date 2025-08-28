@@ -31,7 +31,9 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={jetBrainsMono.className}>
 			<head>
-                <meta name="keywords" content="LyanBrito Portfolio Porfifolio HTML GitHub Git JavaScript Next.js " />
+                <meta name="keywords" content="Lyan Brito, Portfolio, Porfifolio, HTML, GitHub, Git, JavaScript, Next.js" />
+  				<meta name="robots" content="index, follow"> 
+  				<meta property="og:title" content="Lyan Brito | Portfolio">
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link
 					rel="preconnect"
