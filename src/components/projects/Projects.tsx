@@ -11,7 +11,7 @@ export function Projects({ page }: PageProps) {
 			<div className="project-title">
 				<TitleWrapper page={page} title="projects" index="/" />
 				<Link href="/projectsPage" rel="noopener noreferrer">
-					View more ~~~{">"}
+					View more ~~{">"}
 				</Link>
 			</div>
 			<div className="projects">
