@@ -24,7 +24,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.86.3",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

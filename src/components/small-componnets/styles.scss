@@ -173,6 +173,9 @@
 
 .project img {
   border-top: 1px solid $gray100;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .button-wrapper {

@@ -5,3 +5,6 @@ export { default as PlaceholderImage } from "./395.webp";
 export { default as FashionImg } from "./fashion-img.png";
 export { default as JavaImg } from "./java-img.png";
 export { default as Myself } from "./lyan-brito.png";
+export { default as JVLogo } from "./java-logo.webp";
+export { default as LunaImg } from "./luna-print.png";
+export { default as SBImg } from "./spring-boot-img.png";
