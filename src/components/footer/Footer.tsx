@@ -1,4 +1,4 @@
-import { PageProps } from "@/types";
+import type { PageProps } from "@/types";
 import "./footer.scss";
 import {
 	AlertIcon,
@@ -9,6 +9,8 @@ import {
 	VscIcon,
 } from "@/assets/icons/export";
 import XIcon from "@/assets/icons/XIcon";
+import LastCommit from "./LastCommit";
+
 
 export default function Footer({ page }: PageProps) {
 	return (
@@ -30,7 +32,8 @@ export default function Footer({ page }: PageProps) {
 			<div className="footer-L">
 				<div className="commit-container">
 					<CommitIcon />
-					<p>lyanbrito(1 mouth ago)</p>
+					{/* <p>lyanbrito(1 mouth ago)</p> */}
+					<LastCommit />
 				</div>
 				<p className="columns">Ln 1, Col 1</p>
 				<p>CRLF</p>
