@@ -6,23 +6,55 @@ import Project from "@/components/small-componnets/Project";
 import Footer from "@/components/footer/Footer";
 import {
 	FashionImg,
-	JavaImg,
+	JVLogo,
 	LandwindImg,
+	LunaImg,
 	RestfulImg,
 	RRImg,
+	SBImg,
 } from "@/assets/images/export";
 
 export const metadata = {
 	title: "Projects | Lyan Brito",
 };
 
-export default function Page({}) {
+export default function Page() {
 	return (
 		<div className="page">
 			<Header index="\projects&gt;" page="pg2" />
 			<div className="all-projects">
 				<TitleWrapper page="pg2" index="/" title="projects" />
 				<div className="projects">
+					<Project
+						page="pg2"
+						projectDescription="A website made for gamers looking for new games our people to play."
+						projectTitle="Luna Project"
+						projectImg={LunaImg}
+						projectAlt="luna figma community screenshot"
+						type="pj1"
+						ghLink="https://github.com/LyanBrito/study-api.backend.git"
+						openLink="https://github.com/ALunaProject"
+					/>
+					<Project
+						page="pg2"
+						projectDescription="Simple SpringBoot project mande in SENAI course. Project made to understand RESTful API & CRUD"
+						projectTitle="Spring Project"
+						projectImg={SBImg}
+						projectAlt="spring boot logo"
+						type="pj1"
+						ghLink="https://github.com/LyanBrito/spring-project.git"
+						openLink="https://github.com/LyanBrito/spring-project.git"
+					/>
+					<Project
+						page="pg2"
+						projectDescription="Simple exercises made in SENAI course to understand OOP in Java Language."
+						projectTitle="Java Course"
+						projectImg={JVLogo}
+						projectAlt="java logo"
+						type="pj1"
+						ghLink="https://github.com/LyanBrito/java-course2.git"
+						openLink="https://github.com/LyanBrito/java-course2.git"
+					/>
 					<Project
 						page="pg2"
 						projectDescription="Project developed to understand the process of creating a RESTful API."
@@ -63,16 +95,6 @@ export default function Page({}) {
 						ghLink="https://github.com/LyanBrito/shopping-website.react.git"
 						openLink="https://code-dojo-landwind-lac.vercel.app/"
 					/>
-					<Project
-						page="pg2"
-						projectDescription="Muitiple JAVA exercises"
-						projectTitle="Java Course"
-						projectImg={JavaImg}
-						projectAlt="portifolio image"
-						type="pj1"
-						ghLink="https://github.com/LyanBrito/java-course.git"
-						openLink="https://code-dojo-landwind-lac.vercel.app/"
-					/>
 				</div>
 			</div>
 			<div className="small-projects">
@@ -91,7 +113,7 @@ export default function Page({}) {
 					<Project
 						page="pg2"
 						projectDescription="Page made with Astro & Less (with errors)"
-						projectTitle="Astro & Less"
+						projectTitle="Astro & Less (unfineshed)"
 						projectImg=""
 						projectAlt="portifolio image"
 						type="pj2"

@@ -1,9 +1,9 @@
 import { TitleWrapper } from "../small-componnets/TitleWrapper";
 import "./projects.scss";
 import Project from "@/components/small-componnets/Project";
-import { PageProps } from "@/types";
+import type { PageProps } from "@/types";
 import Link from "next/link";
-import { LandwindImg, RestfulImg, RRImg } from "@/assets/images/export";
+import { JVLogo, LandwindImg, LunaImg, RestfulImg, RRImg, SBImg } from "@/assets/images/export";
 
 export function Projects({ page }: PageProps) {
 	return (
@@ -17,33 +17,33 @@ export function Projects({ page }: PageProps) {
 			<div className="projects">
 				<Project
 					page={page}
-					projectDescription="Project developed to understand the process of creating a RESTful API."
-					projectTitle="Study API Backend"
-					projectImg={RestfulImg}
-					projectAlt="portifolio image"
+					projectDescription="A website made for gamers looking for new games our people to play."
+					projectTitle="Luna Project"
+					projectImg={LunaImg}
+					projectAlt="luna figma community screenshot"
 					type="pj1"
 					ghLink="https://github.com/LyanBrito/study-api.backend.git"
-					openLink="https://github.com/LyanBrito/study-api.backend.git"
+					openLink="https://github.com/ALunaProject"
 				/>
 				<Project
 					page={page}
-					projectDescription="Page created to understand basic HTML coding."
-					projectTitle="R&R"
-					projectImg={RRImg}
-					projectAlt="portifolio image"
+					projectDescription="Simple SpringBoot project mande in SENAI course. Project made to understand RESTful API & CRUD"
+					projectTitle="Spring Project"
+					projectImg={SBImg}
+					projectAlt="spring boot logo"
 					type="pj1"
-					ghLink="https://github.com/LyanBrito/SENAI-rrFunilaria.HTML"
-					openLink="https://rr-funilaria.vercel.app"
+					ghLink="https://github.com/LyanBrito/spring-project.git"
+					openLink="https://github.com/LyanBrito/spring-project.git"
 				/>
 				<Project
 					page={page}
-					projectDescription="Page created with tailwind in SENAI course."
-					projectTitle="Landwind"
-					projectImg={LandwindImg}
-					projectAlt="portifolio image"
+					projectDescription="Simple exercises made in SENAI course to understand OOP in Java Language."
+					projectTitle="Java Course"
+					projectImg={JVLogo}
+					projectAlt="java logo"
 					type="pj1"
-					ghLink="https://github.com/LyanBrito/code-dojo-landwind.git"
-					openLink="https://code-dojo-landwind-lac.vercel.app/"
+					ghLink="https://github.com/LyanBrito/java-course2.git"
+					openLink="https://github.com/LyanBrito/java-course2.git"
 				/>
 			</div>
 		</section>
