@@ -1,0 +1,63 @@
+// Colors
+
+// Semantic colors
+$sc-info-100: #A9D6E5;
+$sc-info-200: #0466C8;
+$sc-info-300: #002855;
+
+$sc-alert-100: #FFEE99;
+$sc-alert-200: #FFD400;
+$sc-alert-300: #926C15;
+
+$sc-danger-100: #FF8FA3;
+$sc-danger-200: #BF0603;
+$sc-danger-300: #38040E;
+
+$sc-sucess-100: #AAD576;
+$sc-sucess-200: #38B000;
+$sc-sucess-300: #143601;
+
+// Grayscale
+
+$gs-600: #000;
+$gs-500: #141414;
+$gs-400: #212529;
+$gs-300: #6C757D;
+$gs-200: #C4C4C4;
+$gs-100: #FFF;
+
+// Gradients
+$default-bg: linear-gradient(180deg, #24292E 0%, #09090A 95.33%);
+$linkedin-bg: linear-gradient(146deg, #3C75C6 4.59%, #144589 78.97%);
+$figma-bg: linear-gradient(194deg, rgba(0, 0, 0, 0.00) 9.92%, rgba(0, 0, 0, 0.29) 56.7%, rgba(0, 0, 0, 0.40) 89.85%), linear-gradient(122deg, #F24E1E -2.5%, rgba(250, 99, 69, 0.97) 2.84%, rgba(255, 114, 98, 0.95) 13.19%, rgba(198, 99, 195, 0.92) 32.36%, rgba(162, 89, 255, 0.90) 49.41%, rgba(80, 149, 254, 0.87) 69.97%, rgba(26, 188, 254, 0.85) 79.33%, rgba(23, 192, 229, 0.84) 89.39%, rgba(10, 207, 131, 0.80) 102.23%);
+$project-card-bg: linear-gradient(104deg, #7A19F3 -2.44%, #A952F3 100%);
+$insta-bg: linear-gradient(221deg, #B24DB9 15.65%, #D42F7F 36.99%, #F7772E 76.15%, #FEF780 95.05%);
+$spring-bg: linear-gradient(180deg, #8CC468 -3.22%, #245E42 120%);
+$metalic-border-200: linear-gradient(105deg, #FFF 0.76%, rgba(255, 255, 255, 0.26) 32.78%, rgba(255, 255, 255, 0.74) 69.11%, rgba(255, 255, 255, 0.07) 99%);
+$metalis-border-100: linear-gradient(180deg, #E3E3E3 0%, #9A9A9A 18.75%, #626262 30.29%, #878787 43.75%, #FFF 61.06%, #747474 76.44%, #B0B0B0 87.5%, #4C4C4C 100%);
+
+// Font styles
+$ff-poppins: Poppins, sans-serif;
+
+$fs-sm: 16px;
+$fs-base: 18px;
+$fs-lg: 20px;
+$fs-xl: 24px;
+$fs-2xl: 32px;
+$fs-3xl: 48px;
+$fs-4xl: 64px;
+$fs-5xl: 72px;
+$fs-6xl: 98px;
+$fs-7xl: 180px;
+
+$fw-regular: 400;
+$fw-medium: 590;
+
+$ls-title: -1.92px;
+$ls-title: -1.44px;
+$ls-text: -0.2px;
+
+$lh-title: 100%;
+$lh-subtitle: 120%;
+$lh-text: 140%;
+
