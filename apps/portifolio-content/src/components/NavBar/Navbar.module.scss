@@ -1,0 +1,8 @@
+.navContainer {
+    background-color: $sc-sucess-200;
+    @include flex-center;
+    width: fit-content;
+    padding: 8px;
+    border: 1px solid $gs-100;
+    gap: 10px;
+}
