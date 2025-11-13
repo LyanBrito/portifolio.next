@@ -1,0 +1,38 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "./reset";
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: $gs-100;
+  background-color: $gs-600;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: $gs-100;
+  &:hover {
+    color: darken($gs-100, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: $gs-100;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: $gs-100;
+}
+.flex-center {
+  @include flex-center;
+}
