@@ -4,7 +4,6 @@
 node_modules
 .pnp
 .pnp.js
-.idea
 
 # Local env files
 .env
@@ -12,6 +11,10 @@ node_modules
 .env.development.local
 .env.test.local
 .env.production.local
+
+# IDE settings
+.idea
+.vscode
 
 # Testing
 coverage
