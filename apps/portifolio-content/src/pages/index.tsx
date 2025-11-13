@@ -1,8 +1,10 @@
-const inter = Inter({subsets: ['latin']})
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
     return (
-// @ts-ignore
+        <>
         <h1>refactor in progress . . .</h1>
+        <NavBar />
+        </>
     )
 }
