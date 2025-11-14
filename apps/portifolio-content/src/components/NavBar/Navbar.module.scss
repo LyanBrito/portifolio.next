@@ -18,29 +18,22 @@
 }
 
 .link {
-  display: flex;
-  height: 46px;
-  padding: 16px;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-ani;
+  @include fs-link-lg;
+
+  width: unset;
+  padding: 9px 16px;
   gap: 4px;
-  @include font-style;
-  font-size: $fs-lg;
-  color: $gs-200;
-  font-weight: $fw-regular;
-  line-height: $lh-text;
-  letter-spacing: $ls-text;
   border-radius: 48px;
+  opacity: 1;
   &.selected {
     background-color: $gs-100;
     color: $gs-600;
-    border: 1px solid $gs-100;
   }
   &:hover {
-   border: 1px solid $gs-100;
+    box-shadow: inset 0 0 0 1px $gs-100;
   }
 }
-
 
 .menu {
   display: none;
@@ -53,25 +46,31 @@
     flex-direction: column-reverse;
     align-items: flex-end;
     border-radius: 29px;
-    padding: 17px;
+    padding: 16px;
   }
   .menu {
     display: flex;
   }
   .menuContent {
     flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height .2s ease-in;
 
     .link {
-      display: none;
+      opacity: 0;
+      transform: translateY(-60px);
+      transition: opacity .2s ease-in, transform .2s ease-in;
     }
   }
-
   .menuContent.opened {
-    display: flex;
-    width: 100%;
+    max-height: 500px; 
+    transition: max-height .2s ease-in;
 
     .link {
-      display: flex;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
