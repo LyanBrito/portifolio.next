@@ -6,6 +6,21 @@
   justify-content: center;
   width: 100%;
 }
+@mixin flex-center-ani {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all .2s ease-in;
+}
+@mixin fs-link-lg {
+  @include font-style;
+  font-size: $fs-lg;
+  color: $gs-200;
+  font-weight: $fw-regular;
+  line-height: $lh-text;
+  letter-spacing: $ls-text;
+}
 
 @mixin respond($breakpoint) {
   @if $breakpoint == "mobile" {
