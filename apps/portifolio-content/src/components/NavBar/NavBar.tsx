@@ -1,4 +1,4 @@
-import styles from "./Navbar.module.scss";
+import s from "./Navbar.module.scss";
 import Link from "next/link";
 import MoreOptions from "@/assets/icons/MoreOptions";
 import {useState} from "react";
@@ -16,14 +16,14 @@ export default function NavBar({page}: NavbarProps) {
     const handleMenuToggle = () => setMenuOpen(!menuOpen);
 
     return (
-        <nav className={styles.navContainer}>
-            <div className={`${styles.menuContent} ${menuOpen ? styles.opened : ""}`}>
-                <Link hrefLang="definir-rota" className={`${styles.link} ${page == "home" ? styles.selected : ""}`} onClick={handleMenuClose} href="">Home</Link>
-                <Link hrefLang="definir-rota" className={`${styles.link} ${page == "projects" ? styles.selected : ""}`} onClick={handleMenuClose} href="">Projects</Link>
-                <Link hrefLang="definir-rota" className={`${styles.link} ${page == "about-me" ? styles.selected : ""}`} onClick={handleMenuClose} href="">About Me</Link>
-                <Link hrefLang="definir-rota" className={`${styles.link} ${page == "contacts" ? styles.selected : ""}`} onClick={handleMenuClose} href="">Contacts</Link>
+        <nav className={s.navContainer}>
+            <div className={`${s.menuContent} ${menuOpen ? s.opened : ""}`}>
+                <Link hrefLang="definir-rota" className={`${s.link} ${page == "home" ? s.selected : ""}`} onClick={handleMenuClose} href="">Home</Link>
+                <Link hrefLang="definir-rota" className={`${s.link} ${page == "projects" ? s.selected : ""}`} onClick={handleMenuClose} href="">Projects</Link>
+                <Link hrefLang="definir-rota" className={`${s.link} ${page == "about-me" ? s.selected : ""}`} onClick={handleMenuClose} href="">About Me</Link>
+                <Link hrefLang="definir-rota" className={`${s.link} ${page == "contacts" ? s.selected : ""}`} onClick={handleMenuClose} href="">Contacts</Link>
             </div>
-            <button className={styles.menu} onClick={handleMenuToggle}>
+            <button className={s.menu} onClick={handleMenuToggle}>
                 <MoreOptions />
             </button>
         </nav>
