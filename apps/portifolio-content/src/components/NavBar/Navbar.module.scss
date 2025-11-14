@@ -1,8 +1,66 @@
 .navContainer {
-    background-color: $sc-sucess-200;
-    @include flex-center;
-    width: fit-content;
-    padding: 8px;
-    border: 1px solid $gs-100;
-    gap: 10px;
+  display: flex;
+  width: 100%;
+  padding: 0 5px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  border-radius: 80px;
+  border: 1px solid $gs-100;
+  background: transparent;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(10px);
+  flex-direction: row;
+}
+.menuContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+   .link {
+     display: flex;
+     height: 46px;
+     padding: 16px;
+     justify-content: center;
+     align-items: center;
+     gap: 4px;
+   }
+
+.teste1 {
+  color: $sc-alert-200;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 835px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    border-radius: 29px;
+    padding: 17px;
+  }
+  .menu {
+    display: flex;
+  }
+  .menuContent {
+    flex-direction: column;
+
+    .link {
+      display: none;
+    }
+  }
+
+  .menuContent.opened {
+    display: flex;
+    width: 100%;
+    .link {
+      display: flex;
+    }
+  }
 }
