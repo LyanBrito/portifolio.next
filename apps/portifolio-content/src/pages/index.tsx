@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>
         <h1>refactor in progress . . .</h1>
-        <NavBar />
+        <NavBar page="teste1"/>
         </>
     )
 }
