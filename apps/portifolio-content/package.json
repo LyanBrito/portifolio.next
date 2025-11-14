@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.0.0",
+    "pnpm": "^10.22.0",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.94.0",
