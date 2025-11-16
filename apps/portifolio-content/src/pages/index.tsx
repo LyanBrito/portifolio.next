@@ -1,10 +1,10 @@
 import NavBar from "@/components/NavBar/NavBar";
+import HomePage from "@/pages/HomePage/HomePage";
 
 export default function Home() {
     return (
         <>
-        <h1>refactor in progress . . .</h1>
-        <NavBar page="home"/>
+        <HomePage />
         </>
     )
 }

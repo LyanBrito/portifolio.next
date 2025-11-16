@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
-    includePaths: ["./src", "./src/styles"], // 👈 garante que o Sass encontre "styles"
+    includePaths: ["./src", "./src/styles"], // garante que o Sass encontre "styles"
     additionalData: `
       @use "styles/utils/variables" as *;
       @use "styles/utils/mixins" as *;
