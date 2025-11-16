@@ -1,0 +1,117 @@
+.homeContainer {
+  @include flex-center;
+  flex-direction: column;
+  padding: 32px 85px 75px;
+  gap: 30px;
+}
+
+.textWrapper {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+
+  h1 {
+    width: 100%;
+  }
+
+  p {
+    padding-top: 20px;
+    padding-left: 55%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ATWcontainer {
+  @include flex-center-ani;
+  width: unset;
+  padding: 6px 20px;
+  gap: 10px;
+  position: absolute;
+  right: 90px;
+  top: 201px;
+  border-radius: 40px;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+  background: $gs-400;
+  cursor: pointer;
+
+  svg circle {
+    transition: all .15s;
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    fill-opacity: unset;
+  }
+
+  span {
+    @include font-style;
+    color: $gs-300;
+    font-size: $fs-xl;
+    transition: all .15s;
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+  }
+
+  &:hover {
+    span {
+      color: $gs-100;
+
+    }
+
+    svg circle:first-child {
+      fill: $sc-sucess-300;
+      fill-opacity: 1;
+    }
+  }
+  &:active {
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(0deg, rgba(109, 211, 61, 0.10) 0%, rgba(109, 211, 61, 0.10) 100%), #141414;
+    box-shadow: 0 0 30px 0 rgba(109, 211, 61, 0.50);
+  }
+}
+
+.aboutMeContainer {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutMeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+
+  a {
+    font-size: $fs-lg;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+.aboutMeTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.cardWrapper {
+  @include flex-center;
+  gap: 30px;
+}
+
+@include respond(tablet-lg) {
+  .homeContainer {
+    padding: 32px;
+  }
+  .ATWcontainer {
+    top: 166px;
+    right: 44px;
+  }
+  .textWrapper p {
+    padding-left: 50%;
+  }
+}
