@@ -24,19 +24,19 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @include font-style;
-  font-weight: 600;
-  color: $gs-100;
-  margin-bottom: 0.5rem;
+h1 {
+  @include fs-title;
+}
+h2 {
+  @include fs-title-3xl;
 }
 
 p {
-  @include font-style;
-  margin-bottom: 1rem;
-  color: $gs-100;
+  @include fs-df-text;
 }
 
-.flex-center {
-  @include flex-center;
+@include respond(tablet-lg) {
+  h1 {
+    font-size: $fs-6xl;
+  }
 }
