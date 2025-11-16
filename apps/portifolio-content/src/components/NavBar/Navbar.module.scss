@@ -1,8 +1,7 @@
+
 .navContainer {
   @include flex-center;
   padding: 5px 0;
-  position: absolute;
-  top: 32px;
   border-radius: 80px;
   border: 1px solid $gs-100;
   background: transparent;
@@ -40,7 +39,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 835px) {
+@include respond("tablet") {
   .navContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -61,12 +60,15 @@
     .link {
       opacity: 0;
       transform: translateY(-60px);
-      transition: opacity .2s ease-in, transform .2s ease-in;
+      transition: opacity .2s, transform .2s;
+      transition-timing-function: cubic-bezier(.25, .1, .25, 1);
     }
   }
   .menuContent.opened {
     max-height: 500px; 
-    transition: max-height .2s ease-in;
+    transition: max-height .2s;
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+
 
     .link {
       opacity: 1;
