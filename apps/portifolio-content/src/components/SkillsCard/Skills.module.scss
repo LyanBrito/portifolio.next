@@ -1,0 +1,47 @@
+.cardContainer {
+  @include flex-center-ani;
+  position: relative;
+  padding: 80px 40px;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 0 0;
+  color: $gs-200;
+  border-radius: 50px;
+  z-index: 1;
+
+  p {
+    @include font-style;
+    font-size: $fs-2xl;
+    font-family: Nunito Sans, sans-serif;
+  }
+
+  svg {
+    height: 77px;
+    width: 77px;
+  }
+
+}
+
+.spring {
+  background: $spring-bg;
+}
+
+.figma {
+  background: $figma-bg;
+}
+
+.ts {
+  background: $linkedin-bg;
+}
+
+.react {
+  background: $react-bg;
+}
+
+.git {
+  background: $git-bg;
+}
+
+.react-native {
+  background: $rn-bg;
+}
