@@ -25,9 +25,9 @@ export default function HomePage() {
                 <p>Hi! I'm a developer passionate in UI/UX & Web Development. Throughout my journey, I gained experience
                     in several areas. Take a look on my works.</p>
             </section>
-            <section className={s.aboutMeContainer}>
-                <div className={s.aboutMeWrapper}>
-                    <div className={s.aboutMeTitle}>
+            <section className={s.sectionContainer}>
+                <div className={s.secTextWrapper}>
+                    <div className={s.secTitleWrapper}>
                         <h3>About me</h3>
                         <p>Here some special skills that i learned in my trajectory</p>
                     </div>
@@ -44,6 +44,16 @@ export default function HomePage() {
                         link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://spring.io/projects/spring-boot/&ved=2ahUKEwiS4d_Zg_iQAxVYqpUCHb8DNygQFnoECA4QAQ&usg=AOvVaw2pUMdt8wsd8iwcI6VR-oxY"
                         type="spring" title="Spring Boot" icon={<SpringIcon/>}/>
                 </div>
+            </section>
+            <section className={s.sectionContainer}>
+                <div className={s.secTextWrapper}>
+                    <div className={s.secTitleWrapper}>
+                        <h3>Projects</h3>
+                        <p>As a student, I tracked my journey in development producting some projects</p>
+                    </div>
+                    <Link href="#">View More <ArrowIcon/></Link>
+                </div>
+
             </section>
         </div>
     )

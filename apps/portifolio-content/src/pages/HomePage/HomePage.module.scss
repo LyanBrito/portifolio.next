@@ -78,13 +78,13 @@
   }
 }
 
-.aboutMeContainer {
+.sectionContainer {
   @include flex-center;
   flex-direction: column;
   gap: 30px;
 }
 
-.aboutMeWrapper {
+.secTextWrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -98,7 +98,7 @@
   }
 }
 
-.aboutMeTitle {
+.secTitleWrapper {
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -130,6 +130,19 @@
 
 @include respond(tablet) {
   .cardWrapper {
+    flex-direction: column;
+  }
+}
+@include respond(mobile) {
+  .ATWcontainer {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+  .textWrapper p{
+    padding: unset;
+  }
+  .secTextWrapper {
     flex-direction: column;
   }
 }

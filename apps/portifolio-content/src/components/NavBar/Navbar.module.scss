@@ -1,6 +1,6 @@
-
 .navContainer {
   @include flex-center;
+  max-width: 773px;
   position: fixed;
   top: 32px;
   padding: 5px 0;
@@ -49,6 +49,7 @@
     align-items: flex-end;
     border-radius: 29px;
     padding: 16px;
+    max-width: 747px;
   }
   .menu {
     display: flex;
@@ -77,5 +78,10 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+@include respond("mobile") {
+  .navContainer {
+    max-width: 347px;
   }
 }
