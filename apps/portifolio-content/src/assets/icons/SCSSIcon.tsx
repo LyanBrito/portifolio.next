@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { SVGProps } from "react";
 
-const FigmaIcon = (props: SVGProps<SVGSVGElement>) => (
+const SCSSIcon = (props: SVGProps<SVGSVGElement>) => (
 
     <svg xmlns="http://www.w3.org/2000/svg" width="52" height="77" viewBox="0 0 52 77" fill="none">
         <path d="M0 64.1668C0 57.0792 5.74574 51.3335 12.8333 51.3335H25.6667V64.1668C25.6667 71.2544 19.9209 77.0002 12.8333 77.0002C5.74574 77.0002 0 71.2544 0 64.1668Z" fill="#24CB71" />
@@ -12,4 +12,4 @@ const FigmaIcon = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 
 );
-export default FigmaIcon;
+export default SCSSIcon;
