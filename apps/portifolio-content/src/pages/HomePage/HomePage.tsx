@@ -28,15 +28,21 @@ export default function HomePage() {
             <section className={s.aboutMeContainer}>
                 <div className={s.aboutMeWrapper}>
                     <div className={s.aboutMeTitle}>
-                        <h2>About me</h2>
+                        <h3>About me</h3>
                         <p>Here some special skills that i learned in my trajectory</p>
                     </div>
-                    <Link href="#">More <ArrowIcon /></Link>
+                    <Link href="#">More <ArrowIcon/></Link>
                 </div>
                 <div className={s.cardWrapper}>
-                    <SkillsCard type={"react"} title={"React"} icon={<ReactIcon />}/>
-                    <SkillsCard type={"figma"} title={"Design UI/UX"} icon={<FigmaIcon />}/>
-                    <SkillsCard type={"spring"} title={"Spring Boot"} icon={<SpringIcon />}/>
+                    <SkillsCard
+                        link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://react.dev/&ved=2ahUKEwicsbe4g_iQAxWEqpUCHbi9JngQFnoECBYQAQ&usg=AOvVaw1tEjYYiD7LQlxO53dgjTHV"
+                        type="react" title="React" icon={<ReactIcon/>}/>
+                    <SkillsCard
+                        link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://translate.google.com/translate%3Fu%3Dhttps://www.figma.com/%26hl%3Dpt%26sl%3Den%26tl%3Dpt%26client%3Dwa&ved=2ahUKEwiQ5ZfKg_iQAxVHpJUCHY3qI08QFnoECCYQAw&usg=AOvVaw0-Ta0uXMAObrHG2ij5pSgr"
+                        type="figma" title="Design UI/UX" icon={<FigmaIcon/>}/>
+                    <SkillsCard
+                        link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://spring.io/projects/spring-boot/&ved=2ahUKEwiS4d_Zg_iQAxVYqpUCHb8DNygQFnoECA4QAQ&usg=AOvVaw2pUMdt8wsd8iwcI6VR-oxY"
+                        type="spring" title="Spring Boot" icon={<SpringIcon/>}/>
                 </div>
             </section>
         </div>
