@@ -27,7 +27,13 @@ a {
 h1 {
   @include fs-title;
 }
+
 h2 {
+  @include fs-title;
+  font-size: $fs-5xl;
+}
+
+h3 {
   @include fs-title-3xl;
 }
 
@@ -38,5 +44,20 @@ p {
 @include respond(tablet-lg) {
   h1 {
     font-size: $fs-6xl;
+  }
+}
+
+@include respond(tablet) {
+  h1 {
+    font-size: $fs-5xl;
+  }
+}
+
+@include respond(mobile) {
+  h1 {
+    font-size: $fs-4xl;
+  }
+  h2 {
+    font-size: $fs-3xl;
   }
 }

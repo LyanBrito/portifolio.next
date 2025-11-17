@@ -1,7 +1,10 @@
 
 .navContainer {
   @include flex-center;
+  position: fixed;
+  top: 32px;
   padding: 5px 0;
+  z-index: 2;
   border-radius: 80px;
   border: 1px solid $gs-100;
   background: transparent;
