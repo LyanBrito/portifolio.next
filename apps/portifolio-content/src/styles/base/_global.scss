@@ -2,7 +2,8 @@
 @use "../utils/mixins" as *;
 @use "./reset";
 
-html, body {
+html,
+body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: $gs-100;
@@ -40,8 +41,7 @@ h3 {
 p {
   @include fs-df-text;
 }
-
-@include respond(tablet-lg) {
+@include respond(laptop) {
   h1 {
     font-size: $fs-6xl;
   }
