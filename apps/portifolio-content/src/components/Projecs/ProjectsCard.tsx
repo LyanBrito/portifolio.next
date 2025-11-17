@@ -1,4 +1,3 @@
-import {forEachEntryModule} from "next/dist/build/webpack/utils";
 import { skillsIcons } from "./skillsMap";
 import s from "./ProductsCard.module.scss";
 
@@ -21,16 +20,40 @@ export default function ProjectsCard({ project }: ProjectsProps) {
                 return {
                     title: 'Luna',
                     description: 'Website + Figma Prototype',
-                    projectImage: "../fonte",
+                    projectImage: "./../../assets/imgs/luna-project.png",
+                    // arrumar caminho da imagem
                     skills: ['HTML', 'CSS', 'Spring'],
                 };
-                case 'spring':
-                    return {
-                        title: 'Spring',
-                        description: 'Simple JPA repository',
-                        projectImage: "",
-                        skills: ['Java', 'Sping'],
-                    }
+            case 'spring-project':
+                return {
+                    title: 'Spring',
+                    description: 'Simple JPA repository',
+                    projectImage: "",
+                    skills: ['Java', 'Spring'],
+                }
+            case 'java-course2':
+                return {
+                    title: 'Java Course 2',
+                    description: 'Basic Java exercised fro POO practice',
+                    projectImage: "",
+                    skills: ['Java']
+                }
+            case 'rr-html':
+                return {
+                    title: 'R&R Funilaria',
+                    description: 'Simple Landingpage for HTML practice',
+                    projectImage: "",
+                    skills: ['HTML', 'CSS', 'Javascript']
+                }
+            case 'shopping-react':
+                return {
+                    title: 'Fashion Website',
+                    description: 'Webshop landingpage made with create-react-app',
+                    projectImage: "",
+                    skills: ['React', 'styled-component', 'JavaScript']
+
+                }
+
             default:
                 return {
                     title: 'Projeto não encontrado',
@@ -44,19 +67,21 @@ export default function ProjectsCard({ project }: ProjectsProps) {
     const data = getProjectData(project);
 
     return (
-        <div>
-            <img src={data.projectImage} alt={data.title} />
-            <div>
-                <div>
+        <div className={s.cardContainer}>
+            <img src={data.projectImage} alt={`${data.title}` + "-project-img"} />
+            <div className={s.cardInfo}>
+                <div className={s.cardTitleWrapper}>
                     <h3>{data.title}</h3>
                     <p>{data.description}</p>
                 </div>
-                <div>
-                    {data.skills.map((skill, index) => (
-                        <div key={index} className={s.skillIcon}>
-                            {skillsIcons[skill]}
-                        </div>
-                    ))}
+                <div className={s.skillsWrapper}>
+                    {data.skills.map((skill) => {
+                        const Icon = skillsIcons[skill];
+                        if (!Icon) return null;
+                        return (
+                            <Icon />
+                        );
+                    })}
                 </div>
             </div>
         </div>
