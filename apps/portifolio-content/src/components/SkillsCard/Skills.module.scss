@@ -102,3 +102,8 @@
     padding: 40px 20px;
   }
 }
+@include respond(mobile) {
+  .cardContainer {
+    border-radius: 30px;
+  }
+}

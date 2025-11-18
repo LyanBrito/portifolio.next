@@ -42,14 +42,14 @@
   cursor: pointer;
 }
 
-@include respond("tablet") {
+@include respond(tablet) {
   .navContainer {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
     border-radius: 29px;
     padding: 16px;
-    max-width: 747px;
+    max-width: 89.46%;
   }
   .menu {
     display: flex;
@@ -78,10 +78,5 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
-}
-@include respond("mobile") {
-  .navContainer {
-    max-width: 347px;
   }
 }

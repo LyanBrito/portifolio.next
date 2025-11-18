@@ -1,32 +1,117 @@
 .cardContainer {
-    @include flex-center-ani;
-    flex-direction: column;
-    gap: 24px;
-    max-width: 620px;
-    img {
-        width: 100%;
-        object-fit: cover;
+  @include flex-center-ani;
+  flex-direction: column;
+  gap: 24px;
+
+  &:hover {
+    .imageBG {
+      box-shadow: 0 10px 10px rgba(255, 255, 255, 0.20);
     }
+
+    .cardInfo {
+      padding: 11px 2%;
+    }
+  }
 }
+
+.imageBG {
+  @include flex-center-ani;
+  height: 100vh;
+  max-height: 616px;
+  border-radius: 50px;
+  align-items: flex-end;
+  background: $project-card-bg;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    padding: 5% 5%;
+    border-radius: 25px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.70));
+    object-fit: contain;
+    transition: all .2s;
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+
+    &:hover {
+      padding: 4% 4%;
+      filter: drop-shadow(10px 10px 20px rgba(255, 255, 255, 0.25));
+    }
+  }
+}
+
 .cardInfo {
-    @include flex-center;
-    justify-content: space-between;
-    padding: 11px 0;
-}
-.cardTitleWrapper {
+  @include flex-center-ani;
+  justify-content: space-between;
+  padding: 11px 0;
+
+  h3, p {
+    transition: all .2s;
+    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+
+  }
+
+  &:hover {
+    h3, p {
+      text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  .cardTitleWrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+
+  }
 }
+
 .skillsWrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    max-width: 250px;
-    gap: 24px;
-    svg {
-        width: 30px;
-        height: 30px;
-    }
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 250px;
+  gap: 24px;
+
+  svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+.cardContainer.luna {
+  .imageBG {
+    background: linear-gradient(98deg, #8F33DF -3.55%, #BD68EE 18.43%, #3C096C 78.28%, #4E1C79 95.99%);
+  }
+}
+
+.cardContainer.spring-project {
+  .imageBG {
+    background: $spring-bg;
+  }
+}
+
+.cardContainer.java-course2 {
+  .imageBG {
+    background: linear-gradient(0deg, rgba(173, 173, 173, 0.20) 0%, rgba(173, 173, 173, 0.20) 100%), linear-gradient(158deg, #E4AA84 8.89%, #E06A1C 34.01%, #7C3B0F 87.75%);
+  }
+}
+.cardContainer.rr-html {
+  .imageBG {
+    background: $default-bg;
+  }
+}
+.cardContainer.shopping-react {
+  .imageBG {
+    background: linear-gradient(160deg, $sc-alert-100 8.38%, $sc-alert-200 49.15%, $sc-alert-300 89.26%);
+  }
+}
+
+@include respond(mobile) {
+  .cardContainer {
+    gap: 16px;
+  }
+  .imageBG {
+    border-radius: 30px;
+  }
 }
