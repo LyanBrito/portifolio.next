@@ -85,7 +85,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
     return (
         <Link href={data.projectLink} className={`${s[project]} ${s.cardContainer}`}>
             <div className={s.imageBG}>
-                <Image src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
+                <Image priority src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
             </div>
             <div className={s.cardInfo}>
                 <div className={s.cardTitleWrapper}>
@@ -93,11 +93,11 @@ export default function ProjectsCard({project}: ProjectsProps) {
                     <p>{data.description}</p>
                 </div>
                 <div className={s.skillsWrapper}>
-                    {data.skills.map((skill) => {
+                    {data.skills.map((skill, i) => {
                         const Icon = skillsIcons[skill];
                         if (!Icon) return null;
                         return (
-                            <Icon/>
+                            <Icon key={i}/>
                         );
                     })}
                 </div>
