@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "devicons-react": "^1.5.0",
     "next": "14.0.0",
     "pnpm": "^10.22.0",
     "react": "^18",

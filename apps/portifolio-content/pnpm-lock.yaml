@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      devicons-react:
+        specifier: ^1.5.0
+        version: 1.5.0(react@18.3.1)
       next:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.94.0)
@@ -223,6 +226,11 @@ packages:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
     hasBin: true
+
+  devicons-react@1.5.0:
+    resolution: {integrity: sha512-8DYsWpgdbwI7ENDyC6Z9eqV72H01zUIAeRRo+UxBAq4clpPWcFhtqDrWSm0i5GUqbn/iNyiIfT1K69y0XLsscg==}
+    peerDependencies:
+      react: '*'
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -500,6 +508,10 @@ snapshots:
 
   detect-libc@1.0.3:
     optional: true
+
+  devicons-react@1.5.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   fill-range@7.1.1:
     dependencies:
