@@ -18,7 +18,7 @@ export default function SkillsCard({ type, title, icon, link }: CardProps) {
                 <p>{title}</p>
             </div>
 
-            <Link href={link}>See documentation <ArrowIcon /></Link>
+            <Link target="_blank" href={link}>See documentation <ArrowIcon /></Link>
         </div>
     )
 }
