@@ -35,12 +35,12 @@
   }
 
   svg {
-    height: 77px;
+    width: 77px !important;
+    height: 77px !important;
     fill: $gs-100;
-    width: 77px;
     transition: all 0.2s;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    path {
+    path, circle {
       fill: $gs-100;
     }
   }
@@ -59,9 +59,8 @@
     background: rgba(36, 36, 36, 0.2);
 
     svg {
-      width: 13px;
-      height: 15px;
-      transform: rotate(-45deg);
+      width: 13px !important;
+      height: 15px !important;
       flex-shrink: 0;
     }
 
@@ -69,6 +68,9 @@
       box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.14) inset,
         19px 22px 37.2px 0 rgba(0, 0, 0, 0.3),
         53px 73px 64.7px 0 rgba(0, 0, 0, 0.3);
+      svg {
+        transform: rotate(-45deg);
+      }
     }
   }
 }
