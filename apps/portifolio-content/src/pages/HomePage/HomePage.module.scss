@@ -109,6 +109,50 @@
   gap: 30px;
 }
 
+.socialLink {
+  display: flex;
+  padding: 3px 2px;
+  align-items: center;
+  gap: 10px;
+  font-size: $fs-2xl;
+}
+.socialWrapepr {
+  @include flex-center;
+  flex-direction: column;
+  gap: 12px;
+}
+.button {
+  @include flex-center;
+  width: unset;
+  padding: 8px 12px;
+  gap: 8px;
+  transition: all 0.2s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 144px;
+  background: rgba(36, 36, 36, 0.7);
+  box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.14) inset,
+  19px 22px 37.2px 0 rgba(0, 0, 0, 0.3),
+  53px 73px 64.7px 0 rgba(0, 0, 0, 0.3);
+
+  svg {
+    width: 13px !important;
+    height: 15px !important;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  &:hover {
+    box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.25) inset,
+    19px 22px 37.2px 0 rgba(0, 0, 0, 0.6),
+    53px 73px 64.7px 0 rgba(0, 0, 0, 0.6);
+    svg {
+      transform: rotate(-45deg);
+    }
+
+  }
+}
+
 @include respond(laptop) {
   .ATWcontainer span {
     font-size: $fs-sm;
@@ -126,11 +170,11 @@
   .textWrapper p {
     padding-left: 50%;
   }
-.sectionContainer:last-child {
-  .cardWrapper {
-    flex-direction: column;
+  .sectionContainer:last-child {
+    .cardWrapper {
+      flex-direction: column;
+    }
   }
-}
 }
 
 @include respond(tablet) {
@@ -138,6 +182,7 @@
     flex-direction: column;
   }
 }
+
 @include respond(mobile) {
   .homeContainer {
     padding: 75px 24px;
@@ -151,12 +196,20 @@
     top: unset;
     right: unset;
   }
-  .textWrapper p{
+  .textWrapper p {
     padding: unset;
   }
   .secTextWrapper {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  .socialLink {
+    font-size: $fs-lg;
+    svg {
+      width: 30px;
+      height: 30px;
+      aspect-ratio: 1/1;
+    }
   }
 }

@@ -6,12 +6,15 @@ import SkillsCard from "@/components/SkillsCard/Skills";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import ProjectsCard from "@/components/Projecs/ProjectsCard";
 import {FigmaOriginal, GithubOriginal, GitOriginal, ReactOriginal} from "devicons-react";
+import WhatsappIcon from "@/assets/icons/WhatsappIcon";
+import MailIcon from "@/assets/icons/MailIcon";
+import Footer from "@/components/Footer/Footer";
 
 export default function HomePage() {
     return (
         <div className={s.homeContainer}>
-            <NavBar page="home"/>
-            <section className={s.textWrapper}>
+            <NavBar links={['#home', '#about-me', '#projects', '#contacts']} page="home"/>
+            <main id="home" className={s.textWrapper}>
                 <div className={s.titleWrapper}>
                     <h1>Lyan Brito</h1>
                     <h1>Web Developer</h1>
@@ -22,8 +25,8 @@ export default function HomePage() {
                 </div>
                 <p>Hi! I'm a developer passionate in UI/UX & Web Development. Throughout my journey, I gained experience
                     in several areas. Take a look on my works.</p>
-            </section>
-            <section className={s.sectionContainer}>
+            </main>
+            <section id="about-me" className={s.sectionContainer}>
                 <div className={s.secTextWrapper}>
                     <div className={s.secTitleWrapper}>
                         <h3>About me</h3>
@@ -43,7 +46,7 @@ export default function HomePage() {
                         type="git" title="Git Versioning" icon={<GitOriginal/>}/>
                 </div>
             </section>
-            <section className={s.sectionContainer}>
+            <section id="projects" className={s.sectionContainer}>
                 <div className={s.secTextWrapper}>
                     <div className={s.secTitleWrapper}>
                         <h3>Projects</h3>
@@ -56,6 +59,15 @@ export default function HomePage() {
                     <ProjectsCard project={"spring-project"}/>
                 </div>
             </section>
+            <section id="contacts" className={s.sectionContainer}>
+                <h2>Let's talk for something special!</h2>
+                <div className={s.socialWrapepr}>
+                    <Link className={s.socialLink} href="mailto:lyanbrito613@gmail.com"><MailIcon/>lyanbrito613@gmail.com</Link>
+                    <Link className={s.socialLink} href="tel:+5511986581730"><WhatsappIcon/>(11) 9 8658-1730</Link>
+                </div>
+                <Link className={s.button} href="https://github.com/LyanBrito">More contact info <ArrowIcon/></Link>
+            </section>
+            <Footer page="home"/>
         </div>
     )
 }
