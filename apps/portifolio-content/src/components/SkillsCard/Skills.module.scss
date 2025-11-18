@@ -1,0 +1,109 @@
+.cardContainer {
+  @include flex-center-ani;
+  position: relative;
+  padding: 80px 40px;
+  flex-direction: column;
+  gap: 20px;
+  color: $gs-200;
+  border-radius: 50px;
+  z-index: 1;
+  a {
+    opacity: 0;
+    transform: translateY(-20px);
+    position: absolute;
+    padding: 20px 16px;
+    background: rgba(36, 36, 36, 0.2);
+    box-shadow: unset;
+
+    svg {
+      width: 13px !important;
+      height: 15px !important;
+      flex-shrink: 0;
+    }
+  }
+
+  .cardText {
+    @include flex-center-ani;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 10px 0 rgba(209, 209, 209, 0.25);
+
+    .cardText {
+      transform: translateY(-30px);
+    }
+
+    svg {
+      filter: drop-shadow(2px 4px 6px rgba(39, 39, 39, 0.759));
+    }
+
+    a {
+      opacity: 1;
+      transform: translateY(70px);
+      max-height: 24px;
+
+      &:hover {
+        box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.14) inset,
+        19px 22px 37.2px 0 rgba(0, 0, 0, 0.3),
+        53px 73px 64.7px 0 rgba(0, 0, 0, 0.3);
+      }
+
+    }
+  }
+
+  p {
+    @include font-style;
+    font-size: $fs-2xl;
+    font-family: Nunito Sans, sans-serif;
+  }
+
+  svg {
+    width: 77px !important;
+    height: 77px !important;
+    fill: $gs-100;
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    path, circle {
+      fill: $gs-100;
+    }
+  }
+
+}
+
+.spring {
+  background: $spring-bg;
+}
+
+.figma {
+  background: $figma-bg;
+}
+
+.ts {
+  background: $linkedin-bg;
+}
+
+.react {
+  background: $react-bg;
+}
+
+.git {
+  background: $git-bg;
+}
+
+.react-native {
+  background: $rn-bg;
+}
+
+@include respond(tablet) {
+  .cardContainer {
+    padding: 40px 20px;
+  }
+}
+@include respond(mobile) {
+  .cardContainer {
+    border-radius: 30px;
+  }
+}

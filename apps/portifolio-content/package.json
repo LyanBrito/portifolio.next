@@ -1,0 +1,26 @@
+{
+  "name": "portifolio-content",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "devicons-react": "^1.5.0",
+    "next": "14.0.0",
+    "pnpm": "^10.22.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.94.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
