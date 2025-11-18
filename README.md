@@ -1,12 +1,12 @@
 # 🚀 Portifolio.Next: Micro-Frontends com Turborepo e Next.js
 
-Este projeto representa uma arquitetura de **Micro-Frontends (MFE)** desenvolvida para um portfólio moderno. A aplicação é dividida em sessões independentes (`Sidebar`, `Content`) que são orquestradas por um *Shell* principal, garantindo **escalabilidade**, **independência de *deploy*** e **manutenção simplificada**.
+Este projeto representa uma arquitetura de **Micro-Frontends (MFE)** desenvolvida para um portfólio moderno. A aplicação é dividida em sessões independentes (`Sidebar`, `Portifolio Content`) que serão orquestradas por um *Shell* principal, garantindo **escalabilidade**, **independência de *deploy*** e **manutenção simplificada**.
 
 ---
 
 ## 💡 Por Que Micro-Frontends?
 
-Optamos pela estrutura MFE para ter **sessões independentes** (barra lateral e conteúdo).
+Optei pela estrutura MFE para ter **sessões independentes** na minha aplicação, e futuramente juntar tudo no `Shell` conforme o design autentico e unico que venho criando nos últimos meses.
 
 * **Independência de Desenvolvimento:** Cada MFE pode ser desenvolvida e *deployada* separadamente. Se a `Sidebar` for atualizada, o `Content` não precisa de um novo *build*.
 * **Isolamento de Falhas:** Um erro crítico em uma micro-frontend (ex: `Sidebar`) tem menos chances de derrubar todo o aplicativo (`Shell`).
@@ -36,7 +36,7 @@ O projeto utiliza o **Turborepo** para gerenciar múltiplos aplicativos Next.js 
 │   │   ├── next.config.js   # Define EXPOSES para './SideBar'
 │   │   └── package.json
 │   │
-│   └── content/         # 3. REMOTE: Área de Conteúdo
+│   └── portifolio-content/         # 3. REMOTE: Área de Conteúdo
 │       ├── pages/
 │       ├── components/    # Onde fica o componente ContentComponent
 │       ├── next.config.js   # Define EXPOSES para './Content'
@@ -68,6 +68,7 @@ O projeto utiliza o **Turborepo** para gerenciar múltiplos aplicativos Next.js 
 | **`sidebar`** | **Remote (Produtor)** | `3001`    | Exporta a tela da barra lateral. É responsável por *alterar* o conteudo de `content` pelas propriedades do APP. |
 | **`content`** | **Remote (Produtor)** | `3002`    | Exporta o componente principal de conteúdo.                                                                     |
 
+> Como não finalizei o design e a estrutura do monorepo, o `portifolio-content` está na porta `3000`, e as demais aplicações ainda não existem.
 ---
 
 ## 🛠️ Stack de Tecnologia e Dependências
@@ -76,13 +77,13 @@ A seleção de dependências foi feita para garantir estabilidade, tipagem e alt
 
 ### Dependências Principais
 
-| Dependência | Versão/Tipo | Por Que Usamos                                                                                                                                                                                                                                                                                          |
-| :--- | :--- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Turborepo** | Gerenciador de Build | Essencial para o monorepo. Otimiza o *build* e o *cache* entre os três aplicativos, reduzindo o tempo de CI/CD e o desenvolvimento local.                                                                                                                                                               |
-| **Next.js 14.x** | Framework Front-end | **Estabilidade com MF:** Escolhemos a **Next.js 14.x (Page Router)** e **não** o App Router. O Page Router é a opção madura e estável que garante a **compatibilidade total** com o Module Federation no modo de desenvolvimento (`next dev`) e produção. (com App Router o module-federation não roda) |
-| **@module-federation/nextjs-mf** | Webpack Plugin | O núcleo da arquitetura MFE. Permite que o `shell` consuma código (`remotes`) dos aplicativos `sidebar` e `content` (`exposes`) em tempo de execução.                                                                                                                                                   |
-| **Sass (ou CSS Modules)** | Estilização | Usado para modularidade de estilos dentro de cada aplicativo e no pacote `ui`.                                                                                                                                                                                                                          |
-| **Webpack** | Dev Dependency (Root) | Necessário para satisfazer o *check* interno do plugin Module Federation, garantindo o ambiente de *build* **correto** para o MFE.                                                                                                                                                                          |
+| Dependência                                                                                                                                                                              | Versão/Tipo           | Por que estou usando?                                                                                                                                                                                                                                                                                                              |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [![Turborepo](https://img.shields.io/badge/Turborepo-FF1E56.svg?style=for-the-badge&logo=Turborepo&logoColor=white)](https://turborepo.com)                                              | Gerenciador de Build  | Essencial para o monorepo. Otimiza o *build* e o *cache* entre os três aplicativos, reduzindo o tempo de CI/CD e o desenvolvimento local.                                                                                                                                                                                          |
+| [![Next.js](https://img.shields.io/badge/Next.JS--14-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/docs/14)                                         | Framework Front-end   | **Estabilidade com MF:** Escolhi a versão **Next.js 14.x (com Page Router)** e **não** a mais recente (com App Router). O Page Router é a opção madura e estável que garante a **compatibilidade total** com o Module Federation no modo de desenvolvimento (`next dev`) e produção. (com App Router o module-federation não roda) |
+| [![Module Federation](https://img.shields.io/badge/Module--Federartion-8DD6F9.svg?style=for-the-badge&logo=Webpack&logoColor=black)](https://webpack.js.org/concepts/module-federation/) | Webpack Plugin        | O núcleo da arquitetura MFE. Permite que o `shell` consuma código (`remotes`) dos aplicativos `sidebar` e `content` (`exposes`) em tempo de execução.                                                                                                                                                                              |
+| [![SASS](https://img.shields.io/badge/Module.Scss-CC6699.svg?style=for-the-badge&logo=Sass&logoColor=white)](https://sass-lang.com/documentation/)                                       | Estilização           | Usado para modularidade de estilos dentro de cada aplicativo e no pacote `ui`.                                                                                                                                                                                                                                                     |
+| [![Webpack](https://img.shields.io/badge/Webpack-8DD6E1.svg?style=for-the-badge&logo=Webpack&logoColor=black)](https://webpack.js.org/concepts/module-federation/)                       | Dev Dependency (Root) | Necessário para satisfazer o *check* interno do plugin Module Federation, garantindo o ambiente de *build* **correto** para o MFE.                                                                                                                                                                                                 |
 
 ### Dependências de Desenvolvimento e Compartilhadas
 
