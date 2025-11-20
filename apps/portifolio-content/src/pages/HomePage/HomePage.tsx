@@ -9,6 +9,7 @@ import {FigmaOriginal, GithubOriginal, GitOriginal, ReactOriginal} from "devicon
 import WhatsappIcon from "@/assets/icons/WhatsappIcon";
 import MailIcon from "@/assets/icons/MailIcon";
 import Footer from "@/components/Footer/Footer";
+import SectionLink from "@/components/SectionLink/SectionLink";
 
 export default function HomePage() {
     return (
@@ -27,13 +28,7 @@ export default function HomePage() {
                     in several areas. Take a look on my works.</p>
             </main>
             <section id="about-me" className={s.sectionContainer}>
-                <div className={s.secTextWrapper}>
-                    <div className={s.secTitleWrapper}>
-                        <h3>About me</h3>
-                        <p>Here some special skills that i learned in my trajectory</p>
-                    </div>
-                    <Link href="#">More <ArrowIcon/></Link>
-                </div>
+                <SectionLink isBlank={false} title="About me" description="Here some special skills that i learned in my trajectory" linkLabel="More" linkRef="/AboutMePage/AboutMe" />
                 <div className={s.cardWrapper}>
                     <SkillsCard
                         link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://react.dev/&ved=2ahUKEwicsbe4g_iQAxWEqpUCHbi9JngQFnoECBYQAQ&usg=AOvVaw1tEjYYiD7LQlxO53dgjTHV"
@@ -47,13 +42,14 @@ export default function HomePage() {
                 </div>
             </section>
             <section id="projects" className={s.sectionContainer}>
-                <div className={s.secTextWrapper}>
-                    <div className={s.secTitleWrapper}>
-                        <h3>Projects</h3>
-                        <p>As a student, I tracked my journey in development producting some projects</p>
-                    </div>
-                    <Link href="#">View More <ArrowIcon/></Link>
-                </div>
+                {/*<div className={s.secTextWrapper}>*/}
+                {/*    <div className={s.secTitleWrapper}>*/}
+                {/*        <h3>Projects</h3>*/}
+                {/*        <p>As a student, I tracked my journey in development producting some projects</p>*/}
+                {/*    </div>*/}
+                {/*    <Link href="#">View More <ArrowIcon/></Link>*/}
+                {/*</div>*/}
+                <SectionLink title="Projects" description="As a student, I tracked my journey in development producting some projects" linkLabel="View More" linkRef="#" isBlank={false} />
                 <div className={s.cardWrapper}>
                     <ProjectsCard project={"luna"}/>
                     <ProjectsCard project={"spring-project"}/>
