@@ -92,7 +92,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
     return (
         <Link href={data.projectLink} className={`${s[project]} ${s.cardContainer}`}>
             <div className={s.imageBG}>
-                <Image priority src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
+                <Image src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
             </div>
             <div className={s.cardInfo}>
                 <div className={s.cardTitleWrapper}>
