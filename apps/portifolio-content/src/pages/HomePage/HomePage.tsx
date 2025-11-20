@@ -13,7 +13,7 @@ import Footer from "@/components/Footer/Footer";
 export default function HomePage() {
     return (
         <div className={s.homeContainer}>
-            <NavBar links={['#home', '#about-me', '#projects', '#contacts']} page="home"/>
+            <NavBar links={['/', '/AboutMePage/AboutMe', '#projects', '#contacts']} page="home"/>
             <main id="home" className={s.textWrapper}>
                 <div className={s.titleWrapper}>
                     <h1>Lyan Brito</h1>
@@ -65,7 +65,6 @@ export default function HomePage() {
                     <Link className={s.socialLink} href="mailto:lyanbrito613@gmail.com"><MailIcon/>lyanbrito613@gmail.com</Link>
                     <Link className={s.socialLink} href="tel:+5511986581730"><WhatsappIcon/>(11) 9 8658-1730</Link>
                 </div>
-                <Link className={s.button} href="https://github.com/LyanBrito">More contact info <ArrowIcon/></Link>
             </section>
             <Footer page="home"/>
         </div>
