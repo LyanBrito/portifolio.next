@@ -2,7 +2,7 @@ import s from "./SectionLink.module.scss";
 import Link from "next/link";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 
-type SectionIconProps = {
+export type SectionLinkProps = {
     title: string,
     description: string,
     linkLabel: string,
@@ -10,7 +10,7 @@ type SectionIconProps = {
     isBlank: boolean
 }
 
-export default function SectionLink({ title, description, linkLabel, linkRef, isBlank}: SectionIconProps) {
+export default function SectionLink({ title, description, linkLabel, linkRef, isBlank}: SectionLinkProps) {
     return (
         <div className={s.secTextWrapper}>
             <div className={s.secTitleWrapper}>
