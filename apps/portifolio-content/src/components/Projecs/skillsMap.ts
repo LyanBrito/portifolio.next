@@ -10,8 +10,10 @@ import {
     ReactOriginal, SassOriginal,
     SpringOriginal, SqlalchemyOriginal, SqldeveloperOriginal, StyledcomponentsOriginal, TailwindcssOriginal,
     TurboOriginal,
+    TurboOriginalWordmark,
     TypescriptOriginal, VercelOriginal, ViteOriginal, WebpackOriginal
 } from "devicons-react";
+import TurborepoIcon from "@/assets/icons/TurborepoIcon";
 
 export const skillsIcons: Record<string, React.FC> = {
     React: ReactOriginal,
@@ -38,5 +40,5 @@ export const skillsIcons: Record<string, React.FC> = {
     Maven: MavenOriginal,
     ReactNative: ReactnativeOriginal,
     "module-federation": WebpackOriginal,
-    Turborepo: TurboOriginal,
+    Turborepo: TurborepoIcon,
 };
