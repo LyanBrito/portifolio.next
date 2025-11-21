@@ -4,16 +4,17 @@ import { ReactElement } from "react";
 import Link from "next/link";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 
-type CardProps = {
+export type CardProps = {
     type: keyof typeof s,
     title: string,
     icon: any,
     link: string,
+    cardPage: keyof typeof s
 }
 
-export default function SkillsCard({ type, title, icon, link }: CardProps) {
+export default function SkillsCard({ cardPage , type, title, icon, link }: CardProps) {
     return (
-        <div className={`${s[type]} ${s.cardContainer}`}>
+        <div className={`${s[type]} ${s.cardContainer} ${s[cardPage]}`}>
             <div className={s.cardText}>
                 {icon}
                 <p>{title}</p>

@@ -45,18 +45,20 @@
       max-height: 24px;
 
       &:hover {
-        box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.14) inset,
-        19px 22px 37.2px 0 rgba(0, 0, 0, 0.3),
-        53px 73px 64.7px 0 rgba(0, 0, 0, 0.3);
+        box-shadow:
+          -2px -4px 5.3px 0 rgba(186, 186, 186, 0.14) inset,
+          19px 22px 37.2px 0 rgba(0, 0, 0, 0.3),
+          53px 73px 64.7px 0 rgba(0, 0, 0, 0.3);
       }
-
     }
   }
 
   p {
     @include font-style;
     font-size: $fs-2xl;
-    font-family: Nunito Sans, sans-serif;
+    font-family:
+      Nunito Sans,
+      sans-serif;
   }
 
   svg {
@@ -66,13 +68,37 @@
     transition: all 0.2s;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 
-    path, circle {
+    path,
+    circle {
       fill: $gs-100;
     }
   }
-
 }
 
+.about {
+  padding: 12px 20px;
+  width: unset;
+  &:hover {
+    .cardText {
+      transform: unset;
+    }
+  }
+  .cardText {
+    flex-direction: row;
+    gap: 8px;
+    svg {
+      height: 40px !important;
+      width: unset !important;
+    }
+    p {
+      font-size: $fs-sm;
+      font-weight: $fw-medium;
+    }
+  }
+  a {
+    display: none;
+  }
+}
 .spring {
   background: $spring-bg;
 }
@@ -101,9 +127,15 @@
   .cardContainer {
     padding: 40px 20px;
   }
+  .about {
+    padding: 12px 20px;
+  }
 }
 @include respond(mobile) {
   .cardContainer {
     border-radius: 30px;
+  }
+  .about {
+    border-radius: 50px;
   }
 }
