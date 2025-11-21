@@ -89,6 +89,10 @@
     svg {
       height: 40px !important;
       width: unset !important;
+      fill: revert-layer;
+      path, circle {
+        fill: revert-layer;
+      }
     }
     p {
       font-size: $fs-sm;
@@ -99,28 +103,47 @@
     display: none;
   }
 }
-.spring {
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 0.2s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: -1;
+}
+.about:hover::before {
+  opacity: 1;
+}
+.about.spring::before, .home.spring {
   background: $spring-bg;
 }
-
-.figma {
+.about.figma::before, .home.figma {
   background: $figma-bg;
 }
-
-.ts {
+.about.typescript::before, .home.typescript {
   background: $linkedin-bg;
 }
-
-.react {
+.about.react::before, .home.react {
   background: $react-bg;
 }
-
-.git {
+.about.git::before, .home.git {
   background: $git-bg;
 }
-
-.react-native {
+.about.reactnative::before, .home.reactnative {
   background: $rn-bg;
+}
+.about.java::before, .home.java {
+  background: $java-bg;
+}
+.about.turborepo::before {
+  background: $turborepo-bg;
+}
+
+/* Somente opacity muda */
+.about:hover::before {
+  opacity: 1;
 }
 
 @include respond(tablet) {

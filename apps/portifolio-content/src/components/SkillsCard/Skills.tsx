@@ -12,15 +12,22 @@ export type CardProps = {
     cardPage: keyof typeof s
 }
 
-export default function SkillsCard({ cardPage , type, title, icon, link }: CardProps) {
+export default function SkillsCard({ cardPage, type, title, icon, link }: CardProps) {
     return (
         <div className={`${s[type]} ${s.cardContainer} ${s[cardPage]}`}>
             <div className={s.cardText}>
                 {icon}
                 <p>{title}</p>
             </div>
+            {cardPage !== "about"
+                ? (
+                    <Link className={hs.button} target="_blank" href={link}>
+                        See documentation <ArrowIcon />
+                    </Link>
+                )
+                : null
+            }
 
-            <Link className={hs.button} target="_blank" href={link}>See documentation <ArrowIcon /></Link>
         </div>
     )
 }
