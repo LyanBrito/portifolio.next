@@ -32,13 +32,13 @@ export default function HomePage() {
                 <div className={s.cardWrapper}>
                     <SkillsCard
                         link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://react.dev/&ved=2ahUKEwicsbe4g_iQAxWEqpUCHbi9JngQFnoECBYQAQ&usg=AOvVaw1tEjYYiD7LQlxO53dgjTHV"
-                        type="react" title="React" icon={<ReactOriginal/>}/>
+                        cardPage="home" type="react" title="React" icon={<ReactOriginal/>}/>
                     <SkillsCard
                         link="https://www.figma.com/pt-br/design/"
-                        type="figma" title="Design UI/UX" icon={<FigmaOriginal/>}/>
+                        cardPage="home" type="figma" title="Design UI/UX" icon={<FigmaOriginal/>}/>
                     <SkillsCard
                         link="https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control"
-                        type="git" title="Git Versioning" icon={<GitOriginal/>}/>
+                        cardPage="home" type="git" title="Git Versioning" icon={<GitOriginal/>}/>
                 </div>
             </section>
             <section id="projects" className={s.sectionContainer}>
