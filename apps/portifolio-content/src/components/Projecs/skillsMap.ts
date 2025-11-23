@@ -3,14 +3,13 @@ import React from "react";
 import {
     AzuresqldatabaseOriginal, BiomeOriginal, BootstrapOriginal,
     Css3Original,
-    FigmaOriginal,
+    FigmaOriginal, GithubOriginal,
     GitOriginal, Html5Original,
-    JavaOriginal, JavascriptOriginal, MavenOriginal, MysqlOriginal, NextjsOriginal, NodejsOriginal, PostmanOriginal,
+    JavaOriginal, JavascriptOriginal,
+    LessPlainWordmark, MavenOriginal, MysqlOriginal, NextjsOriginal, NodejsOriginal, PostmanOriginal,
     ReactnativeOriginal,
     ReactOriginal, SassOriginal,
-    SpringOriginal, SqlalchemyOriginal, SqldeveloperOriginal, StyledcomponentsOriginal, TailwindcssOriginal,
-    TurboOriginal,
-    TurboOriginalWordmark,
+    SpringOriginal, StyledcomponentsOriginal, TailwindcssOriginal,
     TypescriptOriginal, VercelOriginal, ViteOriginal, WebpackOriginal
 } from "devicons-react";
 import TurborepoIcon from "@/assets/icons/TurborepoIcon";
@@ -31,7 +30,6 @@ export const skillsIcons: Record<string, React.FC> = {
     TailwindCSS: TailwindcssOriginal,
     "styled-components" : StyledcomponentsOriginal,
     Bootsrap: BootstrapOriginal,
-    // LessJS: "",
     Vite: ViteOriginal,
     Postman: PostmanOriginal,
     Vercel: VercelOriginal,
@@ -41,4 +39,7 @@ export const skillsIcons: Record<string, React.FC> = {
     ReactNative: ReactnativeOriginal,
     "module-federation": WebpackOriginal,
     Turborepo: TurborepoIcon,
+    lessJS: LessPlainWordmark,
+    Github: GithubOriginal,
+    Biome: BiomeOriginal,
 };
