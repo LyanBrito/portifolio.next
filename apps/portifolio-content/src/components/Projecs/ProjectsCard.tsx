@@ -1,6 +1,6 @@
 import {skillsIcons} from "./skillsMap";
 import s from "./ProductsCard.module.scss";
-import {LunaImg, NotFound, SpringImg} from "@/assets/imgs/export";
+import {FashionImg, JavaImg, LandwindImg, LunaImg, MFImg, NotFound, RRImg, SpringImg} from "@/assets/imgs/export";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
                 return {
                     title: 'Java Course 2',
                     description: 'Basic Java exercised fro POO practice',
-                    projectImage: "",
+                    projectImage: JavaImg,
                     projectLink: "https://github.com/LyanBrito/java-course2",
                     skills: ['Java']
                 }
@@ -48,7 +48,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
                 return {
                     title: 'R&R Funilaria',
                     description: 'Landing page for HTML practice',
-                    projectImage: "",
+                    projectImage: RRImg,
                     projectLink: "https://github.com/LyanBrito/SENAI-rrFunilaria.HTML",
                     skills: ['HTML', 'CSS', 'Javascript']
                 }
@@ -56,7 +56,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
                 return {
                     title: 'Fashion Website',
                     description: 'Webshop landing page made with create-react-app',
-                    projectImage: "",
+                    projectImage: FashionImg,
                     projectLink: "https://github.com/LyanBrito/shopping-website.react",
                     skills: ['React', 'styled-component', 'JavaScript']
                 }
@@ -64,11 +64,18 @@ export default function ProjectsCard({project}: ProjectsProps) {
                 return {
                     title: 'Landwind LandinPage',
                     description: 'Page made with tailwind in Group',
-                    projectImage: "",
+                    projectImage: LandwindImg,
                     projectLink: "https://github.com/LyanBrito/code-dojo-landwind",
                     skills: ['HTML', 'CSS', 'Tailwind']
                 }
-
+            case 'microfront-study':
+                return {
+                    title: 'Microfront Study',
+                    description: 'Microfront-end study project with turborepo',
+                    projectImage: MFImg,
+                    projectLink: "https://github.com/LyanBrito/microfront-study.turborepo.git",
+                    skills: ['SCSS', 'NextJS', 'module-federation', 'Turborepo']
+                }
             default:
                 return {
                     title: 'Projeto não encontrado',
@@ -85,7 +92,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
     return (
         <Link href={data.projectLink} className={`${s[project]} ${s.cardContainer}`}>
             <div className={s.imageBG}>
-                <Image priority src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
+                <Image src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
             </div>
             <div className={s.cardInfo}>
                 <div className={s.cardTitleWrapper}>

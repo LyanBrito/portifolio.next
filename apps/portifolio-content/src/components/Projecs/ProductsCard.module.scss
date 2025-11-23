@@ -107,6 +107,16 @@
     background: linear-gradient(160deg, $sc-alert-100 8.38%, $sc-alert-200 49.15%, $sc-alert-300 89.26%);
   }
 }
+.cardContainer.landwind {
+  .imageBG {
+    background: linear-gradient(0deg, rgba(33, 17, 71, 0.50) 0%, rgba(33, 17, 71, 0.50) 100%), linear-gradient(104deg, #7A19F3 -2.44%, #A952F3 100%);
+  }
+}
+.cardContainer.microfront-study {
+  .imageBG {
+    background: linear-gradient(0deg, rgba(33, 17, 71, 0.50) 0%, rgba(33, 17, 71, 0.50) 100%), linear-gradient(189deg, #51FBF5 -2.46%, #5448BF 55.79%, #CF1A75 103.56%);
+  }
+}
 
 @include respond(mobile) {
   .cardContainer {

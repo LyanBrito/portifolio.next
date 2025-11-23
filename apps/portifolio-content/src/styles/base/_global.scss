@@ -37,6 +37,10 @@ h2 {
 h3 {
   @include fs-title-3xl;
 }
+h4 {
+  @include fs-title-3xl;
+  font-size: $fs-2xl;
+}
 
 p {
   @include fs-df-text;
