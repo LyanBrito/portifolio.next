@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100%;
 }
+
 @mixin flex-center-ani {
   display: flex;
   align-items: center;
@@ -15,6 +16,12 @@
   transition-timing-function: cubic-bezier(.25, .1, .25, 1);
 
 }
+
+@mixin global-transition {
+  transition: all .2s;
+  transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+}
+
 @mixin fs-link-lg {
   @include font-style;
   font-size: $fs-lg;
@@ -23,6 +30,7 @@
   line-height: $lh-text;
   letter-spacing: $ls-text;
 }
+
 @mixin fs-title {
   @include font-style;
   font-size: $fs-7xl;
@@ -30,6 +38,7 @@
   line-height: $lh-title;
   letter-spacing: $ls-title;
 }
+
 @mixin fs-df-text {
   @include font-style;
   font-size: $fs-lg;
@@ -37,6 +46,7 @@
   line-height: $lh-text;
   letter-spacing: $ls-text;
 }
+
 @mixin fs-title-3xl {
   @include font-style;
   font-size: $fs-3xl;
@@ -68,6 +78,7 @@
     }
   }
 }
+
 @mixin font-style {
   color: $gs-100;
   font-feature-settings: "liga" off, "clig" off;
