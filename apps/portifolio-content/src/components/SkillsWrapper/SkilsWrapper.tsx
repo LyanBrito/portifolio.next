@@ -9,14 +9,13 @@ type SkillsWrapperProps = SectionLinkProps & {
     skills: string[];
 }
 
-export default function SkillsWrapper({ title, isBlank, linkLabel, linkRef, skills }: SkillsWrapperProps) {
+export default function SkillsWrapper({ title, skills }: SkillsWrapperProps) {
 
     return (
         <section className={s.textWrapper}>
             <div className={s.titleWrapper}>
-                <h3>{title}</h3>
-                <Link target={isBlank ? "_blank" : "_self"} href={linkRef}>{linkLabel}<ArrowIcon /></Link>
-            </div>
+                <h4>{title}</h4>
+             </div>
             <div className={s.skillsWrapper}>
                 {skills.map((skill, i) => {
                     const Icon = skillsIcons[skill];

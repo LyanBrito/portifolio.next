@@ -96,7 +96,7 @@
     }
     p {
       font-size: $fs-sm;
-      font-weight: $fw-medium;
+      font-weight: $fw-regular;
     }
   }
   a {
@@ -114,6 +114,7 @@
   z-index: -1;
 }
 .about:hover::before {
+  background: $default-bg;
   opacity: 1;
 }
 .about.spring::before, .home.spring {
@@ -137,8 +138,53 @@
 .about.java::before, .home.java {
   background: $java-bg;
 }
+.about.html::before, .home.html {
+  background: $git-bg;
+}
+.about.css::before, .home.css {
+  background: $linkedin-bg;
+}
+.about.scss::before, .home.scss {
+  background: $scss-bg;
+}
+.about.tailwindcss::before, .home.tailwindcss {
+  background: $react-bg;
+}
 .about.turborepo::before {
   background: $turborepo-bg;
+}
+.about.styled-components::before, .home.styled-components {
+  background: $scss-bg;
+}
+.about.nextjs::before, .home.nextjs {
+  background: $default-bg;
+}
+.about.postman::before, .home.postman {
+  background: $git-bg;
+}
+.about.github, .about.vercel {
+  .cardText {
+    svg {
+      path, g, circle {
+        fill: $gs-100;
+      }
+    }
+  }
+}
+.about.biome::before, .home.biome {
+  background: $react-bg;
+}
+.about.nodejs::before, .home.nodejs {
+  background: $spring-bg;
+}
+.about.maven::before, .home.maven {
+  background: $insta-bg;
+}
+.about.module-federation::before, .home.module-federation {
+  background: $rn-bg;
+}
+.about.mysql::before, .home.mysql {
+  background: $react-bg;
 }
 
 /* Somente opacity muda */
