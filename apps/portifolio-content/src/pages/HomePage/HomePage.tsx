@@ -3,7 +3,6 @@ import s from "./HomePage.module.scss"
 import StatusActive from "@/assets/icons/StatusActive";
 import Link from "next/link";
 import SkillsCard from "@/components/SkillsCard/Skills";
-import ArrowIcon from "@/assets/icons/ArrowIcon";
 import ProjectsCard from "@/components/Projecs/ProjectsCard";
 import {FigmaOriginal, GithubOriginal, GitOriginal, ReactOriginal} from "devicons-react";
 import WhatsappIcon from "@/assets/icons/WhatsappIcon";
