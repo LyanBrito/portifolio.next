@@ -35,7 +35,7 @@ export default function AboutMePage() {
                 isLink={false}
                 linkLabel=""
                 linkRef=""
-                skills={["HTML", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "styled-components", "less.JS", "React", "NextJS"]}
+                skills={["HTML", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "styled-components", "less.JS", "React", "NextJS", "JavaScript", "TypeScript"]}
                 description=""
             />
             <SkillsWrapper

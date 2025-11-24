@@ -43,8 +43,8 @@ export default function HomePage() {
             <section id="projects" className={s.sectionContainer}>
                 <SectionLink isLink={true} title="Projects" description="As a student, I tracked my journey in development producting some projects" linkLabel="View More" linkRef="/Projects/ProjectsPage" isBlank={false} />
                 <div className={s.cardWrapper}>
-                    <ProjectsCard project={"luna"} />
-                    <ProjectsCard project={"spring-project"} />
+                    <ProjectsCard page="home" project={"luna"} />
+                    <ProjectsCard page="home" project={"spring-project"} />
                 </div>
             </section>
             <section id="contacts" className={s.sectionContainer}>
