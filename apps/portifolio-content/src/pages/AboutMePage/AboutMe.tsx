@@ -10,12 +10,12 @@ import Link from "next/link";
 export default function AboutMePage() {
     return (
         <div className={hs.homeContainer}>
-            <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "#projects", "contacts"]}/>
-            <section className={s.aboutContainer}>
+            <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <section id="home" className={s.aboutContainer}>
                 <div className={s.titleWrapper}>
                     <h1>About me</h1>
                     <a href="../../assets/docs/Resume.pdf" download className={`${hs.ATWcontainer} ${s.dlResume}`}>
-                        <DownloadIcon/>
+                        <DownloadIcon />
                         <span>Resume</span>
                     </a>
                 </div>
@@ -25,12 +25,14 @@ export default function AboutMePage() {
             </section>
             <section className={s.stacksWrapper}>
                 <SectionLink isBlank={true} title="My Stacks"
-                             description="These are the technologies I use the most in my projects and represent my current skill set as a developer."
-                             linkLabel="View in github" linkRef="https://github.com/LyanBrito"/>
+                    description="These are the technologies I use the most in my projects and represent my current skill set as a developer."
+                    linkLabel="View in github" linkRef="https://github.com/LyanBrito"
+                    isLink={true} />
             </section>
             <SkillsWrapper
                 title="Frontend"
                 isBlank={true}
+                isLink={false}
                 linkLabel=""
                 linkRef=""
                 skills={["HTML", "CSS", "SCSS", "Bootstrap", "TailwindCSS", "styled-components", "less.JS", "React", "NextJS"]}
@@ -39,6 +41,7 @@ export default function AboutMePage() {
             <SkillsWrapper
                 title="Backend"
                 isBlank={true}
+                isLink={false}
                 linkLabel=""
                 linkRef=""
                 skills={["Java", "Spring"]}
@@ -47,6 +50,7 @@ export default function AboutMePage() {
             <SkillsWrapper
                 title="Tools"
                 isBlank={true}
+                isLink={false}
                 linkLabel=""
                 linkRef=""
                 skills={["Postman", "Figma", "Git", "Vercel", "Github", "Biome"]}
@@ -55,12 +59,13 @@ export default function AboutMePage() {
             <SkillsWrapper
                 title="Studiyng"
                 isBlank={true}
+                isLink={false}
                 linkLabel=""
                 linkRef=""
                 skills={["NodeJS", "Maven", "ReactNative", "module-federation", "Turborepo", "MySQL"]}
                 description=""
             />
-            <Footer page="other"/>
+            <Footer page="other" />
         </div>
     )
 }
