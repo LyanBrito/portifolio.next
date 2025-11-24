@@ -1,11 +1,29 @@
+.projects.cardContainer {
+  max-width: 373px;
+  height: unset;
+  .imageBG {
+    height: unset;
+    padding: 30px;
+  }
+  .cardInfo .cardTitleWrapper {
+    h3 {
+      font-size: $fs-lg;
+      font-weight: $fw-medium;
+    }
+    p {
+      font-weight: 200;
+    }
+  }
+}
 .cardContainer {
   @include flex-center-ani;
   flex-direction: column;
   gap: 24px;
+  height: 100vh;
 
   &:hover {
     .imageBG {
-      box-shadow: 0 10px 10px rgba(255, 255, 255, 0.20);
+      box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2);
     }
 
     .cardInfo {
@@ -28,10 +46,10 @@
     width: 100%;
     padding: 5% 5%;
     border-radius: 25px;
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.70));
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7));
     object-fit: contain;
-    transition: all .2s;
-    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 
     &:hover {
       padding: 4% 4%;
@@ -45,14 +63,15 @@
   justify-content: space-between;
   padding: 11px 0;
 
-  h3, p {
-    transition: all .2s;
-    transition-timing-function: cubic-bezier(.25, .1, .25, 1);
-
+  h3,
+  p {
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   &:hover {
-    h3, p {
+    h3,
+    p {
       text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.25);
     }
   }
@@ -62,7 +81,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
-
   }
 }
 
@@ -79,10 +97,147 @@
     flex-shrink: 0;
   }
 }
+.ppCardContainer {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  height: 350px;
+  width: 100%;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.ppCardInfo {
+  @include flex-center-ani;
+  justify-content: flex-start;
+  padding: 0 30px;
+  gap: 10px;
+  height: 100%;
+  background: $project-card-bg;
+  border-radius: 50px;
+  border: 2px solid $gs-100;
+}
+.ppCardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  h4 {
+    text-shadow: 0 8px 10px rgba(209, 209, 209, 0.25);
+    font-size: $fs-4xl;
+    font-style: normal;
+    line-height: $lh-subtitle;
+  }
+  p {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+    font-size: $fs-xl;
+  }
+}
+
+.flipCard {
+  background-color: transparent;
+  width: 50%;
+  height: 100%;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 20px;
+  cursor: pointer;
+  svg {
+    width: 77px !important;
+    height: 77px !important;
+  }
+
+  p {
+    font-size: $fs-xl;
+    color: $gs-200;
+    font-weight: $fw-regular;
+  }
+}
+
+.flipCardFront {
+  @include flex-center-ani;
+  flex-direction: column;
+
+  border-radius: 50px;
+  border: 2px solid $gs-100;
+  gap: 10px;
+  background: linear-gradient(180deg, #24292e 0%, #09090a 95.33%);
+  .skillsWrapper {
+  justify-content: center;
+  }
+}
+.ppLinksWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  .ppLink {
+    @include flex-center-ani;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+.flipCardBack {
+  @include flex-center-ani;
+  flex-direction: column;
+  border-radius: 50px;
+  border: 2px solid $gs-100;
+  gap: 10px;
+  background: linear-gradient(180deg, #24292e 0%, #09090a 95.33%);
+
+  transform: rotateY(180deg);
+}
+.ppCardContainer.luna {
+  .ppCardInfo {
+    background: linear-gradient(
+      190deg,
+      #7b1cb2 7.64%,
+      #6d1c9c 31.29%,
+      #651792 56.01%,
+      #340c4c 97.3%
+    );
+  }
+}
+.ppCardContainer.spring-project {
+  .ppCardInfo {
+    background: $spring-bg;
+  }
+}
 
 .cardContainer.luna {
   .imageBG {
-    background: linear-gradient(98deg, #8F33DF -3.55%, #BD68EE 18.43%, #3C096C 78.28%, #4E1C79 95.99%);
+    background: linear-gradient(
+      98deg,
+      #8f33df -3.55%,
+      #bd68ee 18.43%,
+      #3c096c 78.28%,
+      #4e1c79 95.99%
+    );
   }
 }
 
@@ -94,7 +249,13 @@
 
 .cardContainer.java-course2 {
   .imageBG {
-    background: linear-gradient(0deg, rgba(173, 173, 173, 0.20) 0%, rgba(173, 173, 173, 0.20) 100%), linear-gradient(158deg, #E4AA84 8.89%, #E06A1C 34.01%, #7C3B0F 87.75%);
+    background:
+      linear-gradient(
+        0deg,
+        rgba(173, 173, 173, 0.2) 0%,
+        rgba(173, 173, 173, 0.2) 100%
+      ),
+      linear-gradient(158deg, #e4aa84 8.89%, #e06a1c 34.01%, #7c3b0f 87.75%);
   }
 }
 .cardContainer.rr-html {
@@ -104,17 +265,39 @@
 }
 .cardContainer.shopping-react {
   .imageBG {
-    background: linear-gradient(160deg, $sc-alert-100 8.38%, $sc-alert-200 49.15%, $sc-alert-300 89.26%);
+    background: linear-gradient(
+      160deg,
+      $sc-alert-100 8.38%,
+      $sc-alert-200 49.15%,
+      $sc-alert-300 89.26%
+    );
   }
 }
 .cardContainer.landwind {
   .imageBG {
-    background: linear-gradient(0deg, rgba(33, 17, 71, 0.50) 0%, rgba(33, 17, 71, 0.50) 100%), linear-gradient(104deg, #7A19F3 -2.44%, #A952F3 100%);
+    background:
+      linear-gradient(
+        0deg,
+        rgba(33, 17, 71, 0.5) 0%,
+        rgba(33, 17, 71, 0.5) 100%
+      ),
+      linear-gradient(104deg, #7a19f3 -2.44%, #a952f3 100%);
   }
 }
 .cardContainer.microfront-study {
   .imageBG {
-    background: linear-gradient(0deg, rgba(33, 17, 71, 0.50) 0%, rgba(33, 17, 71, 0.50) 100%), linear-gradient(189deg, #51FBF5 -2.46%, #5448BF 55.79%, #CF1A75 103.56%);
+    background:
+      linear-gradient(
+        0deg,
+        rgba(33, 17, 71, 0.5) 0%,
+        rgba(33, 17, 71, 0.5) 100%
+      ),
+      linear-gradient(189deg, #51fbf5 -2.46%, #5448bf 55.79%, #cf1a75 103.56%);
+  }
+}
+@include respond(tablet-lg) {
+  .projects {
+    max-width: unset;
   }
 }
 
