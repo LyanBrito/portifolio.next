@@ -20,3 +20,16 @@
   width: 100%;
   flex-wrap: wrap;
 }
+.ppWrapper {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+@include respond(tablet-lg) {
+  .projectsWrapper {
+    flex-direction: column;
+  }
+  .projectsContainer p {
+    width: 100%;
+  }
+}

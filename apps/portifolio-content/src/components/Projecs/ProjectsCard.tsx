@@ -1,11 +1,12 @@
-import {skillsIcons} from "./skillsMap";
+import { skillsIcons } from "./skillsMap";
 import s from "./ProductsCard.module.scss";
-import {FashionImg, JavaImg, LandwindImg, LunaImg, MFImg, NotFound, RRImg, SpringImg} from "@/assets/imgs/export";
+import { FashionImg, JavaImg, LandwindImg, LunaImg, MFImg, NotFound, RRImg, SpringImg } from "@/assets/imgs/export";
 import Image from "next/image";
 import Link from "next/link";
 
 type ProjectsProps = {
     project: string;
+    page: string
 };
 
 type ProjectData = {
@@ -16,7 +17,7 @@ type ProjectData = {
     projectLink: string;
 };
 
-export default function ProjectsCard({project}: ProjectsProps) {
+export default function ProjectsCard({ project, page }: ProjectsProps) {
 
     const getProjectData = (project: string): ProjectData => {
         switch (project) {
@@ -66,7 +67,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
                     description: 'Page made with tailwind in Group',
                     projectImage: LandwindImg,
                     projectLink: "https://github.com/LyanBrito/code-dojo-landwind",
-                    skills: ['HTML', 'CSS', 'Tailwind']
+                    skills: ['HTML', 'CSS', 'TailwindCSS']
                 }
             case 'microfront-study':
                 return {
@@ -90,9 +91,9 @@ export default function ProjectsCard({project}: ProjectsProps) {
     const data = getProjectData(project);
 
     return (
-        <Link href={data.projectLink} className={`${s[project]} ${s.cardContainer}`}>
+        <Link href={data.projectLink} className={`${s[page]} ${s[project]} ${s.cardContainer}`}>
             <div className={s.imageBG}>
-                <Image src={data.projectImage} alt={`${data.title}` + "-project-img"}/>
+                <Image src={data.projectImage} alt={`${data.title}` + "-project-img"} />
             </div>
             <div className={s.cardInfo}>
                 <div className={s.cardTitleWrapper}>
@@ -104,7 +105,7 @@ export default function ProjectsCard({project}: ProjectsProps) {
                         const Icon = skillsIcons[skill];
                         if (!Icon) return null;
                         return (
-                            <Icon key={i}/>
+                            <Icon key={i} />
                         );
                     })}
                 </div>

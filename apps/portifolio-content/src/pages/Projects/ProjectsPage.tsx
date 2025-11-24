@@ -4,6 +4,7 @@ import s from "./Projects.module.scss"
 import SectionLink from "@/components/SectionLink/SectionLink"
 import ProjectsCard from "@/components/Projecs/ProjectsCard"
 import Footer from "@/components/Footer/Footer"
+import PProjectsCard from "@/components/Projecs/PrincipalProjects"
 
 export default function ProjectPage() {
     return (
@@ -14,16 +15,22 @@ export default function ProjectPage() {
                 <p>Here are some of the main projects I've built while developing my skills. These projects represent my growth, creativity, and the technologies I’ve been mastering along my journey.
                 </p>
             </div>
-            {/* lg-project * 2 +  */}
+            <div className={s.ppWrapper}>
+                <PProjectsCard project="luna" />
+                <PProjectsCard project="spring-project" />
+            </div>
             <section className={s.spContainer}>
                 <SectionLink isLink={false} isBlank={true} title="Small Projects"
                     description="Some small experiments and study projects that helped me practice and understand new tools and techniques."
                     linkLabel="" linkRef="" />
-                    <div className={s.projectsWrapper}>
-                        <ProjectsCard project="rr-html" />
-                        <ProjectsCard project="landwind"/>
-                        <ProjectsCard project="java-course2"/>
-                    </div>
+                <div className={s.projectsWrapper}>
+                    <ProjectsCard page="projects" project="rr-html" />
+                    <ProjectsCard page="projects" project="landwind" />
+                    <ProjectsCard page="projects" project="shopping-react" />
+                    <ProjectsCard page="projects" project="microfront-study" />
+                    <ProjectsCard page="projects" project="simple-api.node" />
+                    <ProjectsCard page="projects" project="" />
+                </div>
             </section>
             <Footer page="other" />
         </section>
