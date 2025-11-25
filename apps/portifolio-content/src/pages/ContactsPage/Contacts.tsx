@@ -5,8 +5,11 @@ import NavBar from "@/components/NavBar/NavBar";
 import s from "./Contacts.module.scss";
 
 import Footer from "@/components/Footer/Footer";
-import {useRef, useState} from "react";
-import {sendForm} from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { sendForm } from "@emailjs/browser";
+import ArrowIcon from "@/assets/icons/ArrowIcon";
+import Link from "next/link";
+import SocialCard from "@/components/SkillsCard/SocialCard";
 
 
 export default function ContactsPage() {
@@ -21,51 +24,57 @@ export default function ContactsPage() {
 
         try {
             await sendForm(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                process.env.S_ID!,
+                process.env.T_ID!,
                 formRef.current,
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+                process.env.EJS_PK!
             );
 
             setStatus("sent");
-            alert("✅ Mensagem enviada!");
+            alert("Sucessfuly sent message!");
             formRef.current.reset();
         } catch (err) {
             console.error("EmailJS error:", err);
             setStatus("error");
-            alert("❌ Ops, algo deu errado.");
+            alert("Something went wrong");
         }
     };
 
     return (
         <section className={hs.homeContainer}>
-            <NavBar page={"contacts"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]}/>
-            <h1>Contacts</h1>
-            <section className={s.formContainer}>
-                <div className={s.formWrapepr}>
+            <NavBar page={"contacts"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <h1 id="home" className={s.cTitle}>Contacts</h1>
+            <section className={s.contactsContainer}>
+                <div className={s.formContainer}>
                     <h3>Let's talk for something special!</h3>
-                    <form ref={formRef} onSubmit={handleSubmit} className="contacts">
-                        <fieldset className={s.inputsWrapper}>
-                            <input placeholder="Name" type="text" name="name" required/>
-                            <input placeholder="Email" type="email" name="email" required/>
+                    <form ref={formRef} onSubmit={handleSubmit} className={s.contacts}>
+                        <fieldset>
+
+                            <input className={s.formInput} placeholder="Name" type="text" name="name" required />
+                            <input className={s.formInput} placeholder="Email" type="email" name="email" required />
+
                         </fieldset>
-                        <input placeholder="Title" type="text" name="title" required/>
-                        <textarea
+                        <input className={s.formInput} placeholder="Title" type="text" name="title" required />
+                        <textarea className={s.formInput}
                             placeholder="Message"
                             name="message"
                             id="message"
                             required
                         />
+                        <button className={`${status === "sending" ? s.disabled : ''} ${hs.button}`}
+                            type="submit" disabled={status === "sending"}>
+                            {status === "sending" ? "Sending..." : "Submit"}
+                            <ArrowIcon />
+                        </button>
                     </form>
-                    <button type="submit" disabled={status === "sending"}>
-                        {status === "sending" ? "Enviando..." : "Enviar"}
-                    </button>
                 </div>
                 <div className={s.cardWrapper}>
-                {/* criar novo card [component */}
+                    <SocialCard contact="linkedin" />
+                    <SocialCard contact="insta" />
+                    <SocialCard contact="github" />
                 </div>
             </section>
-            <Footer page="other"/>
+            <Footer page="other" />
         </section>
     )
 }

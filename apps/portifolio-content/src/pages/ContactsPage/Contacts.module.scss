@@ -1,0 +1,59 @@
+.cTitle {
+  width: 100%;
+  padding-top: 84px;
+  gap: 30px;
+  text-align: start;
+}
+.contactsContainer {
+  @include flex-center-ani;
+  gap: 30px;
+}
+.formContainer {
+  @include flex-center-ani;
+  gap: 30px;
+  flex-direction: column
+}
+.contacts {
+  @include flex-center-ani;
+  flex-direction: column;
+  gap: 30px;
+  fieldset {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    border: none;
+  }
+}
+.inputsWrapper {
+  display: flex;
+  gap: 30px;
+  width: 1000%;
+}
+.formInput {
+  display: flex;
+  padding: 10px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+  width: 100%;
+
+  border-radius:25px;
+  border: 1px solid $gs-300;
+}
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+@include respond(tablet) {
+  .contactsContainer {
+    flex-direction: column;
+  }
+  .contacts, .cardWrapper, .contactsContainer, .contacts fieldset {
+    gap: 20px;
+  }
+  
+}
