@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function AboutMePage() {
     return (
         <div className={hs.homeContainer}>
-            <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
             <section id="home" className={s.aboutContainer}>
                 <div className={s.titleWrapper}>
                     <h1>About me</h1>

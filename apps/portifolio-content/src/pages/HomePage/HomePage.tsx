@@ -13,7 +13,7 @@ import SectionLink from "@/components/SectionLink/SectionLink";
 export default function HomePage() {
     return (
         <div className={s.homeContainer}>
-            <NavBar page={"home"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <NavBar page={"home"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
             <main id="home" className={s.textWrapper}>
                 <div className={s.titleWrapper}>
                     <h1>Lyan Brito</h1>
