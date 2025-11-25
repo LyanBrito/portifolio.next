@@ -123,6 +123,8 @@
 }
 .button {
   @include flex-center;
+  cursor: pointer;
+  color: $gs-100;
   width: unset;
   padding: 8px 12px;
   gap: 8px;

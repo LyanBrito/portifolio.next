@@ -9,6 +9,13 @@
 
   border-radius: 50px;
   background: $default-bg;
+  a {
+    @include global-transition;
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.5;
+    }
+  }
 }
 .cardText {
   display: flex;
