@@ -5,8 +5,18 @@ import SectionLink from "@/components/SectionLink/SectionLink"
 import ProjectsCard from "@/components/Projecs/ProjectsCard"
 import Footer from "@/components/Footer/Footer"
 import PProjectsCard from "@/components/Projecs/PrincipalProjects"
+import ProjectsPageSK from "@/components/ui/skeleton/ProjectsPageSK";
+import {useEffect, useState} from "react";
 
 export default function ProjectPage() {
+        const [loading, setLoading] = useState(true)
+        useEffect(() => {
+            const timer = setTimeout(() => setLoading(false), 800)
+            return () => clearTimeout(timer)
+        }, [])
+
+        if (loading) return <ProjectsPageSK />
+
     return (
         <section className={hs.homeContainer}>
             <NavBar page={"projects"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
