@@ -9,9 +9,18 @@ import WhatsappIcon from "@/assets/icons/WhatsappIcon";
 import MailIcon from "@/assets/icons/MailIcon";
 import Footer from "@/components/Footer/Footer";
 import SectionLink from "@/components/SectionLink/SectionLink";
+import HomeSK from "@/components/ui/skeleton/HomeSK";
+import {useEffect, useState} from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 
 export default function HomePage() {
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 800)
+        return () => clearTimeout(timer)
+    }, [])
+
+    if (loading) return <HomeSK />
     return (
         <div className={s.homeContainer}>
             <NavBar page={"home"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
