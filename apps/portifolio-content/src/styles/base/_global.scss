@@ -16,13 +16,18 @@ body {
   flex-direction: column;
 }
 
-a {
+a, input, textarea {
   color: $gs-100;
   @include font-style;
 
   &:hover {
     color: darken($gs-100, 10%);
   }
+}
+textarea {
+  resize: none;
+  scrollbar-width: none;
+  min-height: 176px
 }
 
 h1 {
