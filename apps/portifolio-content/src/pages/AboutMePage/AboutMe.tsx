@@ -5,9 +5,17 @@ import SectionLink from "@/components/SectionLink/SectionLink";
 import SkillsWrapper from "@/components/SkillsWrapper/SkilsWrapper";
 import Footer from "@/components/Footer/Footer";
 import DownloadIcon from "@/assets/icons/DownloadIcon";
-import Link from "next/link";
+import AboutMeSK from "@/components/ui/skeleton/AboutMeSK";
+import {useEffect, useState} from "react";
 
 export default function AboutMePage() {
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 800)
+        return () => clearTimeout(timer)
+    }, [])
+
+    if (loading) return <AboutMeSK />
     return (
         <div className={hs.homeContainer}>
             <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
