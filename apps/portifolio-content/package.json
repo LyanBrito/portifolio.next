@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "devicons-react": "^1.5.0",
+    "emailjs": "^4.0.3",
+    "install": "^0.13.0",
     "next": "14.0.0",
+    "npm": "^11.6.3",
     "pnpm": "^10.22.0",
     "react": "^18",
     "react-dom": "^18",
