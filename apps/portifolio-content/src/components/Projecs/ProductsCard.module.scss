@@ -112,12 +112,12 @@
 .ppCardInfo {
   @include flex-center-ani;
   justify-content: flex-start;
-  padding: 0 30px;
+  padding: 50px;
   gap: 10px;
   height: 100%;
   background: $project-card-bg;
   border-radius: 50px;
-  border: 2px solid $gs-100;
+  border: 1.5px solid $gs-100;
 }
 .ppCardText {
   display: flex;
@@ -147,15 +147,16 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  @include global-transition;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flipCard:hover .flipCardInner {
-  transform: rotateY(180deg);
+.flipCard:hover, .flipCard:active {
+  .flipCardInner {
+    transform: rotateY(180deg);
+  }
 }
-
 .flipCardFront,
 .flipCardBack {
   position: absolute;
@@ -164,11 +165,10 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 20px;
-  cursor: pointer;
   svg {
     width: 77px !important;
     height: 77px !important;
-  }
+    }
 
   p {
     font-size: $fs-xl;
@@ -182,7 +182,7 @@
   flex-direction: column;
 
   border-radius: 50px;
-  border: 2px solid $gs-100;
+  border: 1.5px solid $gs-100;
   gap: 10px;
   background: linear-gradient(180deg, #24292e 0%, #09090a 95.33%);
   .skillsWrapper {
@@ -193,20 +193,34 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
+  gap: 24px;
   width: 100%;
   .ppLink {
     @include flex-center-ani;
+    cursor: pointer;
+    @include fs-link-lg;
+    width: unset;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    svg {
+      path {
+        @include global-transition;
+        fill: $gs-200;
+      }
+    }
+    &:hover {
+      color: $gs-100;
+      svg path {
+        fill: $gs-100;
+      }
+    }
   }
 }
 .flipCardBack {
   @include flex-center-ani;
   flex-direction: column;
   border-radius: 50px;
-  border: 2px solid $gs-100;
+  border: 1.5px solid $gs-100;
   gap: 10px;
   background: linear-gradient(180deg, #24292e 0%, #09090a 95.33%);
 
@@ -298,6 +312,17 @@
 @include respond(tablet-lg) {
   .projects {
     max-width: unset;
+  }
+  .ppCardContainer {
+    flex-direction: column;
+    height: unset;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+  .flipCard {
+    width: 100%;
+    height: 350px;
   }
 }
 

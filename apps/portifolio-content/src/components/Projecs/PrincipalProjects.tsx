@@ -1,11 +1,7 @@
 import Link from "next/link";
 import s from "./ProductsCard.module.scss";
-import { LunaImg, NotFound, SpringImg } from "@/assets/imgs/export";
-import DownloadIcon from "@/assets/icons/DownloadIcon";
-import { GithubOriginal } from "devicons-react";
-import { title } from "process";
+import {GithubOriginal, SafariLine, SafariOriginal} from "devicons-react";
 import { skillsIcons } from "./skillsMap";
-import Image from "next/image";
 
 type ProjectsProps = {
     project: string;
@@ -27,7 +23,7 @@ export default function PProjectsCard({ project }: ProjectsProps) {
             case 'luna':
                 return {
                     title: 'Luna',
-                    description: 'Website + Figma Prototype',
+                    description: 'Website made for available gamers community, perfect for those who want to know new people',
                     skills: ['HTML', 'CSS', 'Spring', 'MySQL'],
                     githubLink: 'https://github.com/ALunaProject',
                     projectLink: "https://alunaproject.github.io/luna-project.frontend/",
@@ -36,8 +32,8 @@ export default function PProjectsCard({ project }: ProjectsProps) {
                 // trocar esse de spring por algo melhor, mais completo
                 return {
                     title: 'Spring',
-                    description: 'Simple Spring backend Project',
-                    skills: ['Java', 'Spring'],
+                    description: 'This project showcases a simple CRUD application built using the Spring framework.',
+                    skills: ['Java', 'Spring', 'Maven'],
                     githubLink: 'https://github.com/LyanBrito/spring-project',
                     projectLink: "https://github.com/LyanBrito/spring-project",
                 }
@@ -79,7 +75,7 @@ export default function PProjectsCard({ project }: ProjectsProps) {
                     <div className={s.flipCardBack}>
                         <p>Open in</p>
                         <div className={s.ppLinksWrapper}>
-                            <Link target="_blank" className={s.ppLink} href={data.projectLink}><DownloadIcon /> Website</Link>
+                            <Link target="_blank" className={s.ppLink} href={data.projectLink}><SafariLine /> Website</Link>
                             <Link target="_blank" className={s.ppLink} href={data.githubLink}><GithubOriginal /> Github</Link>
                         </div>
                     </div>

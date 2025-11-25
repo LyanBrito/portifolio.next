@@ -28,6 +28,7 @@
 @include respond(tablet-lg) {
   .projectsWrapper {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
   .projectsContainer p {
     width: 100%;
