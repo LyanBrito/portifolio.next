@@ -19,7 +19,7 @@ export default function ProjectPage() {
 
     return (
         <section className={hs.homeContainer}>
-            <NavBar page={"projects"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <NavBar page={"projects"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
             <div id="home" className={s.projectsContainer}>
                 <h1>Projects</h1>
                 <p>Here are some of the main projects I've built while developing my skills. These projects represent my growth, creativity, and the technologies I’ve been mastering along my journey.
