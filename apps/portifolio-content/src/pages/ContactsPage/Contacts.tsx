@@ -5,14 +5,16 @@ import NavBar from "@/components/NavBar/NavBar";
 import s from "./Contacts.module.scss";
 
 import Footer from "@/components/Footer/Footer";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sendForm } from "@emailjs/browser";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import Link from "next/link";
 import SocialCard from "@/components/SkillsCard/SocialCard";
+import ContactsSK from "@/components/ui/skeleton/ContactsSK";
 
 
 export default function ContactsPage() {
+    
     const formRef = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -39,6 +41,14 @@ export default function ContactsPage() {
             alert("Something went wrong");
         }
     };
+    
+     const [loading, setLoading] = useState(true)
+        useEffect(() => {
+            const timer = setTimeout(() => setLoading(false), 800)
+            return () => clearTimeout(timer)
+        }, [])
+    
+        if (loading) return <ContactsSK />
 
     return (
         <section className={hs.homeContainer}>
