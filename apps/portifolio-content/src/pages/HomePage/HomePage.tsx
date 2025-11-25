@@ -9,6 +9,7 @@ import WhatsappIcon from "@/assets/icons/WhatsappIcon";
 import MailIcon from "@/assets/icons/MailIcon";
 import Footer from "@/components/Footer/Footer";
 import SectionLink from "@/components/SectionLink/SectionLink";
+import ArrowIcon from "@/assets/icons/ArrowIcon";
 
 export default function HomePage() {
     return (
@@ -52,6 +53,10 @@ export default function HomePage() {
                 <div className={s.socialWrapepr}>
                     <Link className={s.socialLink} href="mailto:lyanbrito613@gmail.com"><MailIcon />lyanbrito613@gmail.com</Link>
                     <Link className={s.socialLink} href="tel:+5511986581730"><WhatsappIcon />(11) 9 8658-1730</Link>
+                    <Link className={s.button}
+                        href="/ContactsPage/Contacts">
+                        More Contact Info <ArrowIcon />
+                    </Link>
                 </div>
             </section>
             <Footer page="home" />
