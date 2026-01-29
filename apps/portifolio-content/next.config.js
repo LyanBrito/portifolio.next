@@ -1,43 +1,34 @@
 /** @type {import('next').NextConfig} */
-const NextFederationPlugin = require('@module-federation/nextjs-mf');
-// this enables you to use import() and the webpack parser
-// loading remotes on demand, not ideal for SSR
-
-// const remotes = isServer => {
-//     const location = isServer ? 'ssr' : 'chunks';
-//     return {
-//         shell: `shell@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
-//     };
-// };
-
 
 const nextConfig = {
-  reactStrictMode: true,
-  sassOptions: {
-    includePaths: ["./src", "./src/styles"], // garante que o Sass encontre "styles"
-    additionalData: `
+    reactStrictMode: true,
+    sassOptions: {
+        includePaths: ["./src", "./src/styles"], // garante que o Sass encontre "styles"
+        additionalData: `
       @use "styles/utils/variables" as *;
       @use "styles/utils/mixins" as *;
     `,
-  },
+    },
 };
+const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
     webpack(config, options) {
+        const { isServer } = options;
         config.plugins.push(
             new NextFederationPlugin({
-                name: 'portifolio-content',
+                name: 'next2',
                 filename: 'static/chunks/remoteEntry.js',
-                dts: false,
+                remotes: {
+                    next1: `next1@http://localhost:3001/_next/static/${
+                        isServer ? 'ssr' : 'chunks'
+                    }/remoteEntry.js`,
+                },
                 exposes: {
-                    './home': './src/pages/index.tsx',
+                    './test': './src/pages/index.tsx',
                 },
-                // remotes: remotes(options.isServer),
                 shared: {
-                    // reactStrictMode: true,
-                },
-                extraOptions: {
-                    exposePages: true,
+                    // whatever else
                 },
             }),
         );
