@@ -1,6 +1,6 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
-@use "./reset";
+@use "reset";
 
 html,
 body {

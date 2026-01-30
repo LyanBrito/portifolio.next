@@ -19,5 +19,7 @@
   },
   "include": [
     "next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "apps/portifolio-content/node_modules"
+  ]
 }

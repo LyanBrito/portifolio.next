@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3000",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "../apps/portifolio-content/node_modules/.bin/next dev --port 3000",
+    "build": "../apps/portifolio-content/node_modules/.bin/next build",
+    "start": "../apps/portifolio-content/node_modules/.bin/next start",
+    "lint": "../apps/portifolio-content/node_modules/.bin/next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
