@@ -1,0 +1,32 @@
+@use "../../styles/utils" as *;
+
+.aboutContainer {
+  @include flex-center-ani;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 84px;
+  gap: 30px;
+  p {
+    width: 46.77%;
+  }
+}
+.titleWrapper {
+  @include flex-center;
+  width: 100%;
+  justify-content: space-between;
+}
+.stacksWrapper {
+  @include flex-center-ani;
+  gap: 30px;
+}
+.dlResume {
+  svg path {
+    fill: $gs-300;
+    @include global-transition;
+  }
+  &:hover {
+    svg path {
+      fill: $gs-100;
+    }
+  }
+}

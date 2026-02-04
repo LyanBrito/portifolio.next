@@ -1,0 +1,38 @@
+@use "../../styles/utils" as *;
+
+.projectsContainer {
+  @include flex-center-ani;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 84px;
+  gap: 30px;
+  p {
+    width: 46.77%;
+  }
+}
+.spContainer {
+  @include flex-center-ani;
+  flex-direction: column;
+  gap: 30px;
+}
+.projectsWrapper {
+  @include flex-center-ani;
+  align-content: flex-start;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.ppWrapper {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+@include respond(tablet-lg) {
+  .projectsWrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .projectsContainer p {
+    width: 100%;
+  }
+}

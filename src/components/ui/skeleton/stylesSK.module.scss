@@ -1,0 +1,239 @@
+@use "../../../styles/utils" as *;
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+%shimmer {
+  background: linear-gradient(90deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 30px;
+}
+
+.navContainer {
+  @include flex-center;
+  max-width: 773px;
+  height: 58px;
+  position: fixed;
+  top: 32px;
+  padding: 5px 0;
+  border-radius: 50px;
+  @extend %shimmer;
+}
+//
+//.link {
+//  @include fs-link-lg;
+//  width: 93px;
+//  height: 28px;
+//  padding: 9px 16px;
+//  gap: 4px;
+//  opacity: 1;
+//}
+
+.projectsContainer,
+.hprojectsContainer {
+  @include flex-center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 84px;
+  gap: 30px;
+}
+
+.titleh1 {
+  width: 50%;
+  height: 180px;
+  @extend %shimmer;
+}
+.titleh4 {
+  width: 18%;
+  height: 38px;
+  @extend %shimmer;
+}
+
+.text {
+  width: 47%;
+  height: 84px;
+  @extend %shimmer;
+}
+
+.ppWrapper,
+.hppWrapper {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ppContainer {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  height: 350px;
+  width: 100%;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.ppInfo {
+  width: 100%;
+  height: 100%;
+  @extend %shimmer;
+}
+
+.ppFlip {
+  width: 50%;
+  height: 100%;
+  @extend %shimmer;
+}
+
+.spContainer {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.secTitleWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+}
+
+.titleh3 {
+  width: 28%;
+  height: 57px;
+  @extend %shimmer;
+}
+
+.projectsWrapper,
+.hprojectsWrapper {
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projectCard {
+  width: 19%;
+  height: 350px;
+  @extend %shimmer;
+}
+
+.footer {
+  @include flex-center;
+  height: 58px;
+  @extend %shimmer;
+  margin-top: 30px;
+}
+.skillsWrapper {
+  @include flex-center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+.skills {
+  @extend %shimmer;
+  width: 100%;
+  height: 64px;
+}
+.textWrapper {
+  @include flex-center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.link {
+  @extend %shimmer;
+  width: 14%;
+  height: 30px;
+}
+.htitle {
+  @extend %shimmer;
+  width: 80%;
+  height: 368px;
+}
+.htext {
+  @extend %shimmer;
+  width: 50%;
+  height: 100px;
+  margin-left: auto;
+}
+.hppWrapper {
+  align-items: flex-start;
+}
+.hprojectsWrapper {
+  width: 100%;
+  height: 500px;
+  flex-wrap: nowrap;
+}
+.subtit {
+  @extend %shimmer;
+  width: 60%;
+  height: 72px;
+}
+.social {
+  @extend %shimmer;
+  width: 25%;
+  height: 48px;
+}
+.element {
+  width: 15%;
+  height: 50px;
+  @extend %shimmer;
+  position: absolute;
+  top: 201px;
+  right: 5%;
+}
+.formWrapper {
+  @include flex-center;
+  gap: 30px;
+  .text {
+    width: 100%;
+  }
+}
+.inputWrapper {
+  @include flex-center;
+  flex-direction: column;
+  gap: 30px;
+}
+.input {
+  height: 40px;
+  width: 100%;
+  @extend %shimmer;
+}
+.socialWrapper {
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.social {
+  width: 272px;
+  height: 272px;
+  @extend %shimmer;
+}
+.textarea {
+  width: 100%;
+  height: 176px;
+  @extend %shimmer;
+}
+.fbutton {
+  width: 190px;
+  height: 40px;
+  @extend %shimmer;
+}
+@include respond(tablet) {
+  .social {
+    width: 100%;
+  }
+  .socialWrapper {
+    flex-direction: column;
+  }
+}
