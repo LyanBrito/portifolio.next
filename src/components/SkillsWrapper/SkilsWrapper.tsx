@@ -1,6 +1,4 @@
-import Link from "next/link"
 import s from "./SkillsWrapper.module.scss"
-import ArrowIcon from "@/assets/icons/ArrowIcon"
 import { SectionLinkProps } from "../SectionLink/SectionLink"
 import SkillsCard from "../SkillsCard/Skills"
 import { skillsIcons } from "../Projecs/skillsMap"
