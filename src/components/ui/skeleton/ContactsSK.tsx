@@ -1,5 +1,5 @@
 import s from "./stylesSK.module.scss";
-import hs from "@/pages/HomePage/HomePage.module.scss";
+import hs from "@/app/HomePage/HomePage.module.scss";
 
 export default function ContactsSK() {
     return (
