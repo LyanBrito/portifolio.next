@@ -58,9 +58,6 @@
   p {
     @include font-style;
     font-size: $fs-2xl;
-    font-family:
-      Nunito Sans,
-      sans-serif;
   }
 
   svg {
@@ -78,18 +75,19 @@
 }
 
 .about {
-  padding: 12px 20px;
-  width: unset;
+  width: 200px;
+  height: 200px;
+
   &:hover {
     .cardText {
-      transform: unset;
+      transform: translateY(-15px);
     }
   }
   .cardText {
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     svg {
-      height: 40px !important;
+      height: 50px !important;
       width: unset !important;
       fill: revert-layer;
       path,
@@ -103,7 +101,7 @@
     }
   }
   a {
-    display: none;
+    font-size: $fs-sm;
   }
 }
 .about::before {

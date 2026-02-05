@@ -38,7 +38,7 @@
   @include flex-center-ani;
   height: 100vh;
   max-height: 616px;
-  border-radius: 50px;
+  border-radius: 35px;
   align-items: flex-end;
   background: $project-card-bg;
   overflow: hidden;
@@ -47,7 +47,7 @@
     height: 100%;
     width: 100%;
     padding: 5% 5%;
-    border-radius: 25px;
+    border-radius: 50px;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7));
     object-fit: contain;
     transition: all 0.2s;
