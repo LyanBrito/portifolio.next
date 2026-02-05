@@ -14,8 +14,9 @@ import SectionLink from "@/components/SectionLink/SectionLink";
 import HomeSK from "@/components/ui/skeleton/HomeSK";
 import {useEffect, useState} from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
+import AboutMePage from "@/app/AboutMePage/page";
 
-export default function HomePage() {
+export default function Page() {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 800)
@@ -25,7 +26,7 @@ export default function HomePage() {
     if (loading) return <HomeSK />
     return (
         <div className={s.homeContainer}>
-            <NavBar page={"home"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
+            <NavBar page={"home"} />
             <main id="home" className={s.textWrapper}>
                 <div className={s.titleWrapper}>
                     <h1>Lyan Brito</h1>
@@ -65,7 +66,7 @@ export default function HomePage() {
                     <Link className={s.socialLink} href="mailto:lyanbrito613@gmail.com"><MailIcon />lyanbrito613@gmail.com</Link>
                     <Link className={s.socialLink} href="tel:+5511986581730"><WhatsappIcon />(11) 9 8658-1730</Link>
                     <Link className={s.button}
-                        href="/ContactsPage/Contacts">
+                        href="/ContactsPage/page">
                         More Contact Info <ArrowIcon />
                     </Link>
                 </div>

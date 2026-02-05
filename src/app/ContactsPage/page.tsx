@@ -1,6 +1,6 @@
 "use client";
 
-import hs from "@/pages/HomePage/HomePage.module.scss";
+import hs from "@/app/HomePage/HomePage.module.scss";
 import NavBar from "@/components/NavBar/NavBar";
 import s from "./Contacts.module.scss";
 
@@ -51,7 +51,7 @@ export default function ContactsPage() {
         try {
             await sendEmail(data);
             setStatus("sent");
-            alert("Sucessfuly sent message!");
+            alert("Successfully sent message!");
             formRef.current.reset();
 
         } catch (err) {
@@ -71,7 +71,7 @@ export default function ContactsPage() {
 
     return (
         <section className={hs.homeContainer}>
-            <NavBar page={"contacts"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "contacts"]} />
+            <NavBar page={"contacts"} />
             <h1 id="home" className={s.cTitle}>Contacts</h1>
             <section className={s.contactsContainer}>
                 <div className={s.formContainer}>

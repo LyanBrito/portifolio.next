@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import HomePage from "@/app/HomePage/HomePage";
+import Page from "@/app/HomePage/page";
 
 export default function Home() {
     return (
         <>
-           <HomePage />
+           <Page />
         </>
     );
 }

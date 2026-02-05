@@ -1,3 +1,5 @@
+"use client"
+
 import NavBar from "@/components/NavBar/NavBar";
 import s from "./AboutMe.module.scss";
 import hs from "../HomePage/HomePage.module.scss";
@@ -18,7 +20,7 @@ export default function AboutMePage() {
     if (loading) return <AboutMeSK />
     return (
         <div className={hs.homeContainer}>
-            <NavBar page={"about-me"} links={["/", "/AboutMePage/AboutMe", "/Projects/ProjectsPage", "/ContactsPage/Contacts"]} />
+            <NavBar page={"about-me"} />
             <section id="home" className={s.aboutContainer}>
                 <div className={s.titleWrapper}>
                     <h1>About me</h1>
