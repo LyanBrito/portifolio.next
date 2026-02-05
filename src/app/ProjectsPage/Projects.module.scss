@@ -1,3 +1,5 @@
+@use "../../styles/utils" as *;
+
 .projectsContainer {
   @include flex-center-ani;
   flex-direction: column;

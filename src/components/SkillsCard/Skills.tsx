@@ -1,5 +1,5 @@
 import s from './Skills.module.scss'
-import hs from '@/pages/HomePage/HomePage.module.scss'
+import hs from '@/app/HomePage/HomePage.module.scss'
 import { ReactElement } from "react";
 import Link from "next/link";
 import ArrowIcon from "@/assets/icons/ArrowIcon";

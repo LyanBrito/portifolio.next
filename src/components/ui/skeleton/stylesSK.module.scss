@@ -1,3 +1,5 @@
+@use "../../../styles/utils" as *;
+
 @keyframes shimmer {
   0% {
     background-position: -400px 0;
