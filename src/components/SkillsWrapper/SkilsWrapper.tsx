@@ -2,6 +2,7 @@ import s from "./SkillsWrapper.module.scss"
 import { SectionLinkProps } from "../SectionLink/SectionLink"
 import SkillsCard from "../SkillsCard/Skills"
 import { skillsIcons } from "../Projecs/skillsMap"
+import {skillsDocs} from "@/components/SkillsCard/linksMap";
 
 type SkillsWrapperProps = SectionLinkProps & {
     skills: string[];
@@ -18,15 +19,14 @@ export default function SkillsWrapper({ title, skills }: SkillsWrapperProps) {
                 {skills.map((skill, i) => {
                     const Icon = skillsIcons[skill];
                     if (!Icon) return null;
-
                     return (
                         <SkillsCard
                             key={i}
                             title={skill}
-                            link="#"
                             type={skill.toLowerCase()}
-                            icon={<Icon />}
+                            icon={<Icon/>}
                             cardPage="about"
+                            link={skillsDocs[skill]}
                         />
                     );
                 })}

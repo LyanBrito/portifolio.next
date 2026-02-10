@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 20px;
   color: $gs-200;
-  border-radius: 50px;
+  border-radius: 25px;
   z-index: 1;
   a {
     opacity: 0;
@@ -58,9 +58,6 @@
   p {
     @include font-style;
     font-size: $fs-2xl;
-    font-family:
-      Nunito Sans,
-      sans-serif;
   }
 
   svg {
@@ -78,18 +75,19 @@
 }
 
 .about {
-  padding: 12px 20px;
-  width: unset;
+  width: 200px;
+  height: 200px;
+
   &:hover {
     .cardText {
-      transform: unset;
+      transform: translateY(-15px);
     }
   }
   .cardText {
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     svg {
-      height: 40px !important;
+      height: 50px !important;
       width: unset !important;
       fill: revert-layer;
       path,
@@ -103,14 +101,14 @@
     }
   }
   a {
-    display: none;
+    font-size: $fs-sm;
   }
 }
 .about::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 50px;
+  border-radius: 25px;
   opacity: 0;
   transition: all 0.2s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -127,6 +125,10 @@
 .about.figma::before,
 .home.figma {
   background: $figma-bg;
+}
+.about.bootstrap::before,
+.home.bootstrap {
+  background: $bootstrap-bg;
 }
 .about.typescript::before,
 .home.typescript {
@@ -239,6 +241,6 @@
     border-radius: 30px;
   }
   .about {
-    border-radius: 50px;
+    border-radius: 25px;
   }
 }

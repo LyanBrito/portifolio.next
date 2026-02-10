@@ -4,7 +4,7 @@
   @include flex-center;
   flex-direction: column;
   padding: 32px 85px 75px;
-  gap: 30px;
+  gap: 60px;
 }
 
 .textWrapper {
@@ -116,19 +116,19 @@
   padding: 3px 2px;
   align-items: center;
   gap: 10px;
-  font-size: $fs-2xl;
+  font-size: $fs-lg;
 }
 .socialWrapepr {
   @include flex-center;
   flex-direction: column;
-  gap: 12px;
+  gap: 30px;
 }
 .button {
   @include flex-center;
   cursor: pointer;
   color: $gs-100;
   width: unset;
-  padding: 8px 12px;
+  padding: 12px 30px;
   gap: 8px;
   transition: all 0.2s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -211,8 +211,8 @@
   .socialLink {
     font-size: $fs-lg;
     svg {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       aspect-ratio: 1/1;
     }
   }

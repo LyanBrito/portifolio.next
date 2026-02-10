@@ -29,7 +29,7 @@ export const skillsIcons: Record<string, React.FC> = {
     MySQL: MysqlOriginal,
     TailwindCSS: TailwindcssOriginal,
     "styled-components" : StyledcomponentsOriginal,
-    Bootsrap: BootstrapOriginal,
+    Bootstrap: BootstrapOriginal,
     Vite: ViteOriginal,
     Postman: PostmanOriginal,
     Vercel: VercelOriginal,

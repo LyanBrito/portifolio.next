@@ -8,7 +8,7 @@ const TurborepoIcon = (props: SVGProps<SVGSVGElement>) => (
         <path fillRule="evenodd" clipRule="evenodd" d="M52.2419 12.03V0C78.3899 1.398 99.162 23.046 99.162 49.542C99.162 76.038 78.3899 97.68 52.2419 99.084V87.054C71.7299 85.662 87.1619 69.378 87.1619 49.542C87.1619 29.706 71.7299 13.422 52.2419 12.03ZM21.126 74.1419C15.96 68.1779 12.63 60.5819 12.036 52.2419H0C0.624 63.9119 5.292 74.5019 12.606 82.6559L21.12 74.1419H21.126ZM46.8421 99.084V87.054C38.4961 86.46 30.9001 83.136 24.9361 77.964L16.4221 86.478C24.5821 93.798 35.1721 98.46 46.8361 99.084H46.8421Z" fill="url(#paint0_linear_2758_13788)" />
         <defs>
             <linearGradient id="paint0_linear_2758_13788" x1="54.1863" y1="6.9667" x2="5.4184" y2="55.7346" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#0096FF" />
+                <stop stopColor="#0096FF" />
                 <stop offset="1" stopColor="#FF1E56" />
             </linearGradient>
         </defs>

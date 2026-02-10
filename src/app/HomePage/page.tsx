@@ -40,7 +40,7 @@ export default function Page() {
                     in several areas. Take a look on my works.</p>
             </main>
             <section id="about-me" className={s.sectionContainer}>
-                <SectionLink isLink={true} isBlank={false} title="About me" description="Here some special skills that i learned in my trajectory" linkLabel="More" linkRef="/AboutMePage/AboutMe" />
+                <SectionLink isLink={true} isBlank={false} title="About me" description="Here some special skills that i learned in my trajectory" linkLabel="More" linkRef="/AboutMePage" />
                 <div className={s.cardWrapper}>
                     <SkillsCard
                         link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://react.dev/&ved=2ahUKEwicsbe4g_iQAxWEqpUCHbi9JngQFnoECBYQAQ&usg=AOvVaw1tEjYYiD7LQlxO53dgjTHV"
@@ -54,7 +54,7 @@ export default function Page() {
                 </div>
             </section>
             <section id="projects" className={s.sectionContainer}>
-                <SectionLink isLink={true} title="Projects" description="As a student, I tracked my journey in development producting some projects" linkLabel="View More" linkRef="/Projects/ProjectsPage" isBlank={false} />
+                <SectionLink isLink={true} title="Projects" description="As a student, I tracked my journey in development producting some projects" linkLabel="View More" linkRef="/ProjectsPage" isBlank={false} />
                 <div className={s.cardWrapper}>
                     <ProjectsCard page="home" project={"luna"} />
                     <ProjectsCard page="home" project={"spring-project"} />
@@ -66,7 +66,7 @@ export default function Page() {
                     <Link className={s.socialLink} href="mailto:lyanbrito613@gmail.com"><MailIcon />lyanbrito613@gmail.com</Link>
                     <Link className={s.socialLink} href="tel:+5511986581730"><WhatsappIcon />(11) 9 8658-1730</Link>
                     <Link className={s.button}
-                        href="/ContactsPage/page">
+                        href="/ContactsPage">
                         More Contact Info <ArrowIcon />
                     </Link>
                 </div>

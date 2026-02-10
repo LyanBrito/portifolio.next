@@ -9,7 +9,7 @@ type FooterProps = {
 export default function Footer({page}: FooterProps) {
     return (
         <footer className={s.footerContainer}>
-            <p>2025 © — Lyan Brito</p>
+            <p>2026 © — Lyan Brito</p>
             <nav className={s[page]}>
                 <Link href="#home">Home</Link>
                 <Link href="#about-me">About Me</Link>
