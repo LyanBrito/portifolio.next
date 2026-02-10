@@ -126,6 +126,10 @@
 .home.figma {
   background: $figma-bg;
 }
+.about.bootstrap::before,
+.home.bootstrap {
+  background: $bootstrap-bg;
+}
 .about.typescript::before,
 .home.typescript {
   background: $linkedin-bg;
