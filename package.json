@@ -26,5 +26,18 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "typescript": "^5"
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 110",
+      "edge >= 110",
+      "firefox >= 110",
+      "safari >= 16"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
   }
+
+
 }
