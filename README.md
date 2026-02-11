@@ -59,21 +59,33 @@ The project is built using the following stack:
 
 ## Local Testing 🚀
 Follow the steps below to run the project in your local development environment.
-1. Clone the repository:
+### 1. Clone the repository:
 ```git
 git clone https://github.com/LyanBrito/portifolio.next.git
 cd portifolio.next
 ```
-2. Installing Dependencies (Use any node package manager)
+### 2. Installing Dependencies (Use any node package manager)
 ```bash
 pnpm install
+```
+or
+```bash
 npm install
+```
+or
+```bash
 yarn install
 ```
-3. Run Project & Open on `http://localhost:3000` (Use any node package manager)
+### 3. Run Project & Open on `http://localhost:3000` (Use any node package manager)
 ```bash
 pnpm run
+```
+or
+```bash
 npm run
+```
+or
+```bash
 yarn run
 ```
 
