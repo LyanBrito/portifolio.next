@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio.Next 📖
+Explore my portfolio to learn more about me, the projects I’ve built, and the skills and technologies I work with.
 
-## Getting Started
+## Figma Design 🎨
+I created a custom style guide as a way to further develop my web design skills and deepen my knowledge of prototyping in Figma.
+You can explore the full design process and components in the [Figma Project](https://www.figma.com/community/file/1603455341874713038)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure 📂
+```
+src/
+    ├── assets/                     # Static files (images, icons)
+    ├── app/                        # Application Directory
+    │   ├── AboutMePage/            # Other Page
+    │   ├── ContactsPage/           
+    │   ├── HomePage/               # Home Page
+    │   ├── ProjectsPage/          
+    │   ├── page.tsx                # Principal Application File
+    ├── components/                 # Reusable Components
+    │   ├── NavBar/                 # Reusable NavBar 
+    │   │   ├── NavBar.tsx          # React Component
+    │   │   └── navBar.module.scss  # Modular Component Styles
+    ├── hooks/                      # State Handlers (Hooks)
+    │   ├── useSentEmail.ts         
+    ├── style/
+    │   └── base                    # Base Styles
+    │   │   └── _global.scss        # Global Style
+    │   │   └── _reset.scss         # Default CSS Reset
+    │   └── utils                   # Reusable Elements
+    │   │   └── _variables.scss     # Styles Variables
+    │   │   └── _mixins.scss        # Reusable Mixins
+    │   │   └── _index.scss         # Exports variables & mixins to main.scss
+    │   └── main.scss               # Exports Global Styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development 💻
+This repository represents an evolving learning journey. Since the first version, I’ve continuously refactored and improved the project while applying new concepts and best practices.
+The development process followed these stages:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Initial Version [v1.0](https://github.com/LyanBrito/portifolio.next/releases/tag/v1.0): A simple Next.js application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Architecture Experiment [v2.0-beta](https://github.com/LyanBrito/portifolio.next/releases/tag/v2.0-beta): Implementation of a microfrontend architecture using Module Federation.
 
-## Learn More
+- Final Version [v2.0](https://github.com/LyanBrito/portifolio.next/releases/tag/v2.0): A refined Next.js application built with modern standards, scalable structure, and best practices.
+  
+The microfrontend approach was ultimately discontinued due to incompatible architectural & maintainability trade-offs for this project’s scope.
 
-To learn more about Next.js, take a look at the following resources:
+## Dependencies & Technologies 🏗️
+The project is built using the following stack:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/docs) (latest) – React framework for SSR, routing, and performance optimization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [TypeScript](https://www.typescriptlang.org/docs/) – Static typing for improved reliability and maintainability
 
-## Deploy on Vercel
+- [SCSS](https://sass-lang.com/documentation/) – Modular and scalable styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Devicon](https://github.com/devicons/devicon) – Technology icons integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [EmailJS](https://www.emailjs.com/docs/) – Client-side email service integration
+
+## Local Testing 🚀
+Follow the steps below to run the project in your local development environment.
+1. Clone the repository:
+```git
+git clone https://github.com/LyanBrito/portifolio.next.git
+cd portifolio.next
+```
+2. Installing Dependencies (Use any node package manager)
+```bash
+pnpm install
+npm install
+yarn install
+```
+3. Run Project & Open on `http://localhost:3000` (Use any node package manager)
+```bash
+pnpm run
+npm run
+yarn run
+```
+
+## Contribuition 🍀
+Feel free to explore, and support the project whenever you want. Just fork the repository and be happy!
