@@ -1,8 +1,8 @@
 import s from "./SkillsWrapper.module.scss"
 import { SectionLinkProps } from "../SectionLink/SectionLink"
 import SkillsCard from "../SkillsCard/Skills"
-import { skillsIcons } from "../Projecs/skillsMap"
-import {skillsDocs} from "@/components/SkillsCard/linksMap";
+import { skillsIcons } from "../../constants/skills"
+import {skillsDocs} from "@/constants/docs";
 
 type SkillsWrapperProps = SectionLinkProps & {
     skills: string[];

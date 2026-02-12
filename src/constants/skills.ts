@@ -22,6 +22,12 @@ import NodeJSIcon from "@/assets/icons/dev-icons/NodeJSIcon";
 import MavenIcon from "@/assets/icons/dev-icons/MavenIcon";
 import MFEIcon from "@/assets/icons/dev-icons/MFEIcon";
 import GithubIcon from "@/assets/icons/dev-icons/GithubIcon";
+import NextJSIcon from "@/assets/icons/dev-icons/NextJSIcon";
+import ReactNativeIcon from "@/assets/icons/dev-icons/ReactNativeIcon";
+import LessJSIcon from "@/assets/icons/dev-icons/LessJSIcon";
+import ViteIcon from "@/assets/icons/dev-icons/ViteIcon";
+import AngularIcon from "@/assets/icons/dev-icons/AngularIcon";
+import ReactNavigationIcon from "@/assets/icons/dev-icons/ReactNavigationIcon";
 
 export const skillsIcons: Record<string, React.FC> = {
     React: ReactIcon,
@@ -33,21 +39,23 @@ export const skillsIcons: Record<string, React.FC> = {
     HTML: HtmlIcon,
     CSS: CssIcon,
     SCSS: ScssIcon,
-    // NextJS: NextJs,
+    NextJS: NextJSIcon,
     Java: JavaIcon,
     MySQL: MySQLIcon,
     TailwindCSS: TailwindIcon,
     "styled-components": StyledComponentsIcon,
     Bootstrap: BootstrapIcon,
-    // Vite: ViteOriginal,
+    Vite: ViteIcon,
     Postman: PostmanIcon,
+    Angular: AngularIcon,
     Vercel: VercelIcon,
     BiomeJS: BiomeIcon,
     NodeJS: NodeJSIcon,
     Maven: MavenIcon,
-    // ReactNative: ReactnativeOriginal,
+    ReactNative: ReactNativeIcon,
     "module-federation": MFEIcon,
     Turborepo: TurborepoIcon,
-    // lessJS: LessPlainWordmark,
+    lessJS: LessJSIcon,
     Github: GithubIcon,
+    ReactNavigation: ReactNavigationIcon,
 };

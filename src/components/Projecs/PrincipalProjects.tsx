@@ -1,7 +1,7 @@
 import Link from "next/link";
 import s from "./ProductsCard.module.scss";
 import {GithubOriginal, SafariLine, SafariOriginal} from "devicons-react";
-import { skillsIcons } from "./skillsMap";
+import { skillsIcons } from "../../constants/skills";
 
 type ProjectsProps = {
     project: string;

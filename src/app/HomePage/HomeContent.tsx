@@ -4,7 +4,7 @@ import StatusActive from "@/assets/icons/StatusActive";
 import Link from "next/link";
 import SkillsCard from "@/components/SkillsCard/Skills";
 import ProjectsCard from "@/components/Projecs/ProjectsCard";
-import {FigmaOriginal, GitOriginal, ReactOriginal} from "devicons-react";
+
 import WhatsappIcon from "@/assets/icons/WhatsappIcon";
 import MailIcon from "@/assets/icons/MailIcon";
 import Footer from "@/components/Footer/Footer";
@@ -12,6 +12,9 @@ import SectionLink from "@/components/SectionLink/SectionLink";
 import HomeSK from "@/components/ui/skeleton/HomeSK";
 import {useEffect, useState} from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
+import ReactIcon from "@/assets/icons/dev-icons/ReactIcon";
+import FigmaIcon from "@/assets/icons/dev-icons/FigmaIcon";
+import GitIcon from "@/assets/icons/dev-icons/GitIcon";
 
 export default function HomeContent() {
     return (
@@ -36,16 +39,16 @@ export default function HomeContent() {
                 <div className={s.cardWrapper}>
                     <SkillsCard
                         link="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://react.dev/&ved=2ahUKEwicsbe4g_iQAxWEqpUCHbi9JngQFnoECBYQAQ&usg=AOvVaw1tEjYYiD7LQlxO53dgjTHV"
-                        cardPage="home" type="react" title="React" icon={<ReactOriginal/>}/>
+                        cardPage="home" type="react" title="React" icon={<ReactIcon/>}/>
                     {/*
                         Refatorar esses skillsCard aqui e trazer os icones, labels e links dinamicamente como na pagina aboutmePage -> devicons pode estar pesando MUITO o tbt (4 segundos de blocking time)
                     */}
                     <SkillsCard
                         link="https://www.figma.com/pt-br/design/"
-                        cardPage="home" type="figma" title="Design UI/UX" icon={<FigmaOriginal/>}/>
+                        cardPage="home" type="figma" title="Design UI/UX" icon={<FigmaIcon />}/>
                     <SkillsCard
                         link="https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control"
-                        cardPage="home" type="git" title="Git Versioning" icon={<GitOriginal/>}/>
+                        cardPage="home" type="git" title="Git Versioning" icon={<GitIcon/>}/>
                 </div>
             </section>
             <section id="projects" className={s.sectionContainer}>

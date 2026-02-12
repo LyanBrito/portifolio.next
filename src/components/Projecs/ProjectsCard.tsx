@@ -1,4 +1,4 @@
-import { skillsIcons } from "./skillsMap";
+import { skillsIcons } from "../../constants/skills";
 import s from "./ProductsCard.module.scss";
 import { FashionImg, JavaImg, LandwindImg, LunaImg, MFImg, NotFound, RRImg, SpringImg } from "@/assets/imgs/export";
 import Image from "next/image";
