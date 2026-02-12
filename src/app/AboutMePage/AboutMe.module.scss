@@ -30,3 +30,8 @@
     }
   }
 }
+@include respond("tablet"){
+  .aboutContainer p{
+    width: 100%;
+  }
+}
