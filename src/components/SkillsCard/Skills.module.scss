@@ -126,6 +126,10 @@
 .home.figma {
   background: $figma-bg;
 }
+.about.reactnavigation::before,
+.home.reactnavigation {
+  background: $bootstrap-bg;
+}
 .about.bootstrap::before,
 .home.bootstrap {
   background: $bootstrap-bg;
@@ -148,7 +152,7 @@
 }
 .about.java::before,
 .home.java {
-  background: $java-bg;
+  background: $git-bg;
 }
 .about.html::before,
 .home.html {
@@ -216,7 +220,15 @@
 }
 .about.module-federation::before,
 .home.module-federation {
-  background: $rn-bg;
+  background: $linkedin-bg;
+}
+.about.vite::before,
+.home.vite {
+  background: $figma-bg;
+}
+.about.angular::before,
+.home.angular {
+  background: $insta-bg;
 }
 .about.mysql::before,
 .home.mysql {

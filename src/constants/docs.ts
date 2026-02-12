@@ -26,4 +26,6 @@ export const skillsDocs: Record<string, string> = {
     lessJS: "https://lesscss.org/",
     Github: "https://docs.github.com/",
     Biome: "https://biomejs.dev/guides/getting-started/",
+    Angular: "https://angular.dev/overview",
+    ReactNavigation: "https://reactnavigation.org/docs/getting-started",
 };

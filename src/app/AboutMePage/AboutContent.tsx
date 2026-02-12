@@ -52,7 +52,7 @@ export default function AboutContent() {
                 isLink={false}
                 linkLabel=""
                 linkRef=""
-                skills={["Postman", "Figma", "Git", "Vercel", "Github", "Biome"]}
+                skills={["Postman", "Figma", "Git", "Vercel", "Github", "Biome", "ReactNavigation"]}
                 description=""
             />
             <SkillsWrapper
@@ -61,7 +61,7 @@ export default function AboutContent() {
                 isLink={false}
                 linkLabel=""
                 linkRef=""
-                skills={["NodeJS", "Maven", "ReactNative", "module-federation", "Turborepo", "MySQL"]}
+                skills={["NodeJS", "Maven", "ReactNative", "module-federation", "Turborepo", "MySQL", "Vite", "Angular"]}
                 description=""
             />
             <Footer page="other"/>
