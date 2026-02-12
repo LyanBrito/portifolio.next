@@ -1,15 +1,16 @@
 import type {Metadata} from "next";
 import {Poppins} from "next/font/google";
 import "@/styles/main.scss";
+import React from "react";
 
 const PoppinsFont = Poppins({
     adjustFontFallback: false,
     display: "swap",
     fallback: [],
-    preload: false,
+    preload: true,
     subsets: ["latin"],
     variable: "--font-poppins",
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    weight: ["400", "500"],
 
 });
 
@@ -41,13 +42,11 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Lyan's Portfolio",
         description:
-            "console.log(\"Hello World! :)\")",
+            "Web Developer & Designer student",
     },
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
