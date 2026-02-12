@@ -1,5 +1,5 @@
-import AboutClient from "@/app/AboutMePage/AboutClient";
+import AboutClient from "@/app/AboutMePage/AboutClient"
 
 export default function AboutMePage() {
-    return <AboutClient/>;
+	return <AboutClient />
 }
