@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const ArrowIcon = (props: SVGProps<SVGSVGElement>) => (
+const ArrowIcon = () => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="15"

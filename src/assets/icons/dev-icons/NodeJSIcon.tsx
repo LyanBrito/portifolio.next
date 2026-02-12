@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const NodeJsIcon = (props: SVGProps<SVGSVGElement>) => {
+const NodeJsIcon = () => {
 	// Gerar um ID único ou usar um prefixo fixo seguro
 	const idPrefix = "nodejs-icon-"
 
@@ -12,7 +11,6 @@ const NodeJsIcon = (props: SVGProps<SVGSVGElement>) => {
 			viewBox="0 0 205.86 126"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			{...props}
 		>
 			<defs>
 				<linearGradient

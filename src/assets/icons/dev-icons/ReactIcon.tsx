@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const ReactIcon = (props: SVGProps<SVGSVGElement>) => (
+const ReactIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<g fill="#61DAFB">
 			<circle cx="64" cy="47.5" r="9.3"></circle>

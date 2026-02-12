@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const TurborepoIcon = (props: SVGProps<SVGSVGElement>) => (
+const TurborepoIcon = () => (
 	<svg
 		width="100"
 		height="100"

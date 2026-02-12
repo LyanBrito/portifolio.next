@@ -1,13 +1,12 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const MavenIcon = (props: SVGProps<SVGSVGElement>) => {
+const MavenIcon = () => {
 	// Criamos um ID único para este componente para evitar conflitos de gradientes na mesma página
 	const id = React.useId().replace(/:/g, "")
 	const prefix = `maven-${id}-`
 
 	return (
-		<svg viewBox="0 0 128 128" {...props}>
+		<svg viewBox="0 0 128 128">
 			<defs>
 				<linearGradient
 					id={`${prefix}i`}

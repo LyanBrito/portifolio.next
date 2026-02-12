@@ -1,7 +1,7 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const MailIcon = (props: SVGProps<SVGSVGElement>) => (
+
+const MailIcon = () => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="41"

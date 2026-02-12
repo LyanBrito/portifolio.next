@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const PostmanIcon = (props: SVGProps<SVGSVGElement>) => (
+const PostmanIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#f37036"

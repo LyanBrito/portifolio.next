@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const FigmaIcon = (props: SVGProps<SVGSVGElement>) => (
+const FigmaIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#0acf83"

@@ -1,8 +1,7 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const AngularIcon = (props: SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 128 128" {...props}>
+const AngularIcon = () => (
+	<svg viewBox="0 0 128 128" >
 		<defs>
 			{/* IDs únicos para o Angular para evitar que o gradiente desapareça */}
 			<linearGradient

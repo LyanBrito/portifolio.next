@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const BootstrapIcon = (props: SVGProps<SVGSVGElement>) => (
+const BootstrapIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<defs>
 			<linearGradient

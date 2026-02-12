@@ -2,11 +2,13 @@
 // - renomaer essa pasta pata Cards
 // - mover ProjectsCard e PP pra cá
 // - unificar os estilos em um unico arquivo (se melhorar performace)
+
 import InstagramIcon from "@/assets/icons/InstagramIcon"
 import { NotFound } from "@/assets/imgs/export"
-import { GithubOriginal, LinkedinPlain } from "devicons-react"
 import Link from "next/link"
 import s from "./Social.module.scss"
+import LinkedinIcon from "@/assets/icons/dev-icons/LinkedinIcon";
+import GithubIcon from "@/assets/icons/dev-icons/GithubIcon";
 
 type SocialProps = {
 	contact: string
@@ -25,7 +27,7 @@ export default function SocialCard({ contact }: SocialProps) {
 			case "linkedin":
 				return {
 					title: "Linkedin",
-					icon: <LinkedinPlain />,
+					icon: <LinkedinIcon />,
 					socialLink: "in/lyanbrito",
 					socialLinkHref: "https://www.linkedin.com/in/lyanbrito/",
 				}
@@ -39,7 +41,7 @@ export default function SocialCard({ contact }: SocialProps) {
 			case "github":
 				return {
 					title: "Linkedin",
-					icon: <GithubOriginal />,
+					icon: <GithubIcon />,
 					socialLink: "lyanbrito",
 					socialLinkHref: "https://github.com/LyanBrito",
 				}

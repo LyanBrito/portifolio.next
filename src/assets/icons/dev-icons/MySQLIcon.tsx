@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const MySQLIcon = (props: SVGProps<SVGSVGElement>) => (
+const MySQLIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#00618A"

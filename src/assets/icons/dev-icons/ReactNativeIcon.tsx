@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const ReactNativeIcon = (props: SVGProps<SVGSVGElement>) => (
+const ReactNativeIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#61dafb"

@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const NestIcon = (props: SVGProps<SVGSVGElement>) => (
+const NestIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#df234f"

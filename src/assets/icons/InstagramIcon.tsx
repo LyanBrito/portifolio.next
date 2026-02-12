@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const InstagramIcon = (props: SVGProps<SVGSVGElement>) => (
+const InstagramIcon = () => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="77"

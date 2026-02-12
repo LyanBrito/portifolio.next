@@ -1,7 +1,8 @@
 import Link from "next/link"
 import s from "./ProductsCard.module.scss"
-import { GithubOriginal, SafariLine, SafariOriginal } from "devicons-react"
-import { skillsIcons } from "../../constants/skills"
+import { skillsIcons } from "@/constants/skills"
+import SafariIcon from "@/assets/icons/dev-icons/SafariIcon";
+import GithubIcon from "@/assets/icons/dev-icons/GithubIcon";
 
 type ProjectsProps = {
 	project: string
@@ -80,14 +81,14 @@ export default function PProjectsCard({ project }: ProjectsProps) {
 								className={s.ppLink}
 								href={data.projectLink}
 							>
-								<SafariLine /> Website
+								<SafariIcon /> Website
 							</Link>
 							<Link
 								target="_blank"
 								className={s.ppLink}
 								href={data.githubLink}
 							>
-								<GithubOriginal /> Github
+								<GithubIcon /> Github
 							</Link>
 						</div>
 					</div>

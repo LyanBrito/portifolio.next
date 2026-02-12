@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const MoreOptions = (props: SVGProps<SVGSVGElement>) => (
+const MoreOptions = () => (
 	<svg
 		width="24"
 		height="24"

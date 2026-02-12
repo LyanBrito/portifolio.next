@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const WhatsappIcon = (props: SVGProps<SVGSVGElement>) => (
+const WhatsappIcon = () => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="40"

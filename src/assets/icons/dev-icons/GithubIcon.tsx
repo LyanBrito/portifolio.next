@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const githubIcon = (props: SVGProps<SVGSVGElement>) => (
+const githubIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<g fill="#181616">
 			<path

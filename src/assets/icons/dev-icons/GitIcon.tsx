@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const GitIcon = (props: SVGProps<SVGSVGElement>) => (
+const GitIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#F34F29"

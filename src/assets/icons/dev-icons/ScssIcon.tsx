@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const ScssIcon = (props: SVGProps<SVGSVGElement>) => (
+const ScssIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fillRule="evenodd"

@@ -1,8 +1,7 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const StyledComponentsIcon = (props: SVGProps<SVGSVGElement>) => (
-	<svg viewBox="0 0 128 128" {...props}>
+const StyledComponentsIcon = () => (
+	<svg viewBox="0 0 128 128" >
 		<defs>
 			<linearGradient id="sass-g-b">
 				<stop offset=".027" stopColor="#cc7f12" />

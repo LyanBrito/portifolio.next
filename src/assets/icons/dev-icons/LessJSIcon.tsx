@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const LessJSIcon = (props: SVGProps<SVGSVGElement>) => (
+const LessJSIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fillRule="evenodd"

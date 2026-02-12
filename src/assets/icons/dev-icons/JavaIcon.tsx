@@ -1,7 +1,6 @@
 import * as React from "react"
-import type { SVGProps } from "react"
 
-const JavaIcon = (props: SVGProps<SVGSVGElement>) => (
+const JavaIcon = () => (
 	<svg viewBox="0 0 128 128">
 		<path
 			fill="#0074BD"
