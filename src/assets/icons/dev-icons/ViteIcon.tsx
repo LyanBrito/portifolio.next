@@ -1,7 +1,7 @@
 import * as React from "react"
 
 const ViteIcon = () => (
-	<svg viewBox="0 0 128 128" >
+	<svg viewBox="0 0 128 128">
 		<defs>
 			{/* IDs prefixados para evitar conflito com Maven, Next, Node, etc. */}
 			<linearGradient

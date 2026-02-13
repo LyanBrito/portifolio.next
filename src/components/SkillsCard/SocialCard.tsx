@@ -7,8 +7,8 @@ import InstagramIcon from "@/assets/icons/InstagramIcon"
 import { NotFound } from "@/assets/imgs/export"
 import Link from "next/link"
 import s from "./Social.module.scss"
-import LinkedinIcon from "@/assets/icons/dev-icons/LinkedinIcon";
-import GithubIcon from "@/assets/icons/dev-icons/GithubIcon";
+import LinkedinIcon from "@/assets/icons/dev-icons/LinkedinIcon"
+import GithubIcon from "@/assets/icons/dev-icons/GithubIcon"
 
 type SocialProps = {
 	contact: string

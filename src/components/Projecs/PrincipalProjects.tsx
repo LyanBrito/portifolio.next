@@ -1,8 +1,8 @@
 import Link from "next/link"
 import s from "./ProductsCard.module.scss"
 import { skillsIcons } from "@/constants/skills"
-import SafariIcon from "@/assets/icons/dev-icons/SafariIcon";
-import GithubIcon from "@/assets/icons/dev-icons/GithubIcon";
+import SafariIcon from "@/assets/icons/dev-icons/SafariIcon"
+import GithubIcon from "@/assets/icons/dev-icons/GithubIcon"
 
 type ProjectsProps = {
 	project: string
