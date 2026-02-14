@@ -34,6 +34,10 @@
 
 .ATWcontainer {
   @include flex-center-ani;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: linear-gradient(0deg, rgba(109, 211, 61, 0.10) 0%, rgba(109, 211, 61, 0.10) 100%), #141414;
+  box-shadow: 0 0 30px 0 rgba(109, 211, 61, 0.3);
   z-index: 1;
   width: unset;
   padding: 6px 20px;
@@ -41,9 +45,6 @@
   position: absolute;
   right: 90px;
   top: 201px;
-  border-radius: 40px;
-  border: 0.5px solid rgba(255, 255, 255, 0.05);
-  background: $gs-400;
   cursor: pointer;
 
   svg circle {
@@ -61,6 +62,7 @@
   }
 
   &:hover {
+    box-shadow: 0 0 50px 0 rgba(109, 211, 61, 0.5);
     span {
       color: $gs-100;
 
@@ -74,9 +76,8 @@
 
   &:active {
     border-radius: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: linear-gradient(0deg, rgba(109, 211, 61, 0.10) 0%, rgba(109, 211, 61, 0.10) 100%), #141414;
-    box-shadow: 0 0 30px 0 rgba(109, 211, 61, 0.50);
+    border: 0.5px solid rgba(255, 255, 255, 0.05);
+    background: $gs-400;
   }
 }
 
@@ -118,11 +119,13 @@
   gap: 10px;
   font-size: $fs-lg;
 }
+
 .socialWrapepr {
   @include flex-center;
   flex-direction: column;
   gap: 30px;
 }
+
 .button {
   @include flex-center;
   cursor: pointer;
@@ -150,6 +153,7 @@
     box-shadow: -2px -4px 5.3px 0 rgba(186, 186, 186, 0.25) inset,
     19px 22px 37.2px 0 rgba(0, 0, 0, 0.6),
     53px 73px 64.7px 0 rgba(0, 0, 0, 0.6);
+
     svg {
       transform: rotate(-45deg);
     }
@@ -185,6 +189,11 @@
   .cardWrapper {
     flex-direction: column;
   }
+  .ATWcontainer {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
 }
 
 @include respond(mobile) {
@@ -210,6 +219,7 @@
   }
   .socialLink {
     font-size: $fs-lg;
+
     svg {
       width: 20px;
       height: 20px;

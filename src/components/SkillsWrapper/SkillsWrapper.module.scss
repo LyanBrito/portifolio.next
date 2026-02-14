@@ -29,3 +29,9 @@
   width: 100%;
   flex-wrap: wrap;
 }
+@include respond("tablet-lg"){
+  .skillsWrapper {
+    justify-content: center;
+  }
+}
+

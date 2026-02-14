@@ -18,11 +18,13 @@ body {
 a, input, textarea {
   color: $gs-100;
   @include font-style;
+  @include global-transition;
 
   &:hover {
-    color: darken($gs-100, 10%);
+    color: $gs-200;
   }
 }
+
 textarea {
   resize: none;
   scrollbar-width: none;
@@ -41,6 +43,7 @@ h2 {
 h3 {
   @include fs-title-3xl;
 }
+
 h4 {
   @include fs-title-3xl;
   font-size: $fs-2xl;
@@ -49,6 +52,7 @@ h4 {
 p {
   @include fs-df-text;
 }
+
 @include respond(laptop) {
   h1 {
     font-size: $fs-6xl;
