@@ -1,7 +1,5 @@
-import ProjectClient from "@/app/ProjectsPage/ProjectsClient";
+import ProjectClient from "@/app/ProjectsPage/ProjectsClient"
 
 export default function ProjectPage() {
-	return (
-		<ProjectClient />
-	)
+	return <ProjectClient />
 }

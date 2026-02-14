@@ -1,8 +1,5 @@
-import ContactsClient from "@/app/ContactsPage/ContactsClient";
-import Test from "@/components/GlassNav/Test";
+import ContactsClient from "@/app/ContactsPage/ContactsClient"
 
 export default function ContactsPage() {
-	return (
-		<Test />
-	)
+	return <ContactsClient />
 }

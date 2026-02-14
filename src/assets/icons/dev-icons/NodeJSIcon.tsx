@@ -10,8 +10,7 @@ const NodeJsIcon = () => {
 			height="126"
 			viewBox="0 0 205.86 126"
 			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
+			xmlns="http://www.w3.org/2000/svg">
 			<defs>
 				<linearGradient
 					id={`${idPrefix}grad-b`}
@@ -19,8 +18,7 @@ const NodeJsIcon = () => {
 					y1="37.188"
 					x2="68.328"
 					y2="73.328"
-					gradientUnits="userSpaceOnUse"
-				>
+					gradientUnits="userSpaceOnUse">
 					<stop stopColor="#3F8B3D" />
 					<stop offset=".64" stopColor="#3F873F" />
 					<stop offset=".93" stopColor="#3DA92E" />
@@ -32,8 +30,7 @@ const NodeJsIcon = () => {
 					y1="55.428"
 					x2="121.428"
 					y2="29.028"
-					gradientUnits="userSpaceOnUse"
-				>
+					gradientUnits="userSpaceOnUse">
 					<stop offset=".14" stopColor="#3F873F" />
 					<stop offset=".4" stopColor="#52A044" />
 					<stop offset=".71" stopColor="#64B749" />
@@ -45,8 +42,7 @@ const NodeJsIcon = () => {
 					y1="53.128"
 					x2="97.428"
 					y2="53.128"
-					gradientUnits="userSpaceOnUse"
-				>
+					gradientUnits="userSpaceOnUse">
 					<stop offset=".09" stopColor="#6ABF4B" />
 					<stop offset=".29" stopColor="#64B749" />
 					<stop offset=".6" stopColor="#52A044" />

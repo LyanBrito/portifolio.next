@@ -1,4 +1,4 @@
-import { skillsIcons } from "../../constants/skills"
+import { skillsIcons } from "@/constants/skills"
 import s from "./ProductsCard.module.scss"
 import {
 	FashionImg,
@@ -111,8 +111,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 	return (
 		<Link
 			href={data.projectLink}
-			className={`${s[page]} ${s[project]} ${s.cardContainer}`}
-		>
+			className={`${s[page]} ${s[project]} ${s.cardContainer}`}>
 			<div className={s.imageBG}>
 				<Image
 					src={data.projectImage}

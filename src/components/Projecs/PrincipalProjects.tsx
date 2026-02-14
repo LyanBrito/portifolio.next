@@ -79,15 +79,13 @@ export default function PProjectsCard({ project }: ProjectsProps) {
 							<Link
 								target="_blank"
 								className={s.ppLink}
-								href={data.projectLink}
-							>
+								href={data.projectLink}>
 								<SafariIcon /> Website
 							</Link>
 							<Link
 								target="_blank"
 								className={s.ppLink}
-								href={data.githubLink}
-							>
+								href={data.githubLink}>
 								<GithubIcon /> Github
 							</Link>
 						</div>

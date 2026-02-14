@@ -39,8 +39,7 @@ const StyledComponentsIcon = () => (
 				y1="24.539"
 				y2="26.989"
 				gradientTransform="translate(-138.07 -65.083) scale(3.17893)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset=".021" stopColor="#a65486" />
 				<stop offset=".095" stopColor="#db77b4" />
 				<stop offset=".146" stopColor="#f188c8" />
@@ -58,8 +57,7 @@ const StyledComponentsIcon = () => (
 				y1="32.735"
 				y2="34.22"
 				gradientTransform="translate(-138.02 -65.654) scale(3.17893)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset=".195" stopColor="#974377" />
 				<stop offset=".247" stopColor="#cc76ac" />
 				<stop offset=".33" stopColor="#f5a3d4" />
@@ -76,8 +74,7 @@ const StyledComponentsIcon = () => (
 				y2="45.932"
 				gradientTransform="translate(-162.274 -67.103) scale(3.17893)"
 				gradientUnits="userSpaceOnUse"
-				spreadMethod="reflect"
-			>
+				spreadMethod="reflect">
 				<stop offset="0" stopColor="#dc83b9" />
 				<stop offset=".159" stopColor="#de77b5" />
 				<stop offset=".56" stopColor="#dd74b3" />
@@ -103,8 +100,7 @@ const StyledComponentsIcon = () => (
 				y1="38.931"
 				y2="42.708"
 				gradientTransform="translate(-137.907 -65.725) scale(3.17893)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset="0" stopColor="#bf4f95" />
 				<stop offset=".284" stopColor="#d26aaa" />
 				<stop offset=".588" stopColor="#dc81ba" />
@@ -132,8 +128,7 @@ const StyledComponentsIcon = () => (
 				y1="43.62"
 				y2="49.525"
 				gradientTransform="translate(-137.907 -65.725) scale(3.17893)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset=".085" stopColor="#cc7f12" />
 				<stop offset=".127" stopColor="#ffc22f" />
 				<stop offset=".5" stopColor="#ffd468" />

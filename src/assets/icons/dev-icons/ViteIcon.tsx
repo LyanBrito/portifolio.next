@@ -11,8 +11,7 @@ const ViteIcon = () => (
 				y1="33"
 				y2="344"
 				gradientTransform="translate(0 .937) scale(.3122)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset="0" stopColor="#41d1ff" />
 				<stop offset="1" stopColor="#bd34fe" />
 			</linearGradient>
@@ -24,8 +23,7 @@ const ViteIcon = () => (
 				y1="8.818"
 				y2="292.989"
 				gradientTransform="translate(0 .937) scale(.3122)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset="0" stopColor="#ffea83" />
 				<stop offset=".083" stopColor="#ffdd35" />
 				<stop offset="1" stopColor="#ffa800" />

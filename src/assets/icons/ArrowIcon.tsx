@@ -6,8 +6,7 @@ const ArrowIcon = () => (
 		width="15"
 		height="13"
 		viewBox="0 0 15 13"
-		fill="none"
-	>
+		fill="none">
 		<g clipPath="url(#clip0_188_451)">
 			<path
 				fillRule="evenodd"

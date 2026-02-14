@@ -11,8 +11,7 @@ const AngularIcon = () => (
 				y1="46.27"
 				y2="92.024"
 				gradientTransform="matrix(1 0 0 -1 0 130)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset="0" stopColor="#e40035" />
 				<stop offset=".24" stopColor="#f60a48" />
 				<stop offset=".352" stopColor="#f20755" />
@@ -28,8 +27,7 @@ const AngularIcon = () => (
 				y1="117.071"
 				y2="45.195"
 				gradientTransform="matrix(1 0 0 -1 0 130)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop offset="0" stopColor="#ff31d9" />
 				<stop offset="1" stopColor="#ff5be1" stopOpacity="0" />
 			</linearGradient>

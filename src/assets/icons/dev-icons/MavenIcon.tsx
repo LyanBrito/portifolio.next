@@ -15,8 +15,7 @@ const MavenIcon = () => {
 					y1="2082.507"
 					x2="-7243.872"
 					y2="2046.343"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset="0" stopColor="#f69923" />
 					<stop offset=".312" stopColor="#f79a23" />
 					<stop offset=".838" stopColor="#e97826" />
@@ -28,8 +27,7 @@ const MavenIcon = () => {
 					y1="2086.595"
 					x2="-7283.036"
 					y2="2086.595"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -42,8 +40,7 @@ const MavenIcon = () => {
 					y1="2064.42"
 					x2="-7345.566"
 					y2="2064.42"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset="0" stopColor="#282662" />
 					<stop offset=".095" stopColor="#662e8d" />
 					<stop offset=".788" stopColor="#9f2064" />
@@ -56,8 +53,7 @@ const MavenIcon = () => {
 					y1="2088.633"
 					x2="-7270.643"
 					y2="2088.633"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -70,8 +66,7 @@ const MavenIcon = () => {
 					y1="2085.61"
 					x2="-7359.244"
 					y2="2085.61"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset="0" stopColor="#282662" />
 					<stop offset=".095" stopColor="#662e8d" />
 					<stop offset=".788" stopColor="#9f2064" />
@@ -84,8 +79,7 @@ const MavenIcon = () => {
 					y1="2065.799"
 					x2="-7270.643"
 					y2="2065.799"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -98,8 +92,7 @@ const MavenIcon = () => {
 					y1="2066.905"
 					x2="-7284.331"
 					y2="2066.905"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -112,8 +105,7 @@ const MavenIcon = () => {
 					y1="2058.959"
 					x2="-7270.643"
 					y2="2058.959"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -126,8 +118,7 @@ const MavenIcon = () => {
 					y1="2059.762"
 					x2="-7270.643"
 					y2="2059.762"
-					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)"
-				>
+					gradientTransform="matrix(-.092 -.464 -.464 .092 318.72 -3557.936)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -140,8 +131,7 @@ const MavenIcon = () => {
 					y1="2040.008"
 					x2="-8276.704"
 					y2="2003.844"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset="0" stopColor="#f69923" />
 					<stop offset=".312" stopColor="#f79a23" />
 					<stop offset=".838" stopColor="#e97826" />
@@ -153,8 +143,7 @@ const MavenIcon = () => {
 					y1="2044.096"
 					x2="-8315.868"
 					y2="2044.096"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -167,8 +156,7 @@ const MavenIcon = () => {
 					y1="2021.921"
 					x2="-8378.397"
 					y2="2021.921"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset="0" stopColor="#282662" />
 					<stop offset=".095" stopColor="#662e8d" />
 					<stop offset=".788" stopColor="#9f2064" />
@@ -181,8 +169,7 @@ const MavenIcon = () => {
 					y1="2046.134"
 					x2="-8303.475"
 					y2="2046.134"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -195,8 +182,7 @@ const MavenIcon = () => {
 					y1="2043.111"
 					x2="-8392.076"
 					y2="2043.111"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset="0" stopColor="#282662" />
 					<stop offset=".095" stopColor="#662e8d" />
 					<stop offset=".788" stopColor="#9f2064" />
@@ -209,8 +195,7 @@ const MavenIcon = () => {
 					y1="2023.3"
 					x2="-8303.475"
 					y2="2023.3"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -223,8 +208,7 @@ const MavenIcon = () => {
 					y1="2024.407"
 					x2="-8317.163"
 					y2="2024.407"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />
@@ -237,8 +221,7 @@ const MavenIcon = () => {
 					y1="2016.46"
 					x2="-8303.475"
 					y2="2016.46"
-					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)"
-				>
+					gradientTransform="matrix(.296 -.448 -.448 -.296 3456.332 -3102.04)">
 					<stop offset=".323" stopColor="#9e2064" />
 					<stop offset=".63" stopColor="#c92037" />
 					<stop offset=".751" stopColor="#cd2335" />

@@ -20,29 +20,25 @@ export default function NavBar({ page }: NavbarProps) {
 				<Link
 					href={"/"}
 					className={`${s.link} ${page == "home" ? s.selected : ""}`}
-					onClick={handleMenuClose}
-				>
+					onClick={handleMenuClose}>
 					Home
 				</Link>
 				<Link
 					href={"/AboutMePage"}
 					className={`${s.link} ${page == "about-me" ? s.selected : ""}`}
-					onClick={handleMenuClose}
-				>
+					onClick={handleMenuClose}>
 					About Me
 				</Link>
 				<Link
 					href={"/ProjectsPage"}
 					className={`${s.link} ${page == "projects" ? s.selected : ""}`}
-					onClick={handleMenuClose}
-				>
+					onClick={handleMenuClose}>
 					Projects
 				</Link>
 				<Link
 					href={"/ContactsPage"}
 					className={`${s.link} ${page == "contacts" ? s.selected : ""}`}
-					onClick={handleMenuClose}
-				>
+					onClick={handleMenuClose}>
 					Contacts
 				</Link>
 			</div>

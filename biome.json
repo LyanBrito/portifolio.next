@@ -23,7 +23,8 @@
   "javascript": {
     "formatter": {
       "semicolons": "asNeeded",
-      "bracketSpacing": true
+      "arrowParentheses": "asNeeded",
+      "bracketSameLine": true
     }
   },
   "linter": {

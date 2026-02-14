@@ -4,13 +4,10 @@ import StatusActive from "@/assets/icons/StatusActive"
 import Link from "next/link"
 import SkillsCard from "@/components/SkillsCard/Skills"
 import ProjectsCard from "@/components/Projecs/ProjectsCard"
-
 import WhatsappIcon from "@/assets/icons/WhatsappIcon"
 import MailIcon from "@/assets/icons/MailIcon"
 import Footer from "@/components/Footer/Footer"
 import SectionLink from "@/components/SectionLink/SectionLink"
-import HomeSK from "@/components/ui/skeleton/HomeSK"
-import { useEffect, useState } from "react"
 import ArrowIcon from "@/assets/icons/ArrowIcon"
 import ReactIcon from "@/assets/icons/dev-icons/ReactIcon"
 import FigmaIcon from "@/assets/icons/dev-icons/FigmaIcon"
@@ -41,7 +38,7 @@ export default function HomeContent() {
 					isBlank={false}
 					title="About me"
 					description="Here some special skills that i learned in my trajectory"
-					linkLabel="More"
+					linkLabel="My Stacks"
 					linkRef="/AboutMePage"
 				/>
 				<div className={s.cardWrapper}>
@@ -90,8 +87,7 @@ export default function HomeContent() {
 				<div className={s.socialWrapepr}>
 					<Link
 						className={s.socialLink}
-						href="mailto:lyanbrito613@gmail.com"
-					>
+						href="mailto:lyanbrito613@gmail.com">
 						<MailIcon />
 						lyanbrito613@gmail.com
 					</Link>

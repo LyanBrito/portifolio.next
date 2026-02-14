@@ -10,8 +10,7 @@ const NextJSIcon = () => (
 				y1="116.5"
 				y2="160.5"
 				gradientTransform="scale(.71111)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop stopColor="#fff" />
 				<stop offset="1" stopColor="#fff" stopOpacity="0" />
 			</linearGradient>
@@ -23,8 +22,7 @@ const NextJSIcon = () => (
 				y1="54"
 				y2="106.875"
 				gradientTransform="scale(.71111)"
-				gradientUnits="userSpaceOnUse"
-			>
+				gradientUnits="userSpaceOnUse">
 				<stop stopColor="#fff" />
 				<stop offset="1" stopColor="#fff" stopOpacity="0" />
 			</linearGradient>

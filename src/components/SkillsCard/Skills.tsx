@@ -1,6 +1,5 @@
 import s from "./Skills.module.scss"
 import hs from "@/app/HomePage/HomePage.module.scss"
-import { ReactElement } from "react"
 import Link from "next/link"
 import ArrowIcon from "@/assets/icons/ArrowIcon"
 
@@ -26,7 +25,7 @@ export default function SkillsCard({
 				<p>{title}</p>
 			</div>
 			<Link className={hs.button} target="_blank" href={link}>
-				See more <ArrowIcon />
+				See documentation <ArrowIcon />
 			</Link>
 		</div>
 	)

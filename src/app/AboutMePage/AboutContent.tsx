@@ -16,8 +16,7 @@ export default function AboutContent() {
 					<a
 						href="../../assets/docs/Resume.pdf"
 						download
-						className={`${hs.ATWcontainer} ${s.dlResume}`}
-					>
+						className={`${hs.ATWcontainer} ${s.dlResume}`}>
 						<DownloadIcon />
 						<span>Resume</span>
 					</a>
