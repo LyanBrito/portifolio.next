@@ -11,10 +11,13 @@ src/
     ├── assets/                     # Static files (images, icons)
     ├── app/                        # Application Directory
     │   ├── AboutMePage/            # Other Page
+    │   │   ├── AboutClient.tsx     # Server Component Side
+    │   │   ├── AboutContent.tsx    # Static Page Content
+    │   │   ├── page.tsx            # Next.js Route
     │   ├── ContactsPage/           
-    │   ├── HomePage/               # Home Page
+    │   ├── HomePage/              
     │   ├── ProjectsPage/          
-    │   ├── page.tsx                # Principal Application File
+    │   ├── page.tsx                # Application File
     ├── components/                 # Reusable Components
     │   ├── NavBar/                 # Reusable NavBar 
     │   │   ├── NavBar.tsx          # React Component
@@ -52,8 +55,6 @@ The project is built using the following stack:
 - [TypeScript](https://www.typescriptlang.org/docs/) – Static typing for improved reliability and maintainability
 
 - [SCSS](https://sass-lang.com/documentation/) – Modular and scalable styling
-
-- [Devicon](https://github.com/devicons/devicon) – Technology icons integration
 
 - [EmailJS](https://www.emailjs.com/docs/) – Client-side email service integration
 
