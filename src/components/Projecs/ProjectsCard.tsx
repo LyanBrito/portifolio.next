@@ -45,6 +45,38 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 					skills: ["Java", "Spring"],
 					projectLink: "https://github.com/LyanBrito/spring-project",
 				}
+			case "todolist-back":
+				return {
+					title: "Todo List",
+					description: "To-do list project with Spring Boot",
+					projectImage: SpringImg,
+					skills: ["Postman", "Spring", "MySQL", "Maven"],
+					projectLink: "https://github.com/LyanBrito/todolist-back.java",
+				}
+			case "campus-datacenter":
+				return {
+					title: "Todo List",
+					description: "OpenSource guide for SENAI's datacenter project",
+					projectImage: SpringImg,
+					skills: ["HTML", "CSS", "JavaScript"],
+					projectLink: "https://github.com/LyanBrito/campus-datacenter-explorer/tree/develop",
+				}
+			case "learning-react":
+				return {
+					title: "Learning React",
+					description: "First react project",
+					projectImage: JavaImg,
+					projectLink: "https://github.com/LyanBrito/learning-react",
+					skills: ["React", "JavaScript", "CSS"],
+				}
+			case "express-study":
+				return {
+					title: "Express API",
+					description: "First express api made with Javascript",
+					projectImage: JavaImg,
+					projectLink: "https://github.com/LyanBrito/learning-react",
+					skills: ["Express.js", "JavaScript", "Postman"],
+				}
 			case "java-course2":
 				return {
 					title: "Java Course 2",
