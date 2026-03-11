@@ -2,6 +2,10 @@ import { skillsIcons } from "@/constants/skills"
 import s from "./ProductsCard.module.scss"
 import {
 	FashionImg,
+	CampusDataImg,
+	LExpressImg,
+	LReactImg,
+	TodoListImg,
 	JavaImg,
 	LandwindImg,
 	LunaImg,
@@ -49,7 +53,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				return {
 					title: "Todo List",
 					description: "To-do list project with Spring Boot",
-					projectImage: SpringImg,
+					projectImage: TodoListImg,
 					skills: ["Postman", "Spring", "MySQL", "Maven"],
 					projectLink: "https://github.com/LyanBrito/todolist-back.java",
 				}
@@ -57,7 +61,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				return {
 					title: "Todo List",
 					description: "OpenSource guide for SENAI's datacenter project",
-					projectImage: SpringImg,
+					projectImage: CampusDataImg,
 					skills: ["HTML", "CSS", "JavaScript"],
 					projectLink: "https://github.com/LyanBrito/campus-datacenter-explorer/tree/develop",
 				}
@@ -65,7 +69,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				return {
 					title: "Learning React",
 					description: "First react project",
-					projectImage: JavaImg,
+					projectImage: LReactImg,
 					projectLink: "https://github.com/LyanBrito/learning-react",
 					skills: ["React", "JavaScript", "CSS"],
 				}
@@ -73,7 +77,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				return {
 					title: "Express API",
 					description: "First express api made with Javascript",
-					projectImage: JavaImg,
+					projectImage: LExpressImg,
 					projectLink: "https://github.com/LyanBrito/learning-react",
 					skills: ["Express.js", "JavaScript", "Postman"],
 				}
