@@ -28,6 +28,9 @@ import LessJSIcon from "@/assets/icons/dev-icons/LessJSIcon"
 import ViteIcon from "@/assets/icons/dev-icons/ViteIcon"
 import AngularIcon from "@/assets/icons/dev-icons/AngularIcon"
 import ReactNavigationIcon from "@/assets/icons/dev-icons/ReactNavigationIcon"
+import {LExpressImg} from "@/assets/imgs/export";
+import ExpressIcon from "@/assets/icons/ExpressIcon";
+import ExpoIcon from "@/assets/icons/ExpoIcon";
 
 export const skillsIcons: Record<string, React.FC> = {
 	React: ReactIcon,
@@ -46,6 +49,8 @@ export const skillsIcons: Record<string, React.FC> = {
 	"styled-components": StyledComponentsIcon,
 	Bootstrap: BootstrapIcon,
 	Vite: ViteIcon,
+	Express: ExpressIcon,
+	ExpoIcon: ExpoIcon,
 	Postman: PostmanIcon,
 	Angular: AngularIcon,
 	Vercel: VercelIcon,
