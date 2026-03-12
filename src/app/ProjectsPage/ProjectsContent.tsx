@@ -37,9 +37,10 @@ export default function ProjectsContent() {
 					<ProjectsCard page="projects" project="todolist-back" />
 					<ProjectsCard page="projects" project="shopping-react" />
 					<ProjectsCard page="projects" project="microfront-study" />
-					<ProjectsCard page="projects" project="shopping-react" />
+					<ProjectsCard page="projects" project="campus-datacenter" />
 					<ProjectsCard page="projects" project="java-course2" />
 					<ProjectsCard page="projects" project="landwind" />
+					<ProjectsCard page="projects" project="express-study" />
 				</div>
 			</section>
 			<Footer page="other" />
