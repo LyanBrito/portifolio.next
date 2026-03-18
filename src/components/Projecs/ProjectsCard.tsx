@@ -2,6 +2,10 @@ import { skillsIcons } from "@/constants/skills"
 import s from "./ProductsCard.module.scss"
 import {
 	FashionImg,
+	CampusDataImg,
+	LExpressImg,
+	LReactImg,
+	TodoListImg,
 	JavaImg,
 	LandwindImg,
 	LunaImg,
@@ -44,6 +48,38 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 					projectImage: SpringImg,
 					skills: ["Java", "Spring"],
 					projectLink: "https://github.com/LyanBrito/spring-project",
+				}
+			case "todolist-back":
+				return {
+					title: "Todo List",
+					description: "To-do list project with Spring Boot",
+					projectImage: TodoListImg,
+					skills: ["Postman", "Spring", "MySQL", "Maven"],
+					projectLink: "https://github.com/LyanBrito/todolist-back.java",
+				}
+			case "campus-datacenter":
+				return {
+					title: "Todo List",
+					description: "OpenSource guide for SENAI's datacenter project",
+					projectImage: CampusDataImg,
+					skills: ["HTML", "CSS", "JavaScript"],
+					projectLink: "https://github.com/LyanBrito/campus-datacenter-explorer/tree/develop",
+				}
+			case "learning-react":
+				return {
+					title: "Learning React",
+					description: "First react project",
+					projectImage: LReactImg,
+					projectLink: "https://github.com/LyanBrito/learning-react",
+					skills: ["React", "JavaScript", "CSS"],
+				}
+			case "express-study":
+				return {
+					title: "Express API",
+					description: "First express api made with Javascript",
+					projectImage: LExpressImg,
+					projectLink: "https://github.com/LyanBrito/learning-react",
+					skills: ["Express.js", "JavaScript", "Postman"],
 				}
 			case "java-course2":
 				return {

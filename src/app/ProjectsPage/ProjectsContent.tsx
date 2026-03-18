@@ -34,11 +34,13 @@ export default function ProjectsContent() {
 				/>
 				<div className={s.projectsWrapper}>
 					<ProjectsCard page="projects" project="rr-html" />
-					<ProjectsCard page="projects" project="landwind" />
+					<ProjectsCard page="projects" project="todolist-back" />
 					<ProjectsCard page="projects" project="shopping-react" />
 					<ProjectsCard page="projects" project="microfront-study" />
-					<ProjectsCard page="projects" project="simple-api.node" />
-					<ProjectsCard page="projects" project="" />
+					<ProjectsCard page="projects" project="campus-datacenter" />
+					<ProjectsCard page="projects" project="java-course2" />
+					<ProjectsCard page="projects" project="landwind" />
+					<ProjectsCard page="projects" project="express-study" />
 				</div>
 			</section>
 			<Footer page="other" />
