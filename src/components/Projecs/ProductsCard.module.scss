@@ -37,17 +37,14 @@
 
 .imageBG {
   @include flex-center-ani;
-  height: 100vh;
-  max-height: 616px;
   border-radius: 15px;
   align-items: flex-end;
   background: $project-card-bg;
   overflow: hidden;
 
   img {
-    height: 100%;
-    width: 100%;
-    padding: 5% 5%;
+    height: 250px;
+    width: 282px;
     border-radius: 25px;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7));
     object-fit: contain;
@@ -84,6 +81,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+    width: 95%;
   }
 }
 
@@ -241,6 +239,22 @@
   .ppCardInfo {
     background: $spring-bg;
   }
+}
+
+.ppCardContainer.todolist-back {
+  background: $turborepo-bg;
+}
+
+.ppCardContainer.campus-datacenter{
+  background: $figma-bg;
+}
+
+.ppCardContainer.learning-react {
+  background: $react-bg;
+}
+
+.ppCardContainer.express-study {
+  background: $project-card-bg;
 }
 
 .cardContainer.luna {

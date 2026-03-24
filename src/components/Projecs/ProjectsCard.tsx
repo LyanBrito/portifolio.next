@@ -59,10 +59,10 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				}
 			case "campus-datacenter":
 				return {
-					title: "Todo List",
-					description: "OpenSource guide for SENAI's datacenter project",
+					title: "Campus Datacenter",
+					description: "OpenSource guide for SENAI's project",
 					projectImage: CampusDataImg,
-					skills: ["HTML", "CSS", "JavaScript"],
+					skills: ["HTML", "CSS", "JavaScript", "Figma"],
 					projectLink: "https://github.com/LyanBrito/campus-datacenter-explorer/tree/develop",
 				}
 			case "learning-react":
@@ -102,7 +102,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 				return {
 					title: "Fashion Website",
 					description:
-						"Webshop landing page made with create-react-app",
+						"Webshop landing page made with pure react",
 					projectImage: FashionImg,
 					projectLink:
 						"https://github.com/LyanBrito/shopping-website.react",
