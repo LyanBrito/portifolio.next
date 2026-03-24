@@ -34,6 +34,10 @@
     }
   }
 }
+.imageBG.homePage {
+  padding: 5% 5%;
+  height: 100vh;
+}
 
 .imageBG {
   @include flex-center-ani;
@@ -42,6 +46,10 @@
   background: $project-card-bg;
   overflow: hidden;
 
+  img.homePage {
+    height: 100%;
+    width: 100%
+  }
   img {
     height: 250px;
     width: 282px;
