@@ -4,20 +4,28 @@
   max-width: 373px;
   height: unset;
   max-height: 675px;
+
   .imageBG {
     height: unset;
     padding: 30px;
+
+    img {
+      border-radius: 20px;
+    }
   }
+
   .cardInfo .cardTitleWrapper {
     h3 {
       font-size: $fs-lg;
       font-weight: $fw-medium;
     }
+
     p {
       font-weight: 200;
     }
   }
 }
+
 .cardContainer {
   @include flex-center-ani;
   flex-direction: column;
@@ -34,9 +42,17 @@
     }
   }
 }
-.imageBG.homePage {
-  padding: 5% 5%;
-  height: 100vh;
+
+.home.cardContainer {
+  .imageBG {
+    height: 100%;
+    padding: 5% 5%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .imageBG {
@@ -46,10 +62,6 @@
   background: $project-card-bg;
   overflow: hidden;
 
-  img.homePage {
-    height: 100%;
-    width: 100%
-  }
   img {
     height: 250px;
     width: 282px;
@@ -106,6 +118,7 @@
     flex-shrink: 0;
   }
 }
+
 .ppCardContainer {
   display: flex;
   align-items: flex-start;
@@ -113,6 +126,7 @@
   gap: 30px;
   height: 350px;
   width: 100%;
+
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -127,17 +141,20 @@
   background: $project-card-bg;
   border-radius: 25px;
 }
+
 .ppCardText {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 17px;
+
   h4 {
     text-shadow: 0 8px 10px rgba(209, 209, 209, 0.25);
     font-size: $fs-4xl;
     font-style: normal;
     line-height: $lh-subtitle;
   }
+
   p {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
     font-size: $fs-xl;
@@ -165,6 +182,7 @@
     transform: rotateY(180deg);
   }
 }
+
 .flipCardFront,
 .flipCardBack {
   position: absolute;
@@ -173,10 +191,11 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 20px;
+
   svg {
     width: 77px !important;
     height: 77px !important;
-    }
+  }
 
   p {
     font-size: $fs-xl;
@@ -192,16 +211,19 @@
   border-radius: 25px;
   gap: 10px;
   background: linear-gradient(180deg, #24292e 0%, #09090a 95.33%);
+
   .skillsWrapper {
-  justify-content: center;
+    justify-content: center;
   }
 }
+
 .ppLinksWrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
   width: 100%;
+
   .ppLink {
     @include flex-center-ani;
     cursor: pointer;
@@ -209,20 +231,24 @@
     width: unset;
     flex-direction: column;
     gap: 10px;
+
     svg {
       path {
         @include global-transition;
         fill: $gs-200;
       }
     }
+
     &:hover {
       color: $gs-100;
+
       svg path {
         fill: $gs-100;
       }
     }
   }
 }
+
 .flipCardBack {
   @include flex-center-ani;
   flex-direction: column;
@@ -232,47 +258,62 @@
 
   transform: rotateY(180deg);
 }
-.ppCardContainer.luna {
+
+.cardContainer.luna {
   .ppCardInfo {
-    background: linear-gradient(
-      190deg,
-      #7b1cb2 7.64%,
-      #6d1c9c 31.29%,
-      #651792 56.01%,
-      #340c4c 97.3%
-    );
   }
+
+  background: linear-gradient(
+                  190deg,
+                  #7b1cb2 7.64%,
+                  #6d1c9c 31.29%,
+                  #651792 56.01%,
+                  #340c4c 97.3%
+  );
 }
-.ppCardContainer.spring-project {
-  .ppCardInfo {
+
+.cardContainer.spring-project {
+  .imageBG {
+    .ppCardInfo {
+    }
     background: $spring-bg;
   }
 }
 
-.ppCardContainer.todolist-back {
-  background: $turborepo-bg;
+.cardContainer.todolist-back {
+  .imageBG {
+    background: $linkedin-bg;
+  }
 }
 
-.ppCardContainer.campus-datacenter{
-  background: $figma-bg;
+.cardContainer.campus-datacenter {
+  .imageBG {
+    background: $figma-bg;
+  }
 }
 
-.ppCardContainer.learning-react {
-  background: $react-bg;
+.cardContainer.learning-react {
+  .imageBG {
+    background-image: url("../../assets/imgs/learning-react-img.webp");
+    backdrop-filter: blur(5px);
+
+  }
 }
 
-.ppCardContainer.express-study {
-  background: $project-card-bg;
+.cardContainer.express-study {
+  .imageBG {
+    background: $default-bg;
+  }
 }
 
 .cardContainer.luna {
   .imageBG {
     background: linear-gradient(
-      98deg,
-      #8f33df -3.55%,
-      #bd68ee 18.43%,
-      #3c096c 78.28%,
-      #4e1c79 95.99%
+                    98deg,
+                    #8f33df -3.55%,
+                    #bd68ee 18.43%,
+                    #3c096c 78.28%,
+                    #4e1c79 95.99%
     );
   }
 }
@@ -285,52 +326,54 @@
 
 .cardContainer.java-course2 {
   .imageBG {
-    background:
-      linear-gradient(
-        0deg,
-        rgba(173, 173, 173, 0.2) 0%,
-        rgba(173, 173, 173, 0.2) 100%
-      ),
-      linear-gradient(158deg, #e4aa84 8.89%, #e06a1c 34.01%, #7c3b0f 87.75%);
+    background: linear-gradient(
+                    0deg,
+                    rgba(173, 173, 173, 0.2) 0%,
+                    rgba(173, 173, 173, 0.2) 100%
+    ),
+    linear-gradient(158deg, #e4aa84 8.89%, #e06a1c 34.01%, #7c3b0f 87.75%);
   }
 }
+
 .cardContainer.rr-html {
   .imageBG {
     background: $default-bg;
   }
 }
+
 .cardContainer.shopping-react {
   .imageBG {
     background: linear-gradient(
-      160deg,
-      $sc-alert-100 8.38%,
-      $sc-alert-200 49.15%,
-      $sc-alert-300 89.26%
+                    160deg,
+                    $sc-alert-100 8.38%,
+                    $sc-alert-200 49.15%,
+                    $sc-alert-300 89.26%
     );
   }
 }
+
 .cardContainer.landwind {
   .imageBG {
-    background:
-      linear-gradient(
-        0deg,
-        rgba(33, 17, 71, 0.5) 0%,
-        rgba(33, 17, 71, 0.5) 100%
-      ),
-      linear-gradient(104deg, #7a19f3 -2.44%, #a952f3 100%);
+    background: linear-gradient(
+                    0deg,
+                    rgba(33, 17, 71, 0.5) 0%,
+                    rgba(33, 17, 71, 0.5) 100%
+    ),
+    linear-gradient(104deg, #7a19f3 -2.44%, #a952f3 100%);
   }
 }
+
 .cardContainer.microfront-study {
   .imageBG {
-    background:
-      linear-gradient(
-        0deg,
-        rgba(33, 17, 71, 0.5) 0%,
-        rgba(33, 17, 71, 0.5) 100%
-      ),
-      linear-gradient(189deg, #51fbf5 -2.46%, #5448bf 55.79%, #cf1a75 103.56%);
+    background: linear-gradient(
+                    0deg,
+                    rgba(33, 17, 71, 0.5) 0%,
+                    rgba(33, 17, 71, 0.5) 100%
+    ),
+    linear-gradient(189deg, #51fbf5 -2.46%, #5448bf 55.79%, #cf1a75 103.56%);
   }
 }
+
 @include respond(tablet-lg) {
   .projects {
     max-width: unset;
@@ -338,6 +381,7 @@
   .ppCardContainer {
     flex-direction: column;
     height: unset;
+
     &:nth-child(even) {
       flex-direction: column;
     }
