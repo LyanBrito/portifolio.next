@@ -30,12 +30,12 @@ export default function PProjectsCard({ project }: ProjectsProps) {
 					projectLink:
 						"https://alunaproject.github.io/luna-project.frontend/",
 				}
-			case "spring-project":
+			case "ecommerce":
 				// trocar esse de spring por algo melhor, mais completo
 				return {
-					title: "Spring",
+					title: "Ecommerce",
 					description:
-						"This project showcases a simple CRUD application built using the Spring framework.",
+						"Simple ecommerce APi made with SpringBoot & deployed on azure",
 					skills: ["Java", "Spring", "Maven"],
 					githubLink: "https://github.com/LyanBrito/spring-project",
 					projectLink: "https://github.com/LyanBrito/spring-project",

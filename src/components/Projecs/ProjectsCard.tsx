@@ -44,7 +44,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 			case "spring-project":
 				return {
 					title: "Spring",
-					description: "Simple Spring backend Project",
+					description: "Simple SpringBoot projects monorepo",
 					projectImage: SpringImg,
 					skills: ["Java", "Spring"],
 					projectLink: "https://github.com/LyanBrito/spring-project",
@@ -84,7 +84,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 			case "java-course2":
 				return {
 					title: "Java Course 2",
-					description: "Basic Java exercised fro POO practice",
+					description: "Basic Java exercised for POO practice",
 					projectImage: JavaImg,
 					projectLink: "https://github.com/LyanBrito/java-course2",
 					skills: ["Java"],
@@ -117,6 +117,7 @@ export default function ProjectsCard({ project, page }: ProjectsProps) {
 						"https://github.com/LyanBrito/code-dojo-landwind",
 					skills: ["HTML", "CSS", "TailwindCSS"],
 				}
+
 			case "microfront-study":
 				return {
 					title: "Microfront Study",

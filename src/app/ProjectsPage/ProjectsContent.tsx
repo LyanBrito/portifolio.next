@@ -21,7 +21,7 @@ export default function ProjectsContent() {
 			</div>
 			<div className={s.ppWrapper}>
 				<PProjectsCard project="luna" />
-				<PProjectsCard project="spring-project" />
+				<PProjectsCard project="ecommerce" />
 			</div>
 			<section className={s.spContainer}>
 				<SectionLink
@@ -41,6 +41,7 @@ export default function ProjectsContent() {
 					<ProjectsCard page="projects" project="java-course2" />
 					<ProjectsCard page="projects" project="landwind" />
 					<ProjectsCard page="projects" project="express-study" />
+					<ProjectsCard page="projects" project="spring-project" />
 					<ProjectsCard page="projects" project="learning-react"/>
 				</div>
 			</section>
