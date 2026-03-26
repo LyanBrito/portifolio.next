@@ -138,7 +138,7 @@
   padding: 50px;
   gap: 10px;
   height: 100%;
-  background: $project-card-bg;
+  background: $default-bg;
   border-radius: 25px;
 }
 
@@ -259,23 +259,14 @@
   transform: rotateY(180deg);
 }
 
-.cardContainer.luna {
-  .ppCardInfo {
-  }
-
-  background: linear-gradient(
-                  190deg,
-                  #7b1cb2 7.64%,
-                  #6d1c9c 31.29%,
-                  #651792 56.01%,
-                  #340c4c 97.3%
-  );
+.cardContainer.ecommerce {
+    .ppCardInfo {
+    background: $spring-bg;
+    }
 }
 
 .cardContainer.spring-project {
   .imageBG {
-    .ppCardInfo {
-    }
     background: $spring-bg;
   }
 }
@@ -294,8 +285,7 @@
 
 .cardContainer.learning-react {
   .imageBG {
-    background-image: url("../../assets/imgs/learning-react-img.webp");
-    backdrop-filter: blur(5px);
+    background: $linkedin-bg;
 
   }
 }
